@@ -1,0 +1,475 @@
+.filter {
+  // width: calc(((100% / 12) * 3)-28px);
+  // margin-right: 28px;
+
+
+
+  &__date {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-family: "Gotham Pro Medium";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-bottom: 31px;
+  }
+
+  &__form {
+    background-color: #ffffff;
+    padding: 16px 20px 25px;
+    transition: 0.4s;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+    transition: 0.4s;
+    margin-bottom: 28px;
+
+    label {
+      cursor: pointer;
+    }
+
+    &:hover {}
+
+    /* Скрываем реальный чекбокс */
+    .checkbox {
+      display: none;
+
+      /* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+      &-custom {
+        position: relative;
+        /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+        width: 20px;
+        /* Обязательно задаем ширину */
+        height: 20px;
+        /* Обязательно задаем высоту */
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        margin-left: -25px;
+      }
+
+      /* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+      &-custom,
+      .label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+      &:checked+.checkbox-custom::before {
+        content: "";
+        /* Добавляем наш псевдоэлемент */
+        display: block;
+        /* Делаем его блочным элементом */
+        position: absolute;
+        /* Позиционируем его абсолютным образом */
+        /* Задаем расстояние от верхней, правой, нижней и левой границы */
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
+        left: 2px;
+        background: #aa6e4f;
+        /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-family: "Gotham Pro Medium";
+    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    background: url("https://icongr.am/entypo/chevron-up.svg?color=d6d6d6") 97%/18px no-repeat;
+  }
+
+  &__container {}
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.07;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+    margin-bottom: 20px;
+
+    input {
+      background: transparent;
+      padding-left: 5px;
+      border: 0;
+      color: #999999;
+      min-width: 50px;
+    }
+
+    span {
+      border-radius: 2px;
+      border: solid 1px #d6d6d6;
+      width: 45%;
+      display: flex;
+      padding-left: 3%;
+      overflow: hidden;
+    }
+  }
+
+  &__slider {
+    width: 90%;
+    border: none;
+    border-radius: 3px;
+    height: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url("../images/slider.png") repeat-x;
+    margin-left: 3%;
+
+    .ui-slider-range {
+      position: absolute;
+      z-index: 1;
+      font-size: 0.7em;
+      display: block;
+      border: 0;
+      background-position: 0 0;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #aa6e4f;
+    }
+
+    .ui-slider-handle {
+      width: 12px;
+      height: 12px;
+      transform: rotate(-45deg);
+      border-radius: 2px;
+      background-color: #aa6e4f;
+      border: none;
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      width: 100%;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      word-wrap: break-word;
+      word-break: break-all;
+      padding-left: 25px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input {
+      -webkit-appearance: none;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #aa6e4f;
+      font-family: "Gotham Pro Medium";
+      padding: 14px 0;
+      width: 100%;
+      border-radius: 2px;
+      border: solid 1px #aa6e4f;
+      text-transform: uppercase;
+      margin-bottom: 19px;
+    }
+  }
+
+  &_reset {
+    font-family: "Gotham Pro Medium";
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #aa6e4f;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #aa6e4f;
+  }
+
+  &__item {
+    overflow: hidden;
+    height: unset;
+    border-bottom: 1px solid #eeeeee;
+    padding: 16px 0 24px !important;
+    width: 100%;
+  }
+
+  &__close {
+    flex-grow: 1;
+    height: 50px;
+    width: 100%;
+    padding: 16px 0 0;
+
+    * {
+      display: none;
+    }
+
+    .filter__title {
+      display: block;
+      background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/18px no-repeat;
+    }
+  }
+
+  .close__filter {
+    font-family: "Gotham Pro Medium";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    border-bottom: 1px dashed black;
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+
+    .closed {
+      height: 56px;
+      overflow: hidden;
+      position: relative;
+
+      * {
+        display: none;
+      }
+
+      .item__close {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 15px;
+        top: 0;
+        border: 0;
+        background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 95%/18px no-repeat;
+      }
+
+      .close__filter {
+        display: block;
+        width: 159px;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    &__item {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      width: 100%;
+    }
+
+    &__price {
+      width: 50%;
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    &__slider {
+      width: 40%;
+    }
+
+    &__checkbox {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+
+      label {
+        width: 33%;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      justify-content: unset;
+      align-items: center;
+
+      input {
+        width: 232px;
+        height: 44px;
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+
+    .item__close {
+      border: 0;
+      position: relative;
+      overflow: inherit;
+    }
+
+    .close__filter:last-child {
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: -60px;
+      color: #666666;
+      font-family: "Gotham Pro Medium";
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+
+    &__item {
+      width: 100%;
+      display: block;
+    }
+
+    &__container {
+      width: 100%;
+      display: block;
+    }
+
+    &__title {
+      width: 100%;
+    }
+
+    &__price {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-left: 10px;
+
+      // input {
+      //   margin-left: -65px;
+      // }
+    }
+
+    &__slider {
+      width: 93%;
+    }
+
+    &__checkbox {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+
+      label {
+        width: 100%;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      // justify-content: center;
+      // align-items: center;
+      // flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 240px;
+        height: 44px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      span {
+        width: 127px;
+        margin: 20px auto;
+        min-width: 127px;
+        white-space: nowrap;
+      }
+    }
+
+    .item__close {
+      order: 1;
+      padding: 0;
+    }
+
+    .filter__form {
+      position: relative;
+    }
+
+    .filter__button {
+      padding-top: 19px;
+      padding-bottom: 19px;
+    }
+
+    .item__close {
+      position: absolute;
+      bottom: 0;
+      padding: 0 !important;
+      left: 0;
+    }
+
+    .close__filter:last-child {
+      width: 100%;
+      margin: 5px auto;
+      position: unset;
+      /* min-width: 127px; */
+      white-space: nowrap;
+      max-width: 127px;
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,572 @@
+.comparison {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 69px;
+  position: relative;
+  padding-bottom: 30px;
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .navchain {
+    margin-bottom: 5px;
+  }
+
+  &__middle {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+
+    tr:not(:first-child):nth-child(even) {
+      td {
+        background-color: #f8f8f8;
+      }
+    }
+
+    tr:not(:first-child):hover {
+      td {
+        background-color: #f3efec !important;
+      }
+
+    }
+  }
+
+  .tabs {
+    width: 25%;
+    border-right: solid 1px #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 290px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    td {
+      border-right: solid 1px #f1f1f1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.93;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+    }
+  }
+
+  .swiper-wrapper {
+    height: auto;
+    display: flex;
+  }
+
+  .swiper-slide,
+  .swiper-block {
+    padding-left: 17px;
+    align-items: stretch;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex: 1 0 25%;
+    width: 25%;
+  }
+
+  .products-line {
+
+
+    .swiper-slide {
+      padding-left: 0;
+      align-items: baseline;
+    }
+
+    .swiper__comparison_first {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    font-family: "Gotham Pro Medium";
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+  }
+
+  &__inner {
+    padding: 17px 16px;
+    background-color: #eeeeee;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-menu__title {
+    font-family: "Gotham Pro Medium";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    height: 30px;
+    margin: 16px 0 0;
+    background: url("https://icongr.am/entypo/triangle-down.svg") white 95%/15px no-repeat;
+    border-radius: 2px;
+
+    &:hover {
+      li {
+        height: auto !important;
+        opacity: 1;
+        display: block !important;
+      }
+    }
+
+    li:not(:first-child) {
+      height: 0;
+      display: none;
+    }
+  }
+
+  &__item {
+    width: 256px;
+    height: auto;
+    opacity: 0;
+    border: solid 1px #d6d6d6;
+    background: white;
+    z-index: 99;
+
+    &:first-child {
+      opacity: 1;
+      background: transparent;
+    }
+  }
+
+  &__link {
+    padding: 11px 14px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    position: relative;
+  }
+
+  &__button {
+    padding: 17px 16px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 100%;
+      display: flex;
+      padding-left: 24px;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      margin: 5px 0;
+    }
+
+    .comparison__select {
+      background: url("../images/mamka.png") 0 /15px no-repeat;
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+
+    .comparison__select.active {
+      background: url("../images/papka.png") 0 /15px no-repeat;
+    }
+
+    .comparison__filter {
+      background: url("../images/comparison-delete.png") 0 /12px no-repeat;
+      color: #aa6e4f;
+      margin-top: 30px;
+    }
+  }
+
+  .characteristic {
+    &__title {
+      height: 52px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      font-family: "Gotham Pro Medium";
+    }
+
+    &__row {
+      width: 100%;
+      cursor: pointer;
+
+
+    }
+
+    &__property {
+      font-family: "Gotham Pro";
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+    }
+
+    &__name {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.93;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      flex: 1 1 25%;
+      padding-left: 17px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #b0b0b0;
+    font-size: 20px;
+  }
+
+  .swiper__comparison {
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: baseline;
+    max-width: 100%;
+
+    .special-offers__text {
+      padding: 20px 0;
+      height: 100px;
+      display: flex;
+      max-height: unset;
+    }
+  }
+
+  .price__absolute {}
+
+  .swiper-button-prev {
+    background: url("../images/round-arrow-left.svg") 0/24px no-repeat;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    left: unset;
+  }
+
+  .swiper-button-next {
+    background: url("../images/round-arrow-right.svg") 0/24px no-repeat;
+    top: 40px;
+    right: 50px;
+  }
+
+  .swiper-scrollbar {
+    display: flex;
+    opacity: 1 !important;
+    height: 10px !important;
+    border-radius: 8.5px;
+    background-color: #e6e6e6;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+    &-drag {
+      height: 10px;
+      border-radius: 8.5px;
+      background-color: #aa6e4f;
+    }
+  }
+
+  .comparison__text {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-top: 17px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navchain {
+      margin-bottom: 0;
+    }
+
+    .comparison__button a {}
+
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 32px;
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #262626;
+      width: 30%;
+    }
+
+    .swiper-slide,
+    .swiper-block {
+      flex: 1 0 auto;
+      width: 33.3333333%;
+    }
+
+    &__inner {
+      margin-right: 0;
+    }
+
+    .tabs {
+      max-width: 237px;
+      min-width: 212px;
+    }
+
+    .special-offers__text {
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+    }
+
+    .special-offers__buy {
+      padding: 0;
+      color: transparent;
+      background-image: url("https://icongr.am/entypo/shopping-cart.svg?color=ffffff");
+      background-size: 18px;
+      background-position: center;
+      width: unset;
+    }
+
+    .special-offers__price {
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      text-align: left;
+      color: #2e2e2e;
+    }
+
+    .special-offers__rub {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .swiper-slide,
+    .swiper-block {
+      flex: 1 0 50% !important;
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .products-line {
+      position: relative;
+      padding-top: 350px;
+
+      td:first-child {
+        position: absolute;
+        width: 100% !important;
+        top: 8px;
+        align-items: flex-start;
+        border: 0;
+      }
+
+      .comparison__inner {
+        width: 100%;
+      }
+    }
+
+    .characteristic__row {
+      position: relative;
+
+      .swiper-block:first-child {
+        position: absolute;
+        top: 8px;
+        background: transparent;
+        width: 100%;
+        height: unset !important;
+        padding: 0 0 0 17px;
+        font-family: "Gotham Pro Medium";
+        font-size: 12px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+      }
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    .swiper-block {
+      padding-top: 25px;
+      font-size: 12px !important;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+    }
+
+    &__title {
+      width: unset;
+      font-size: 24px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: left;
+      color: #262626;
+    }
+
+    &__select {
+      margin: 8px 0;
+    }
+
+    .swiper-pagination {
+      display: block;
+      top: 390px;
+      bottom: unset;
+      height: unset;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      color: #2e2e2e;
+    }
+
+    .swiper-button-prev {
+      top: 400px;
+      left: 0;
+    }
+
+    .swiper-button-next {
+      top: 400px;
+      right: 0;
+    }
+
+    .special-offers__text {
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+    }
+
+    .special-offers__price {
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      width: 100%;
+      margin-top: 25px;
+      flex-wrap: nowrap;
+      margin-bottom: 10px;
+    }
+
+    .special-offers__buy {
+      background-image: none;
+      @include button;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      width: 100%;
+    }
+
+    .characteristic__title {
+      .swiper-block {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .swiper-block {
+      height: 63px !important;
+    }
+  }
+}

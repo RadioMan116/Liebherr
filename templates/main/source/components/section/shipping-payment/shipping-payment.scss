@@ -1,0 +1,398 @@
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+
+  .sidebar {
+    padding: 0;
+  }
+
+  .navchain {
+    margin-bottom: 0;
+  }
+
+  .shipping-payment {
+    &__title {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 10px;
+      align-content: baseline;
+    }
+
+
+    &__item {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: baseline;
+      align-items: baseline;
+      border-bottom: solid 1px #e2e2e2;
+      padding-bottom: 50px;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    &__header {
+      font-family: "Gotham Pro Medium";
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      width: 100%;
+      margin-top: 30px;
+
+      &-color {
+        color: #aa6e4f;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: left;
+      color: #262626;
+      z-index: 99;
+      margin-top: 30px;
+
+      &-b {
+        display: block;
+        width: 100%;
+        margin-bottom: 18px;
+        font-family: "Gotham Pro Medium";
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+      }
+
+      a {
+        color: #aa6e4f;
+      }
+    }
+
+    &__list {
+      z-index: 99;
+      margin: 30px 0 0;
+      list-style: none;
+      font-family: "Gotham Pro Medium";
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    &__li {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      text-align: left;
+      font-family: "Gotham Pro";
+
+      &::before {
+        content: "⯁";
+        margin-right: 15px;
+      }
+
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+
+    &__pic {
+      margin: 34px 0 24px;
+
+    }
+
+    &__number {
+      font-family: "Gotham Pro Medium";
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: left;
+      color: #262626;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+
+    .sidebar {
+      display: flex;
+      align-items: stretch;
+
+      .work-link,
+      .yandex,
+      .quality {
+        width: calc(((100%/12)*4)-10px);
+      }
+
+      .yandex {
+        margin: 0 15px;
+        padding: 3%;
+        align-items: baseline;
+
+        &__link_form {
+          margin-top: auto;
+          font-size: 10px;
+        }
+      }
+
+      .work-link {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        &__a {
+          color: #2e2e2e;
+          font-family: "Gotham Pro";
+          font-size: 14px;
+        }
+      }
+
+      .quality {
+        &__number {
+          color: #2e2e2e;
+          font-family: "Gotham Pro Medium";
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+
+        &__title {
+          color: #2e2e2e;
+          font-family: "Gotham Pro Medium";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+
+        &__text {
+          color: #2e2e2e;
+          font-family: "Gotham Pro";
+          font-size: 12px;
+        }
+      }
+    }
+
+    .shipping-payment {
+      &__title {
+        color: #262626;
+        font-family: "Gotham Pro Medium";
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+      }
+
+      &__items {
+        width: 100%;
+      }
+
+      &__header {
+        color: #2e2e2e;
+        font-family: "Gotham Pro Medium";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 30px;
+
+        &-color {
+          color: #aa6e4f;
+          font-family: "Gotham Pro Medium";
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 10px;
+        }
+      }
+
+      &__text {
+        margin-top: 30px;
+        color: #2e2e2e;
+        font-family: "Gotham Pro";
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      &__list {
+        // margin-top: -30px;
+        color: #2e2e2e;
+        font-family: "Gotham Pro Medium";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      &__li {
+        color: #262626;
+        font-family: "Gotham Pro";
+        font-size: 14px;
+      }
+
+      &__item {
+        padding-bottom: 30px;
+      }
+    }
+
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      display: flex;
+      align-items: stretch;
+
+      .work-link,
+      .yandex,
+      .quality {
+        width: 100%;
+      }
+
+      .yandex {
+        margin: 15px 0;
+        padding: 3% 13% 3%;
+        align-items: baseline;
+
+        &__link_form {
+          margin-top: 15px;
+        }
+      }
+
+      .work-link {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        &__item {
+          width: 100%;
+        }
+
+        &__a {
+          color: #2e2e2e;
+          font-family: "Gotham Pro";
+          font-size: 14px;
+        }
+      }
+
+      .quality {
+        &__number {
+          color: #2e2e2e;
+          font-family: "Gotham Pro Medium";
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+
+        &__title {
+          color: #2e2e2e;
+          font-family: "Gotham Pro Medium";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+
+        &__text {
+          color: #2e2e2e;
+          font-family: "Gotham Pro";
+          font-size: 12px;
+        }
+      }
+    }
+
+    .shipping-payment {
+      &__items {
+        width: 100%;
+      }
+
+      &__header {
+        color: #2e2e2e;
+        font-family: "Gotham Pro Medium";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+
+        &-color {
+          color: #aa6e4f;
+          font-family: "Gotham Pro Medium";
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+      }
+
+      &__pic {
+        margin: 28px 0 18px;
+      }
+
+      &__text {
+        color: #2e2e2e;
+        font-family: "Gotham Pro";
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      &__title {
+        color: #262626;
+        font-family: "Gotham Pro Medium";
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+
+      &__list {
+        color: #2e2e2e;
+        font-family: "Gotham Pro Medium";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      &__li {
+        color: #262626;
+        font-family: "Gotham Pro";
+        font-size: 14px;
+      }
+    }
+
+
+  }
+}

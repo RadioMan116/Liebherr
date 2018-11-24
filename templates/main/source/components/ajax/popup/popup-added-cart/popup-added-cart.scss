@@ -1,0 +1,204 @@
+.added-cart_popup {
+    display: none;
+    padding: 35px 31px 36px;
+
+    .modal__close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 24px;
+        color: #aa6e4f;
+        padding-right: 5px;
+    }
+}
+
+.added-cart__items {
+    display: flex;
+    // width: 50%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.added-cart__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(((100%/12)*6)-33.5px);
+    align-content: flex-start;
+
+    &:first-child {
+        margin-right: 67px;
+        padding: 10px;
+    }
+}
+
+.added-cart__button {
+    width: 100%;
+}
+
+.title-strike {
+    margin-bottom: 35px;
+}
+
+.added-cart__title {
+    font-family: 'Gotham Pro Medium';
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.added-cart__key {
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-bottom: 37px;
+}
+
+.added-cart__price {
+    width: 100%;
+    font-family: "Gotham Pro Medium";
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-bottom: 13px;
+
+    b {
+        font-size: 24px;
+        line-height: 1;
+        margin-left: 10px;
+    }
+}
+
+.added-cart__presence {
+    font-family: Gotham Pro;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #03a619;
+}
+
+.added-cart__button {
+    display: flex;
+    margin-top: 37px;
+
+    a {
+        padding: 7px 24px 5px 25px;
+        font-family: "Gotham Pro Medium";
+        font-size: 12px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .added-cart__back {
+        color: #aa6e4f;
+        border-radius: 2px;
+        border: solid 1px #aa6e4f;
+    }
+
+    .added-cart__order {
+        border-radius: 2px;
+        background-color: #aa6e4f;
+        color: #ffffff;
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .added-cart__price {
+        letter-spacing: -4px;
+        font-size: 30px;
+    }
+
+    .added-cart__item {
+        &:first-child {
+            margin-right: auto;
+
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .added-cart__item:first-child {
+        display: none;
+    }
+
+    .added-cart__price {
+        letter-spacing: 0px;
+    }
+
+    .added-cart__item {
+        width: 100%;
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .added-cart__key {
+        margin-bottom: 10px;
+    }
+
+    .title-strike {
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+    }
+
+    .added-cart__items {
+        padding: 0 32px;
+    }
+
+    .added-cart__button {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 17px;
+
+        a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .added-cart__order {
+        margin-top: 10px;
+    }
+
+    .added-cart_popup {
+        padding: 31px 16px 16px 16px !important;
+    }
+}

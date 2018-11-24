@@ -1,0 +1,52 @@
+<header class="header geometria">
+
+	<div class="header__blocks">
+		<div class="header__block header__block_top">
+			<div class="container">
+				<button class="hamburger" id="js-hamburger" aria-expanded="false">
+					<div class="hamburger__img"></div>
+				</button>
+				{% include 'logo/global/logo.html' %}
+				{% include 'popup-call/callback.html' %}
+				{% include 'menu/menu-header/menu-header.html' %}
+				<div class="header__icons">
+					<div class="header__search js-header__search"></div>
+					<div class="header__compare">
+						<span class="header__number">0</span>
+					</div>
+					<div class="header__basket">
+						<span class="header__number">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__block header__block_bottom">
+			<div class="header__border header__border_top"></div>
+			<div class="container">
+				<div class="header__img">
+					<img src="{{src}}dit-sign.svg" alt="" class="logo__pic">
+				</div>
+				{% include 'menu/menu-header/menu-header.html' %}
+				<div class="header__icons">
+					<div class="header__search js-header__search"></div>
+					<a href="#" class="header__compare">
+						<span class="header__number">0</span>
+					</a>
+					<a href="#" class="header__basket">
+						<span class="header__number">0</span>
+					</a>
+				</div>
+			</div>
+			<div class="header__border header__border_bottom"></div>
+		</div>
+		{% include 'menu/drop-menu/drop-menu.html' %}
+	</div>
+	<div class="search__popup">
+		<form action="/search/" class="header__form">
+			<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+			<input type="submit" value="" class="header__submit js-header__submit">
+			<div class="header__button js-header__button"></div>
+		</form>
+	</div>
+	<div class="header__overlay"></div>
+</header>

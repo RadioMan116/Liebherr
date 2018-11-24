@@ -1,0 +1,432 @@
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    width: 100%;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 965px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  &__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: baseline;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &_first {
+      background: url("../images/about-us.png");
+      background-size: 100% 100%;
+    }
+
+    &_two {
+      background: url("../images/about-us__2.png");
+      background-size: 100% 100%;
+      height: 19%;
+      padding-bottom: 32px;
+    }
+
+    &_three {
+      background: url("../images/about-us__3.png");
+      background-size: 100% 100%;
+
+      .gerb__1 {
+        position: absolute;
+        margin: 0 auto;
+        background: white;
+        padding: 2% 1.1%;
+        width: 5.5%;
+        box-sizing: content-box;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        top: 14%;
+
+        &_right {
+          right: 1.15%;
+        }
+
+        &_left {
+          left: 1.15%;
+        }
+      }
+    }
+
+    &_four {
+      background: url("../images/about-us__4.png");
+      background-size: 100% 100%;
+
+      .gerb__2 {
+        position: absolute;
+        margin: 0 auto;
+        background: white;
+        padding: 2% 1.1%;
+        width: 5.5%;
+        box-sizing: content-box;
+        height: 50%;
+        display: flex;
+        top: 14%;
+
+
+        align-items: center;
+
+        &_right {
+          right: 1.15%;
+        }
+
+        &_left {
+          left: 1.15%;
+        }
+      }
+    }
+
+    &_five {
+      background: url("../images/about-us__5.png");
+      background-size: 100% 100%;
+
+      .gerb__3 {
+        position: absolute;
+        top: 8%;
+        background: white;
+        padding: 1% 1.1% 2%;
+        width: 5.5%;
+        box-sizing: content-box;
+        height: 50%;
+        display: flex;
+        align-items: baseline;
+
+        &_right {
+          right: 1.17%;
+        }
+
+        &_left {
+          left: 1.17%;
+        }
+      }
+    }
+
+    &_six {
+      background: url("../images/about-us__6.png");
+      background-size: 100% 100%;
+    }
+
+    &_seven {
+      // background: url("../images/about-us__7.png");
+      background-size: 100% 100%;
+    }
+
+    &_eight {
+      background: url("../images/about-us__8.png");
+      background-size: 100% 100%;
+    }
+
+    &-absolute {
+      .about-us__pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+      }
+
+      span,
+      iframe {
+        width: 70%;
+      }
+
+      iframe {
+        max-height: 355px;
+        height: -webkit-fill-available;
+        margin-top: 23px;
+        margin-bottom: 36px;
+        height: 100%;
+      }
+    }
+
+    &-last {
+      padding-top: 30px;
+    }
+  }
+
+  &__header {
+    font-family: "Gotham Pro Medium";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #aa6e4f;
+    margin-top: 41px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+    z-index: 99;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-center {
+      text-align: center;
+      width: 64%;
+    }
+
+    &-b {
+      width: 100%;
+      margin-bottom: 10px;
+      font-family: "Gotham Pro Medium";
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2e2e2e;
+    }
+
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    z-index: 99;
+    margin: 30px 0 0;
+    list-style: none;
+    font-family: "Gotham Pro Medium";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+    padding-left: 0;
+    width: 70%;
+  }
+
+  &__li {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+    font-family: "Gotham Pro";
+
+    &::before {
+      content: "⯁";
+      margin-right: 15px;
+    }
+  }
+
+  &__info {
+    font-family: "Gotham Pro Medium";
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: center;
+    color: #aa6e4f;
+    margin-top: 50px;
+  }
+
+  &__pic {
+    &-last {
+      margin-bottom: -60px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navchain {
+      margin-bottom: 0px;
+    }
+
+    &__item {
+      &_two {
+        background: url("../images/about-us_768_2.png");
+        background-size: 100% 100%;
+      }
+
+      &_three {
+        background: url("../images/about-us_768_3.png");
+        background-size: 100% 100%;
+      }
+
+      &_four {
+        background: url("../images/about-us_768_4.png");
+        background-size: 100% 100%;
+      }
+
+      &_five {
+        background: url("../images/about-us_768_5.png");
+        background-size: 100% 100%;
+
+        .gerb__3 {
+          top: 5%;
+        }
+      }
+    }
+
+    .about-us__title {
+      color: #262626;
+      font-family: "Gotham Pro Medium";
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+
+    .about-us__header {
+      color: #aa6e4f;
+      font-family: "Gotham Pro Medium";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      margin-top: 20px;
+    }
+
+    .about-us__text {
+      margin-top: 10px;
+      color: #262626;
+      font-family: "Gotham Pro";
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    .about-us__text-b {
+      color: #2e2e2e;
+      font-family: "Gotham Pro Medium";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    .about-us__list {
+      margin-top: 15px;
+    }
+
+    .about-us__info {
+      color: #aa6e4f;
+      font-family: "Gotham Pro Medium";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+
+      &-last {
+        max-width: 320px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__item {
+      &_two {
+        background: url("../images/about-us_480_1.png");
+        background-size: 100%;
+      }
+
+      &_three {
+        background: url("../images/about-us_480_2.png");
+        background-size: 100% 100%;
+      }
+
+      &_four {
+        background: url("../images/about-us_480_3.png");
+        background-size: 100% 100%;
+      }
+
+      &_five {
+        background: url("../images/about-us_480_4.png");
+        background-size: 100% 100%;
+
+        .gerb__3 {
+          top: 1.9%;
+        }
+      }
+    }
+
+    .about-us__title {
+      color: #262626;
+      font-family: "Gotham Pro Medium";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    .about-us__header {
+      color: #aa6e4f;
+      font-family: "Gotham Pro Medium";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    .about-us__text {
+      color: #262626;
+      font-family: "Gotham Pro";
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .about-us__text-b {
+      color: #2e2e2e;
+      font-family: "Gotham Pro Medium";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    .about-us__list {
+      margin-top: 15px;
+      color: #262626;
+      font-size: 13px;
+      line-height: 20px;
+      font-family: "Gotham Pro Medium";
+      font-weight: 500;
+    }
+
+    .about-us__li {
+      color: #262626;
+      font-family: "Gotham Pro";
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .about-us__info {
+      color: #aa6e4f;
+      font-family: "Gotham Pro Medium";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}

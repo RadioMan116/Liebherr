@@ -1,0 +1,20 @@
+.logo {
+	position: absolute;
+
+	&__link {
+		text-decoration: none;
+		display: block;
+	}
+
+	&__pic {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	@media screen and (max-width: 768px) {
+	position: unset;
+	}
+	@media screen and (max-width: 480px) {
+	width: 127px;
+	}
+}
