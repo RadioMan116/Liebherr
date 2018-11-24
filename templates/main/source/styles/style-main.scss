@@ -1,0 +1,55 @@
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.fixed {
+    overflow: hidden;
+}
+
+.swiper-container,
+.swiper-container-two,
+.swiper-container-three {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .articles-main__title {
+        font-size: 30px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #262626;
+
+        &.shipping-payment__title {
+            padding: 15px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .articles-main__title {
+        font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: #262626;
+    }
+}

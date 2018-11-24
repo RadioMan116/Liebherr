@@ -1,0 +1,265 @@
+.header__dropdown-menu {
+	// height: 204px;
+	background-color: #262626;
+	display: none;
+	z-index: 100;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+
+	.container {
+		display: flex;
+		padding: 22px 0 24px;
+
+		.header__telephones {
+			display: none;
+		}
+	}
+
+	.dropdown-menu {
+		&__back {
+			display: none;
+		}
+
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		&__1 {
+			width: 35%;
+		}
+
+		&__2 {
+			width: 17.5%;
+		}
+
+		&__3 {
+			width: 17.5%;
+		}
+
+		&__title {
+			font-family: 'Gotham Pro Medium';
+			font-size: 14px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.71;
+			letter-spacing: normal;
+			text-align: left;
+			color: #eeeeee;
+			width: 100%;
+		}
+
+		&__item {
+			flex-basis: 190px;
+		}
+
+		&__link {
+			font-family: 'Gotham Pro';
+			font-size: 12px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.92;
+			letter-spacing: normal;
+			text-align: left;
+			color: #b0b0b0;
+		}
+	}
+
+	.header__banner {
+		width: 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__dropdown-menu {
+		height: 100%;
+		top: 60px;
+		position: fixed;
+
+		.container {
+			display: block;
+
+			.header__telephones {
+				display: flex;
+				width: 100%;
+				padding: 0 24px;
+			}
+
+			.header__phone {
+				font-size: 20px;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.2;
+				letter-spacing: normal;
+				text-align: left;
+				color: #eeeeee;
+			}
+
+			.header__call-phone-button {
+				background: unset;
+			}
+		}
+
+		.header__banner {
+			display: none;
+		}
+
+		.dropdown-menu {
+			width: 100%;
+
+			&__1 {
+				height: 110px;
+				overflow: hidden;
+			}
+
+			&__2 {
+				height: 55px;
+				overflow: hidden;
+			}
+
+			&__3 {
+				height: 55px;
+				overflow: hidden;
+				border-bottom: 1px solid #494949;
+				margin-bottom: 41px;
+			}
+
+			&__back {
+				display: block;
+				text-transform: uppercase;
+				border-top: 1px solid #494949;
+				font-size: 14px;
+				font-weight: 500;
+				font-style: normal;
+				font-family: 'Gotham Pro Medium';
+				font-stretch: normal;
+				line-height: 4;
+				letter-spacing: normal;
+				text-align: left;
+				width: 100%;
+				justify-content: flex-end;
+				color: #eeeeee;
+				text-align: right;
+				background: url("https://icongr.am/entypo/chevron-left.svg?color=eeeeee") 0/18px no-repeat;
+			}
+
+			&__list {
+				padding-bottom: 15px;
+
+				li:hover {
+					color: #aa6e4f
+				}
+			}
+
+			&__item {
+				flex-basis: 100%;
+			}
+
+			&__title {
+				border-top: 1px solid #494949;
+				padding: 15px 0;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=eeeeee") 100%/18px no-repeat;
+			}
+		}
+
+		.active {
+			height: unset !important;
+
+			.dropdown-menu__title {
+				background: url("https://icongr.am/entypo/chevron-up.svg?color=eeeeee") 100%/18px no-repeat;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.menu.active {
+		height: 100vh;
+		overflow-y: scroll;
+	}
+
+	.header__dropdown-menu {
+		height: 90%;
+		left: 3%;
+		right: 3%;
+		width: unset;
+		display: block;
+		position: unset;
+		order: -1;
+
+		.container {
+			padding: 0;
+			padding-top: 3px;
+			margin: 0;
+		}
+
+		.dropdown-menu {
+			height: 50px;
+
+			&__3 {
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+
+		.dropdown-menu__back {
+			display: none;
+		}
+
+		.header__telephones {
+			display: none !important;
+		}
+	}
+
+	.menu-480 {
+		.header__dropdown-menu {
+			display: none !important;
+		}
+
+		background: url("https://icongr.am/entypo/chevron-down.svg?color=eeeeee")100% 50%/18px no-repeat !important;
+
+		&:hover {
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=aa6e4f") 100% 50%/18px no-repeat !important;
+			background-color: #5a5a5a;
+		}
+	}
+
+	.menu__item:first-child {
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		background: url("https://icongr.am/entypo/chevron-down.svg?color=eeeeee")100% 50%/18px no-repeat;
+		order: -2;
+
+		&:hover {
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=aa6e4f") 100% 50%/18px no-repeat;
+			background-color: #262626;
+		}
+
+		span {
+			width: 100%;
+		}
+	}
+
+}
+
+@media (max-width: 375px) {
+	.header__dropdown-menu .container {
+		padding: 22px 24px 24px;
+	}
+
+	* {
+		transition: 0.5s;
+	}
+
+	// .dropdown-menu__first {
+	// 	height: 100px !important;
+	// }
+}

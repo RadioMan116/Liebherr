@@ -1,0 +1,288 @@
+.menu {
+  * {
+    transition: 0.2s;
+  }
+
+  nav {
+    width: 100%;
+
+    .header__telephones {
+      display: none;
+      align-items: center;
+
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 75%;
+  padding-right: 3.1%;
+  width:954px;
+
+  @media (max-width:850px) {
+    padding-right: 1%;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    // padding-right: 40px;
+    &:first-child {
+      padding-right: 16px;
+      background: url("https://icongr.am/fontawesome/caret-right.svg?color=ffffff") 4rem/18px no-repeat;
+
+      &:hover {
+        background: url("https://icongr.am/fontawesome/caret-down.svg?color=aa6e4f") 4rem/18px no-repeat;
+      }
+    }
+
+    &:hover {
+      a,span {
+        color: #aa6e4f;
+        text-decoration: none;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-family: "Gotham Pro Bold";
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @media (max-width: 850px) {
+      font-size: 11px;
+    }
+  }
+
+  .menu__compare-320 {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    transform: scale(0);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    padding: 0 24px;
+    display: flex;
+    align-items: baseline;
+
+    nav {
+      .header__telephones {
+        display: flex;
+        width: 100%;
+        padding: 0 24px;
+      }
+
+      .header__phone {
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #eeeeee;
+      }
+
+      .header__call-phone-button {
+        background: unset;
+      }
+    }
+
+    &.active {
+      transform: scale(1);
+      z-index: 10;
+      background-color: #262626;
+    }
+
+    &__list {
+      flex-direction: column;
+      padding: 24px 0 41px;
+    }
+
+    &__item+&__item {}
+
+    &__link {
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #eeeeee;
+    }
+
+    &__item {
+      border-top: 1px solid #494949;
+
+      &:first-child {
+        background: url("https://icongr.am/entypo/chevron-right.svg?color=eeeeee") 98%/18px no-repeat;
+        
+
+        &:hover {
+          background: url("https://icongr.am/entypo/chevron-right.svg?color=aa6e4f") 98%/18px no-repeat;
+          background-color: #5a5a5a;
+        }
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #494949;
+      }
+
+      span:hover,a:hover {
+        background-color: #5a5a5a;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .menu__item {
+    padding-right: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    z-index: 10;
+    background-color: #262626;
+    &.active{
+      height: 100vh !important;
+      overflow-y: scroll !important;
+    }
+  }
+  // .header__dropdown-menu {
+  //   position: absolute;
+  // }
+
+  .header .header__icons,
+  .hamburger,
+  .logo {
+    position: absolute;
+    top: 18px;
+  }
+
+  .logo {
+    left: 13%;
+  }
+
+  .header .header__icons {
+    right: 24px;
+  }
+
+  .header__telephones {
+    background-color: #262626;
+    position: unset;
+    margin-bottom: 30%;
+    padding-bottom: 50px;
+  }
+
+
+
+
+  // .header .header__block_top {
+  //   height: unset;
+  // }
+}
+
+@media screen and (max-width: 375px) {
+  .menu__compare-320 {
+    display: flex !important;
+    font-family: 'Gotham Pro Medium';
+    height: 53px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.75;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #eeeeee;
+    border-bottom: 1px solid #494949;
+    margin-bottom: 24px;
+    padding: 0 0 0 30px;
+    background: url("../images/compare__color.svg") 0 /24px no-repeat;
+
+    i {
+      font-style: normal;
+    }
+
+    &:hover {
+      background-color: #5a5a5a;
+      color: #aa6e4f;
+
+      i {
+        color: white;
+      }
+    }
+  }
+
+  .menu__list {
+    padding-bottom: 0;
+  }
+
+  .menu__item {
+    padding: 0 10px;
+  }
+
+  .menu__link {
+    font-family: 'Gotham Pro Medium';
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eeeeee;
+  }
+
+  .dropdown-menu__back {
+    font-family: 'Gotham Pro Medium' !important;
+    font-size: 12px !important;
+    line-height: 3.75 !important;
+  }
+
+  .header__telephones {
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .header__phone {
+    margin-bottom: 15px;
+  }
+}

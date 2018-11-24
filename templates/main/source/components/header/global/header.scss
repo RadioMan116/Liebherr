@@ -1,0 +1,508 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1436px;
+	margin-left: auto;
+	width: 100%;
+	margin-right: auto;
+	position: relative;
+
+	.header-inner & {
+		flex-direction: row-reverse;
+	}
+
+	&__blocks {
+		width: 100%;
+	}
+
+	&__block {
+		height: 76px;
+		position: relative;
+		display: flex;
+		z-index: 3;
+
+		.container {
+			display: flex;
+			position: relative;
+			align-items: center;
+		}
+
+		&_top {
+			justify-content: center;
+			align-items: center;
+			background: #ffffff;
+
+			.container {
+				justify-content: center;
+			}
+
+			.menu__list {
+				display: none;
+			}
+
+			.header__icons {
+				display: none;
+			}
+		}
+
+		&_bottom {
+			height: 44px;
+			background-color: #262626;
+			color: white;
+			flex-wrap: wrap;
+			position: relative;
+			margin: 2px 0;
+		}
+
+		.hamburger {
+			display: none;
+		}
+	}
+
+	&__border {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-image: linear-gradient(to left, #976d53, #aa6e4f);
+
+		&_top {
+			top: -2px;
+		}
+
+		&_bottom {
+			bottom: -2px;
+		}
+	}
+
+	&__img {
+		z-index: 100;
+		width: 56px;
+		height: 58px;
+		margin-top: -30px;
+		margin-right: 16px;
+		min-width: 56px;
+	}
+
+	&__telephones {
+		position: absolute;
+		right: 0;
+		height: 28px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__phone {
+		font-family: 'Gotham Pro';
+		font-size: 16px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: left;
+		color: #262626;
+		margin-right: 21px;
+	}
+
+	&__call-phone-button {
+		width: 126px;
+		padding: 2px 10px 0;
+		font-family: 'Gotham Pro';
+		font-size: 10px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 2.4;
+		letter-spacing: normal;
+		text-align: left;
+		color: #aa6e4f;
+		border-radius: 4px;
+		background-color: #ffffff;
+		border: solid 1px #ae7557;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		display: flex;
+		white-space: nowrap;
+
+		&:hover {
+			text-decoration: unset;
+		}
+	}
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		flex: 1 1;
+		flex-basis: 6%;
+		justify-content: space-between;
+		min-width: 100px;
+	}
+
+	&__search {
+		width: 24px;
+		height: 24px;
+		background: url("../images/search.svg") 0/24px no-repeat;
+
+		&-open {
+			background: url("https://icongr.am/clarity/close.svg?color=ffffff") 0/24px no-repeat;
+		}
+
+		@media (max-width:850px) {
+			width: 16px;
+			height: 16px;
+			background-size: 16px;
+		}
+	}
+
+	.search__popup {
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		background-color: #2e2e2e;
+		padding: 30px 0 26px;
+		display: flex;
+		justify-content: center;
+		z-index: 99;
+		right: 100%;
+		opacity: 0;
+
+		&-open {
+			display: flex;
+			right: 0;
+			opacity: 1;
+		}
+	}
+
+	&__overlay {
+		display: none;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		opacity: 0.6;
+		background-color: #000000;
+		z-index: 2;
+
+		&-open {
+			display: flex;
+		}
+	}
+
+	&__form {
+		position: relative;
+		width: 45%;
+		display: flex;
+		justify-content: space-between;
+
+		input {
+			border: 0;
+		}
+	}
+
+	&__button {
+		max-width: 24px;
+		width: 100%;
+		height: 24px;
+		background: url("https://icongr.am/clarity/close.svg?color=ffffff") 0/24px no-repeat;
+		position: absolute;
+		top: 0;
+		right: 5%;
+		display: none;
+	}
+
+	&__input {
+		width: 100%;
+		background: inherit;
+		border-bottom: 1px solid #ffffff75 !important;
+		font-family: 'Gotham Pro';
+		font-size: 24px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+		padding-bottom: 15px;
+	}
+
+	&__submit {
+		background: url("../images/search.svg") 0/24px no-repeat;
+		border: 0;
+		position: absolute;
+		right: 0;
+		min-width: 24px;
+		min-height: 24px;
+		display: none;
+	}
+
+	&__compare {
+		width: 39px;
+		background: url("../images/compare.svg") 0 /24px no-repeat;
+		text-decoration: none !important;
+
+		@media (max-width: 850px) {
+			width: 30px;
+			background-size: 16px;
+		}
+	}
+
+	&__basket {
+		width: 39px;
+		background: url("../images/shopping-cart.svg") 0 /24px no-repeat;
+		text-decoration: none !important;
+
+		@media (max-width: 850px) {
+			width: 30px;
+			background-size: 16px;
+		}
+	}
+
+	&__number {
+		font-family: 'Gotham Pro';
+		font-size: 12px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 2;
+		letter-spacing: normal;
+		display: flex;
+		justify-content: flex-end;
+		color: #ffffff;
+		height: 21px;
+	}
+
+	.hamburger {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		outline: 0;
+		border: 0;
+		background: none;
+		padding: 0;
+
+		&__img {
+			width: 24px;
+			height: 24px;
+			background: url('../images/rectangle-6.svg')
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.header {
+			&__img {
+				display: none;
+			}
+
+			&__telephones {
+				display: none;
+			}
+
+			&__block_bottom {
+				position: unset;
+				display: none;
+			}
+
+			&__block_top {
+				height: 60px;
+				border-bottom: 2px solid #aa6e4f;
+
+				.header__icons {
+					display: flex;
+				}
+
+				.menu__list {
+					display: flex;
+				}
+			}
+
+			&__icons {
+				flex: unset;
+				flex-basis: unset;
+				margin-left: auto;
+				justify-content: space-around;
+			}
+
+			&__search {
+				width: 24px;
+				height: 24px;
+				background: url("../images/search.png") 0/24px no-repeat;
+
+				&-open {
+					background: url('https://icongr.am/entypo/cross.svg?color=aa6e4f') 0/24px no-repeat;
+				}
+			}
+
+			&__compare {
+				width: 39px;
+				background: url("../images/compare__color.svg") 0 /24px no-repeat;
+				margin: 0 24px;
+			}
+
+			&__basket {
+				width: 39px;
+				background: url("../images/shopping-cart__color.svg") 0 /24px no-repeat;
+			}
+
+			&__number {
+				color: #aa6e4f;
+			}
+
+			&__form {
+				width: 95%;
+			}
+		}
+
+		.container {
+			justify-content: unset;
+			position: unset;
+		}
+
+		.hamburger {
+			display: block;
+			margin-right: 24px;
+			left: 5%;
+		}
+
+		.opened {
+			.hamburger__img {
+				background: url('https://icongr.am/entypo/cross.svg?color=7d8082') center;
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.header {
+			&__compare {
+				display: none;
+			}
+
+			&__block_top {
+				// height: unset;
+
+				.container {
+					flex-wrap: wrap;
+
+				}
+			}
+		}
+
+		.header__button {
+			right: 9%;
+		}
+
+		.menu-480 {
+			.header__block.header__block_top {
+				height: 60px;
+			}
+
+			.menu.active .menu {
+				display: none;
+			}
+
+			.menu {
+				display: none;
+			}
+		}
+	}
+}
+
+.callback_popup {
+	display: none;
+	width: 373px;
+
+	a {
+		color: #aa6e4f;
+	}
+
+	.modal__close {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		font-size: 24px;
+		color: #aa6e4f;
+	}
+
+	.call-popup-phone-inner {
+		text-align: center;
+	}
+
+	.callback__form {
+		display: flex;
+		flex-wrap: wrap;
+
+		input[type="text"],
+		input[type='tel'] {
+			width: 100%;
+			border-radius: 2px;
+			background-color: #ffffff;
+			border: solid 1px #cbcbcb;
+			padding-left: 15px;
+			font-family: 'Gotham Pro';
+			font-size: 12px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.5;
+			letter-spacing: normal;
+			text-align: left;
+			color: #666666;
+			height: 46px;
+
+			&:first-child {
+				margin-bottom: 12px;
+			}
+
+			&:nth-child(2) {
+				margin-bottom: 21px;
+			}
+
+			@media screen and (max-width: 375px) {
+				&::placeholder {
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	.abuse-popup__item {
+		height: unset;
+		flex-wrap: wrap;
+
+		label,
+		input {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		max-width: 373px;
+	}
+
+	@media screen and (max-width: 375px) {
+		.title-strike {
+			margin-right: auto;
+			font-family: 'Gotham Pro Medium';
+			font-size: 20px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.3;
+			letter-spacing: normal;
+			text-align: left;
+			color: #2e2e2e;
+		}
+
+		.call-popup-phone-inner {
+			p {
+				max-width: 288px;
+				text-align: left;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
