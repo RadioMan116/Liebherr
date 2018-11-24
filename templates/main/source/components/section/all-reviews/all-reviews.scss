@@ -1,5 +1,4 @@
 .all-reviews {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 
@@ -7,7 +6,10 @@
     border-bottom: 0;
   }
 
-
+  .shipping-payment__title.articles-main__title {
+    margin-bottom: 20px!important;
+    margin-top: 15px;
+  }
 
   &__top {
     border: 1px solid #e3e3e3 !important;
@@ -41,7 +43,7 @@
     color: #666666;
     font-size: 14px;
     line-height: 24px;
-    font-family: "Gotham Pro";
+    
   }
 
   &__text {
@@ -54,7 +56,7 @@
   }
 
   &__border {
-    right: 20px;
+    right:20px;
     left: 20px;
     height: 2px;
     border: solid 1px #eeeeee;
@@ -65,7 +67,7 @@
 
   &__link {
     color: #2e2e2e;
-    font-family: "Gotham Pro";
+    
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 3px;

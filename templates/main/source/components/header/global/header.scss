@@ -13,10 +13,12 @@
 
 	&__blocks {
 		width: 100%;
+		z-index: 99;
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
 	}
 
 	&__block {
-		height: 76px;
+
 		position: relative;
 		display: flex;
 		z-index: 3;
@@ -24,54 +26,43 @@
 		.container {
 			display: flex;
 			position: relative;
-			align-items: center;
+			align-items: baseline;
 		}
 
 		&_top {
 			justify-content: center;
 			align-items: center;
 			background: #ffffff;
+			height: 39px;
 
-			.container {
-				justify-content: center;
-			}
 
-			.menu__list {
-				display: none;
-			}
-
-			.header__icons {
-				display: none;
-			}
 		}
 
 		&_bottom {
-			height: 44px;
-			background-color: #262626;
+			height: 74px;
 			color: white;
 			flex-wrap: wrap;
 			position: relative;
 			margin: 2px 0;
+			border-bottom: 1px solid #f1f1f1;
+			border-top: 1px solid #f1f1f1;
 		}
 
 		.hamburger {
 			display: none;
 		}
+
 	}
 
-	&__border {
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		background-image: linear-gradient(to left, #976d53, #aa6e4f);
-
-		&_top {
-			top: -2px;
-		}
-
-		&_bottom {
-			bottom: -2px;
-		}
+	&__link {
+		font-family: 'fonta27c5975a1a88dcd17c7c606902044d9';
+		font-size: 13px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #666666;
 	}
 
 	&__img {
@@ -84,41 +75,43 @@
 	}
 
 	&__telephones {
-		position: absolute;
-		right: 0;
 		height: 28px;
 		display: flex;
 		align-items: center;
+		margin-left: auto;
+
+		.telephones {
+			display: flex;
+			flex-direction: column;
+			margin-left: 41px;
+		}
 	}
 
 	&__phone {
-		font-family: 'Gotham Pro';
-		font-size: 16px;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 18px;
 		font-weight: normal;
 		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.5;
+		font-stretch: condensed;
+		line-height: 1.44;
 		letter-spacing: normal;
-		text-align: left;
-		color: #262626;
-		margin-right: 21px;
+		color: #333333;
 	}
 
 	&__call-phone-button {
 		width: 126px;
-		padding: 2px 10px 0;
-		font-family: 'Gotham Pro';
-		font-size: 10px;
+		padding: 5px 15px;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
 		font-weight: normal;
 		font-style: normal;
-		font-stretch: normal;
-		line-height: 2.4;
+		font-stretch: condensed;
+		line-height: 1.71;
 		letter-spacing: normal;
-		text-align: left;
-		color: #aa6e4f;
-		border-radius: 4px;
+		color: #394791;
+		border-radius: 3px;
 		background-color: #ffffff;
-		border: solid 1px #ae7557;
+		border: solid 1px #394791;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -134,19 +127,19 @@
 	&__icons {
 		display: flex;
 		align-items: center;
-		flex: 1 1;
-		flex-basis: 6%;
 		justify-content: space-between;
-		min-width: 100px;
+		height: 24px;
+		margin-left: auto;
 	}
 
 	&__search {
 		width: 24px;
-		height: 24px;
+		height: 100%;
 		background: url("../images/search.svg") 0/24px no-repeat;
+		margin-right: 43px;
 
 		&-open {
-			background: url("https://icongr.am/clarity/close.svg?color=ffffff") 0/24px no-repeat;
+			background: url("../images/musica-searcher-1.svg") 0/21px no-repeat;
 		}
 
 		@media (max-width:850px) {
@@ -158,19 +151,19 @@
 
 	.search__popup {
 		position: absolute;
-		width: 100%;
-		top: 100%;
-		background-color: #2e2e2e;
+		width: 100.5%;
+		top: 96%;
+		background-color: #ffffff;
 		padding: 30px 0 26px;
 		display: flex;
 		justify-content: center;
-		z-index: 99;
+		z-index: 98;
 		right: 100%;
 		opacity: 0;
 
 		&-open {
 			display: flex;
-			right: 0;
+			right: -0.3%;
 			opacity: 1;
 		}
 	}
@@ -178,6 +171,7 @@
 	&__overlay {
 		display: none;
 		left: 0;
+		top: 115px;
 		position: fixed;
 		width: 100%;
 		height: 100vh;
@@ -205,7 +199,7 @@
 		max-width: 24px;
 		width: 100%;
 		height: 24px;
-		background: url("https://icongr.am/clarity/close.svg?color=ffffff") 0/24px no-repeat;
+		background: url("https://icongr.am/clarity/close.svg?color=666666") 0/24px no-repeat;
 		position: absolute;
 		top: 0;
 		right: 5%;
@@ -215,8 +209,7 @@
 	&__input {
 		width: 100%;
 		background: inherit;
-		border-bottom: 1px solid #ffffff75 !important;
-		font-family: 'Gotham Pro';
+		border-bottom: 1px solid #666666 !important;
 		font-size: 24px;
 		font-weight: normal;
 		font-style: normal;
@@ -224,24 +217,23 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: center;
-		color: #ffffff;
+		color: #333333;
 		padding-bottom: 15px;
 	}
 
 	&__submit {
-		background: url("../images/search.svg") 0/24px no-repeat;
+		background: url("../images/search.svg") 0/18px no-repeat;
 		border: 0;
 		position: absolute;
 		right: 0;
-		min-width: 24px;
-		min-height: 24px;
 		display: none;
 	}
 
 	&__compare {
 		width: 39px;
-		background: url("../images/compare.svg") 0 /24px no-repeat;
-		text-decoration: none !important;
+		height: 100%;
+		background: url("../images/compare.svg") 0 /18px no-repeat;
+		margin-right: 37px;
 
 		@media (max-width: 850px) {
 			width: 30px;
@@ -251,8 +243,8 @@
 
 	&__basket {
 		width: 39px;
-		background: url("../images/shopping-cart.svg") 0 /24px no-repeat;
-		text-decoration: none !important;
+		height: 100%;
+		background: url("../images/shopping-cart.svg") 0 /18px no-repeat;
 
 		@media (max-width: 850px) {
 			width: 30px;
@@ -261,17 +253,18 @@
 	}
 
 	&__number {
-		font-family: 'Gotham Pro';
-		font-size: 12px;
+		font-family: "Arial";
+		font-size: 13px;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
-		line-height: 2;
+		line-height: normal;
 		letter-spacing: normal;
+		color: #666666;
 		display: flex;
 		justify-content: flex-end;
-		color: #ffffff;
-		height: 21px;
+		align-items: center;
+		height: 100%;
 	}
 
 	.hamburger {
@@ -282,6 +275,7 @@
 		border: 0;
 		background: none;
 		padding: 0;
+		order: -2;
 
 		&__img {
 			width: 24px;
@@ -296,18 +290,29 @@
 				display: none;
 			}
 
-			&__telephones {
-				display: none;
-			}
 
 			&__block_bottom {
-				position: unset;
 				display: none;
+
+				&.active {
+					display: block;
+					transform: scale(1);
+					position: fixed;
+					top: 58px;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					transition: transform 0.3s;
+					display: flex;
+					align-items: baseline;
+					box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+					background-color: #ffffff;
+				}
 			}
 
 			&__block_top {
 				height: 60px;
-				border-bottom: 2px solid #aa6e4f;
+				border-bottom: 1px solid #f1f1f1;
 
 				.header__icons {
 					display: flex;
@@ -326,59 +331,105 @@
 			}
 
 			&__search {
-				width: 24px;
-				height: 24px;
-				background: url("../images/search.png") 0/24px no-repeat;
+				width: 18px;
+				height: 18px;
+				background: url("../images/search.svg") 0/18px no-repeat;
 
 				&-open {
-					background: url('https://icongr.am/entypo/cross.svg?color=aa6e4f') 0/24px no-repeat;
+					background: url('../images/musica-searcher-1.svg') 0/18px no-repeat;
 				}
 			}
 
 			&__compare {
 				width: 39px;
-				background: url("../images/compare__color.svg") 0 /24px no-repeat;
-				margin: 0 24px;
+				background: url("../images/compare.svg") 0 /18px no-repeat;
 			}
 
 			&__basket {
 				width: 39px;
-				background: url("../images/shopping-cart__color.svg") 0 /24px no-repeat;
+				background: url("../images/shopping-cart.svg") 0 /24px no-repeat;
 			}
 
 			&__number {
-				color: #aa6e4f;
+				font-size: 13px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				color: #666666;
 			}
 
 			&__form {
 				width: 95%;
+			}
+
+			&__telephones {
+				margin-left: 0;
+				flex-direction: column;
+				height: unset;
+				align-items: baseline;
+				margin-top: 16px;
+
+				.telephones {
+					order: -1;
+					margin-left: 0;
+					flex-direction: row;
+				}
+
+				.header__call-phone-button {
+					margin-top: 16px;
+				}
 			}
 		}
 
 		.container {
 			justify-content: unset;
 			position: unset;
+			flex-wrap: wrap;
 		}
 
 		.hamburger {
 			display: block;
 			margin-right: 24px;
-			left: 5%;
+
+			&__img {
+				width: 18px;
+				height: 18px;
+				background: url('../images/rectangle-6.svg') 0/18px;
+
+			}
 		}
 
 		.opened {
 			.hamburger__img {
-				background: url('https://icongr.am/entypo/cross.svg?color=7d8082') center;
-				width: 24px;
-				height: 24px;
+				background: url('https://icongr.am/entypo/cross.svg?color=7d8082') 0/18px center;
+				width: 18px;
+				height: 18px;
 			}
 		}
 	}
 
 	@media screen and (max-width: 480px) {
 		.header {
-			&__compare {
-				display: none;
+			&__icons {
+				.header__search {
+					margin-right: 16px;
+					width: 18px;
+					height: 18px;
+					background: url('../images/search.svg') 0/18px no-repeat;
+				}
+
+				.header__compare {
+					margin-right: 16px;
+					width: 30px;
+					background: url("../images/compare.svg") 0 /18px no-repeat;
+				}
+
+				.header__basket {
+					width: 30px;
+					background: url('../images/shopping-cart.svg') 0/18px no-repeat;
+				}
 			}
 
 			&__block_top {
@@ -408,6 +459,13 @@
 				display: none;
 			}
 		}
+
+		.hamburger__img {
+			width: 18px;
+			height: 18px;
+			background: url('../images/rectangle-6.svg') 0/18px;
+
+		}
 	}
 }
 
@@ -416,7 +474,7 @@
 	width: 373px;
 
 	a {
-		color: #aa6e4f;
+		@include link;
 	}
 
 	.modal__close {

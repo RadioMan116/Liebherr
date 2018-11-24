@@ -12,11 +12,8 @@
 
 .abuse-popup__item label {
     padding-left: 26px;
-    display: inline-flex;
 
     i {
-        font-style: normal;
-        margin-left: 5px;
         margin-right: 5px;
     }
 }
@@ -24,5 +21,4 @@
 .checkbox-custom {
     margin-left: -24px;
     margin-right: 5px;
-    flex-shrink: 0;
 }
