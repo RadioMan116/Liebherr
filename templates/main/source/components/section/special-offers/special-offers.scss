@@ -17,12 +17,14 @@
     }
 
     &__title {
+        font-family: 'Gotham Pro';
         font-size: 32px;
-        font-weight: normal;
+        font-weight: 500;
         font-style: normal;
-        font-stretch: condensed;
+        font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
+        text-align: left;
         color: #212121;
         margin-bottom: 40px;
         white-space: nowrap;
@@ -39,13 +41,15 @@
     }
 
     &__text {
-        font-size: 18px;
-        font-weight: normal;
+        font-family: 'Gotham Pro Medium';
+        font-size: 16px;
+        font-weight: 500;
         font-style: normal;
-        font-stretch: condensed;
-        line-height: 1.44;
+        font-stretch: normal;
+        line-height: 1.5;
         letter-spacing: normal;
-        color: #333333;
+        text-align: left;
+        color: #2e2e2e;
         margin-right: -4px;
         padding: 12px 0 24px;
         height: 100%;
@@ -62,14 +66,17 @@
     }
 
     &__price {
+        font-family: 'Gotham Pro Medium';
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 500;
         font-style: normal;
-        font-stretch: condensed;
+        font-stretch: normal;
         line-height: 1.2;
         letter-spacing: normal;
-        color: #333333;
+        text-align: left;
+        color: #2e2e2e;
         position: relative;
+        margin: 0 auto;
 
         // @media screen and (max-width: 1128px) {
         //     font-size: 18px;
@@ -104,14 +111,25 @@
     &__buy {
         width: 96px;
         height: 36px;
-        font-size: 14px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: condensed;
-        line-height: 1.71;
-        letter-spacing: normal;
-        color: #ffffff;
-        @include button;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        font-family: 'Gotham Pro Medium';
+        font-size: 12px;
+
+        // font-weight: 500;
+        // font-style: normal;
+        // font-stretch: normal;
+        // line-height: 2;
+        // letter-spacing: normal;
+        // text-align: left;
+        // color: #ffffff;
+        // border-radius: 2px;
+        // background-color: #aa6e4f;
+        // display: flex;
+        // align-items: center;
+        // text-transform: uppercase;
+        @include button ($margin: 0 auto);
 
         // @media screen and (max-width: 1128px) {
         //     font-size: 11px;
@@ -124,15 +142,17 @@
 
     &__pic {
         width: 100%;
-        max-height: 250px;
+        height: 200px;
         display: flex;
-        justify-content: center;
 
         img {
-            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
         }
     }
 
+    .swiper-pagination_2,
     .swiper-pagination_3 {
         display: none;
     }
@@ -141,47 +161,18 @@
         display: none;
     }
 
-    .swiper-pagination_2 {
-        top: 43px;
-        right: 150px;
-        width: 100px;
-        display: flex;
-        justify-content: space-around;
-    }
-
     .swiper-button-prev {
-        background: url("../images/special-offers_prev.png") 0/34px no-repeat;
+        background: url("../images/round-arrow-left.svg") 0/24px no-repeat;
         position: absolute;
-        top: 50px;
+        top: 20.9px;
         right: 100px;
         left: unset;
-        width: 34px;
-        height: 34px;
-
-        &:hover {
-            background: url("../images/swiper-button-color-prev.png") 0/34px no-repeat;
-        }
     }
 
     .swiper-button-next {
-        background: url("../images/special-offers_next.png") 0/34px no-repeat;
-        top: 50px;
+        background: url("../images/round-arrow-right.svg") 0/24px no-repeat;
+        top: 20px;
         right: 50px;
-        width: 34px;
-        height: 34px;
-
-        &:hover {
-            background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
-        }
-    }
-
-    .swiper-pagination-bullet {
-        background: #000 !important;
-
-        &-active {
-            background: #394791 !important;
-            box-sizing: border-box;
-        }
     }
 
     @media screen and (max-width: 768px) {
@@ -262,7 +253,9 @@
             }
         }
 
-
+        .swiper-pagination-bullet-active {
+            background: #aa6e4f !important;
+        }
     }
 
     @media screen and (max-width: 320px) {
