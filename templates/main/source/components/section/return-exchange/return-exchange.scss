@@ -128,7 +128,7 @@
       font-weight: 500;
       color: #ff4b4b;
       margin-right: 5px;
-      margin-left: 5px;
+      margin-left:5px;
     }
   }
 
@@ -137,9 +137,8 @@
 
     label {
       flex-grow: 1;
-
-      &.return-exchange__label {
-        margin-left: 25px;
+      &.return-exchange__label{
+        margin-left:25px;
       }
     }
 
@@ -187,25 +186,20 @@
     opacity: 0;
     cursor: pointer
   }
-
-  @media screen and (max-width: 480px) {
-    &__attachment {
+  @media screen and (max-width: 480px){
+    .return-exchange__attachment{
       padding-left: 0;
-
-      label {
+      label{
         margin-left: 15px;
       }
-
-      .abuse-popup__submit {
+      .abuse-popup__submit{
         width: 100%;
       }
     }
-
-    &__file {
+    .return-exchange__file{
       margin-left: 0 !important;
     }
-
-    &__attachment__container {
+    .return-exchange__attachment__container{
       width: 100%;
       display: flex;
       justify-content: center;
