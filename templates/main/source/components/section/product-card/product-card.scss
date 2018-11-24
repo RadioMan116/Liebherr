@@ -1,6 +1,6 @@
 .navchain {
   width: 100%;
-  font-family: "Gotham Pro";
+  
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -9,10 +9,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #666666;
-
-  &_margin {
-    margin-left: 25%;
-  }
+  margin-bottom: 32px;
 
   a {
     color: #aa6e4f;
@@ -95,7 +92,9 @@
         padding: 13%;
         position: relative;
 
-        iframe {}
+        iframe {
+
+        }
 
         img {
           height: 100%;
@@ -230,7 +229,7 @@
   &__icons {
     background: url("../images/compare__color.svg") -2px 100%/24px no-repeat;
     padding-left: 30px;
-    text-decoration: none !important;
+    text-decoration:none !important;
 
     @media screen and (max-width: 960px) {
       margin-top: 20px;
@@ -464,7 +463,7 @@
       &__links {
         display: flex;
         flex-grow: 1;
-
+        
       }
 
       &__link {
@@ -758,7 +757,7 @@
       left: 0;
       margin: 0;
 
-
+      
       .swiper-slide {
         height: unset;
       }
@@ -924,8 +923,7 @@
 
     .gallery-top {
       width: 100% !important;
-
-      .swiper-slide {
+      .swiper-slide{
         height: unset;
       }
     }

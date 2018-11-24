@@ -13,7 +13,7 @@
     label {
       margin-left: 30px;
       color: #666666;
-      font-family: "Gotham Pro";
+      
       font-size: 12px;
       line-height: 18px;
       display: flex;
@@ -35,8 +35,7 @@
       margin-bottom: 28px;
     }
   }
-
-  .abuse-popup__submit {
+  .abuse-popup__submit{
     margin-left: auto;
     margin-right: 20px;
   }
@@ -85,8 +84,9 @@
   }
 
   @media screen and (max-width: 768px) {
-
-
+    .shipping-payment__title.articles-main__title{
+      padding: 15px 0;
+    }
     &__detail {
       .return-exchange__input {
         font-size: 14px;
@@ -102,6 +102,7 @@
 
     &__form label {
       width: 100%;
+      flex-wrap: wrap;
     }
   }
 
@@ -128,8 +129,7 @@
       color: #2e2e2e;
     }
 
-    .return-exchange__input::placeholder,
-    .return-exchange__textarea::placeholder {
+    .return-exchange__input::placeholder,.return-exchange__textarea::placeholder {
       opacity: 0;
     }
   }

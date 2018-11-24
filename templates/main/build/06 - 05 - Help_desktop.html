@@ -6,13 +6,10 @@
 	<title>Example</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<meta name="HandheldFriendly" content="True">
-	<meta name="format-detection" content="telephone=yes">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/mobile.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
@@ -27,30 +24,17 @@
 						<button class="hamburger" id="js-hamburger" aria-expanded="false">
 							<div class="hamburger__img"></div>
 						</button>
-						<div class="logo">
-							<a href="#" class="logo__link">
-								<img src="images/dedietrich-studio.svg" alt="" class="logo__pic">
-							</a>
-						</div>
-						<!-- /.logo -->
-						<div class="header__telephones">
-							<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
-							<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
-						</div>
-						<div class="menu" id="js-menu" aria-expanded="false">
+						<div class="menu" aria-expanded="false">
 							<nav>
 								<ul class="menu__list">
-									<li class="menu__item js-menu">
-										<span class="menu__link">Каталог</span>
-									</li>
 									<li class="menu__item">
-										<a href="06 - 01 - About us_desktop.html" class="menu__link">De Dietrich</a>
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 03 - Service_desktop.html" class="menu__link">Сервис</a>
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
@@ -59,7 +43,7 @@
 										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 05 - Help_desktop" class="menu__link">Помощь</a>
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
@@ -68,8 +52,11 @@
 								<a href="#" class="menu__compare-320">Сравнение (
 									<i class="compare-320__img">0</i>)</a>
 								<div class="header__telephones">
-									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
 									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
 								</div>
 							</nav>
 						</div>
@@ -85,26 +72,82 @@
 						</div>
 					</div>
 				</div>
-				<div class="header__block header__block_bottom">
-					<div class="header__border header__border_top"></div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
 					<div class="container">
-						<div class="header__img">
-							<img src="images/dit-sign.svg" alt="" class="logo__pic">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/liebherr.svg" alt="" class="logo__pic">
+							</a>
 						</div>
-						<div class="menu" id="js-menu" aria-expanded="false">
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для пекарен</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#">Сервис</a>
+								</span>
+							</nav>
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+									<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+								</div>
+							</div>
+						</div>
+						<div class="menu" aria-expanded="false">
 							<nav>
 								<ul class="menu__list">
-									<li class="menu__item js-menu">
-										<span class="menu__link">Каталог</span>
-									</li>
 									<li class="menu__item">
-										<a href="06 - 01 - About us_desktop.html" class="menu__link">De Dietrich</a>
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 03 - Service_desktop.html" class="menu__link">Сервис</a>
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
@@ -113,7 +156,7 @@
 										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 05 - Help_desktop" class="menu__link">Помощь</a>
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
@@ -122,92 +165,21 @@
 								<a href="#" class="menu__compare-320">Сравнение (
 									<i class="compare-320__img">0</i>)</a>
 								<div class="header__telephones">
-									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
 									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
 								</div>
 							</nav>
 						</div>
 						<!--end menu-->
-						<div class="header__icons">
-							<div class="header__search js-header__search"></div>
-							<a href="#" class="header__compare">
-								<span class="header__number">0</span>
-							</a>
-							<a href="#" class="header__basket">
-								<span class="header__number">0</span>
-							</a>
-						</div>
-					</div>
-					<div class="header__border header__border_bottom"></div>
-				</div>
-				<div class="header__dropdown-menu ">
-					<div class="container">
-						<nav class="dropdown-menu dropdown-menu__1">
-							<ul class="dropdown-menu__list">
-								<li class="dropdown-menu__back">назад</li>
-								<li class="dropdown-menu__title js-dropdown-menu__title">Приготовление пищи</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" target="_blank" href="catalog.html">Варочные панели</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Модульные системы</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Духовые шкафы</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Микроволновые печи</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Пароварки</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Вытяжки</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Подогреватели посуды</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Кофемашины</a>
-								</li>
-							</ul>
-						</nav>
-						<nav class="dropdown-menu dropdown-menu__2">
-							<ul class="dropdown-menu__list">
-								<li class="dropdown-menu__title js-dropdown-menu__title">Мойка и стирка</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Стиральные машины</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Посудомоечные машины</a>
-								</li>
-							</ul>
-						</nav>
-						<nav class="dropdown-menu dropdown-menu__3">
-							<ul class="dropdown-menu__list">
-								<li class="dropdown-menu__title js-dropdown-menu__title">Охлаждение</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Холодильники</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Винные шкафы</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="header__telephones">
-							<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
-							<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
-						</div>
-						<div class="header__banner">
-							<img src="images/banner.jpg" srcset="images/banner@2x.jpg 2x,images/banner@3x.jpg 3x" class="special-offers__img">
-						</div>
 					</div>
 				</div>
 			</div>
 			<div class="search__popup">
 				<form action="/search/" class="header__form">
 					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
-					<input type="submit" value="" class="header__submit js-header__submit">
 					<div class="header__button js-header__button"></div>
 				</form>
 			</div>
@@ -218,8 +190,8 @@
 		<div class="section">
 			<div class="content">
 				<div class="container">
-					<div class="d-flex flex-column-reverse flex-md-row">
-						<div class="col-md-3">
+					<div class="shipping-payment help">
+						<div class="filter">
 							<div class="sidebar">
 								<ul class="work-link">
 									<li class="work-link__item">
@@ -246,7 +218,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9">
+						<div class="shipping-payment__items help__items">
 							<div class="navchain">
 								<span itemscope="" itemtype="http://schema.org/BreadcrumbList">
 									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -261,75 +233,71 @@
 							<div class="shipping-payment__title articles-main__title">
 								Помощь
 							</div>
-							<div class="shipping-payment__items help__items">
-
-								<div class="shipping-payment__item help__item">
-									<span class="shipping-payment__text help__text">
-										<b class="shipping-payment__text-b">При доставке техники</b>Напишите нам, и мы ответим на них!
-										<span>
-											Наш email:
-											<a href="mailto:shop@dedietrich-home.ru" title="Ссылка: mailto:shop@dedietrich-home.ru" data-bx-clean-attribute="title">
-												shop@dedietrich-home.ru
-											</a>
-										</span>
+							<div class="shipping-payment__item help__item">
+								<span class="shipping-payment__text help__text">
+									<b class="shipping-payment__text-b">При доставке техники</b>Напишите нам, и мы ответим на них!
+									<span>
+										Наш email:
+										<a href="mailto:shop@dedietrich-home.ru" title="Ссылка: mailto:shop@dedietrich-home.ru" data-bx-clean-attribute="title">
+											shop@dedietrich-home.ru
+										</a>
 									</span>
-									<span class="shipping-payment__text">
-										Чтобы не терять времени на переписку, посмотрите, возможно, мы уже отвечали на подобный вопрос. Перед Вами – список самых часто задаваемых вопросов по ассортименту техники De Dietrich.
-									</span>
+								</span>
+								<span class="shipping-payment__text">
+									Чтобы не терять времени на переписку, посмотрите, возможно, мы уже отвечали на подобный вопрос. Перед Вами – список самых часто задаваемых вопросов по ассортименту техники De Dietrich.
+								</span>
 
+							</div>
+							<div class="shipping-payment__item help__item">
+								<div class="help__row">
+									В какие сроки происходит доставка техники De Dietrich?
+									<span class="help__info">По Москве и Москвовской области доставка осуществляется в течение 1 дней (при условии, что статус товара – «В наличии»). Если статус товара «Под заказ», оператор интернет-магазина выяснит для Вас срок доставки индивидуально.</span>
 								</div>
-								<div class="shipping-payment__item help__item">
-									<div class="help__row">
-										В какие сроки происходит доставка техники De Dietrich?
-										<span class="help__info">По Москве и Москвовской области доставка осуществляется в течение 1 дней (при условии, что статус товара – «В наличии»). Если статус товара «Под заказ», оператор интернет-магазина выяснит для Вас срок доставки индивидуально.</span>
-									</div>
-									<div class="help__row">
-										Где производится техника De Dietrich?
-										<span class="help__info">Основное производство находится во Франции и Италии. Подогреватели и несколько моделей варочных панелей производятся в Бельгии, некоторые модели техники производятся в Испании и Венгрии. Страна-производитель указана в технических характеристиках
-											товара. Вы можете уточнить эту информацию в каталоге.</span>
-									</div>
-									<div class="help__row">
-										Можно ли вместе с доставкой заказать установку техники De Dietrich?
-										<span class="help__info">
-											Да. Одновременно с доставкой вы можете заказать установку техники De Dietrich. О стоимости и сроках установки спрашивайте у Вашего менеджера.
-										</span>
-									</div>
-									<div class="help__row">
-										Можно ли обменять технику De Dietrich после покупки?
-										<span class="help__info">Да, по Закону «О правах потребителей» Вы можете обменять купленную технику в течение 14 дней со дня покупки при наличии упаковки, товарного и кассового чека и отсутствии механических повреждений.</span>
-									</div>
-									<div class="help__row">
-										Как ухаживать за стеклокерамической варочной панелью DeDietrich?
-										<span class="help__info">Для долгой и качественной службы стеклокерамической панели используйте только подходящую к размерам конфорок посуду. Желательно избегать алюминиевых, медных, эмалированных сковородок и кастрюль, посуды с неровным дном. Очищать рабочую поверхность
-											нужно только после того, как она остыла. Для чистки нельзя использовать абразивные средства, щелочь, грубые губки и щетки. Лучше всего пользоваться специальными средствами для очистки стеклокерамики.</span>
-									</div>
-									<div class="help__row">
-										Почему нельзя хранить вино в обычном холодильнике, а только в винному шкафу?
-										<span class="help__info">Хорошему вину нужны особая температура и влажность. В винных шкафах De Dietrich температура регулируется от 5 до 15 градусов, а влажностный режим постоянно находится на одном уровне. Стекло в винном шкафу не обычное – оно не пропускает ультрафиолета,
-											губительного для вина. Особые компрессоры и специальные деревянные полки предотвратят вибрацию, от которой может образоваться осадок.</span>
-									</div>
-									<div class="help__row">
-										Какие запчасти используются при починке техники DeDietrich?
-										<span class="help__info">Мы работаем только с авторизованными сервисными центрами, которые используют оригинальные запчасти для техники De Dietrich.</span>
-									</div>
-									<div class="help__row">
-										Как часто нужно размораживать морозильные камеры DeDietrich?
-										<span class="help__info">В основном модели холодильников De Dietrich оснащены системой No Frost. Это означает, что морозильные камеры не нуждаются в разморозке, только в регулярной чистке. Единственная модель – встраиваемый под столешницу морозильник De Dietrich – имеет
-											автоматическую систему разморозки. Это означает, что его нужно размораживать примерно 1 раз в год.</span>
-									</div>
-									<div class="help__row">
-										У нас на кухне нет возможности подключения вытяжки к вентиляции. Может ли она работать исключительно в режиме рециркуляции?
-										<span class="help__info">Да, все вытяжки компании De Dietrich имеют и режим циркуляции, и режим отвода. Вы можете пользоваться двумя режимами попеременно в зависимости от ситуации или всегда одним.</span>
-									</div>
-									<div class="help__row">
-										Можно ли самостоятельно установить технику DeDietrich?
-										<span class="help__info">К каждой модели встраиваемой техники прилагается схема установки и инструкция. Однако мы рекомендуем Вам воспользоваться услугами одного из наших авторизованных сервисных центров. Это избавит Вас от многих хлопот и недоразумений, связанных с
-											неправильной установкой бытовой техники.</span>
-									</div>
+								<div class="help__row">
+									Где производится техника De Dietrich?
+									<span class="help__info">Основное производство находится во Франции и Италии. Подогреватели и несколько моделей варочных панелей производятся в Бельгии, некоторые модели техники производятся в Испании и Венгрии. Страна-производитель указана в технических характеристиках
+										товара. Вы можете уточнить эту информацию в каталоге.</span>
+								</div>
+								<div class="help__row">
+									Можно ли вместе с доставкой заказать установку техники De Dietrich?
+									<span class="help__info">
+										Да. Одновременно с доставкой вы можете заказать установку техники De Dietrich. О стоимости и сроках установки спрашивайте у Вашего менеджера.
+									</span>
+								</div>
+								<div class="help__row">
+									Можно ли обменять технику De Dietrich после покупки?
+									<span class="help__info">Да, по Закону «О правах потребителей» Вы можете обменять купленную технику в течение 14 дней со дня покупки при наличии упаковки, товарного и кассового чека и отсутствии механических повреждений.</span>
+								</div>
+								<div class="help__row">
+									Как ухаживать за стеклокерамической варочной панелью DeDietrich?
+									<span class="help__info">Для долгой и качественной службы стеклокерамической панели используйте только подходящую к размерам конфорок посуду. Желательно избегать алюминиевых, медных, эмалированных сковородок и кастрюль, посуды с неровным дном. Очищать рабочую поверхность
+										нужно только после того, как она остыла. Для чистки нельзя использовать абразивные средства, щелочь, грубые губки и щетки. Лучше всего пользоваться специальными средствами для очистки стеклокерамики.</span>
+								</div>
+								<div class="help__row">
+									Почему нельзя хранить вино в обычном холодильнике, а только в винному шкафу?
+									<span class="help__info">Хорошему вину нужны особая температура и влажность. В винных шкафах De Dietrich температура регулируется от 5 до 15 градусов, а влажностный режим постоянно находится на одном уровне. Стекло в винном шкафу не обычное – оно не пропускает ультрафиолета,
+										губительного для вина. Особые компрессоры и специальные деревянные полки предотвратят вибрацию, от которой может образоваться осадок.</span>
+								</div>
+								<div class="help__row">
+									Какие запчасти используются при починке техники DeDietrich?
+									<span class="help__info">Мы работаем только с авторизованными сервисными центрами, которые используют оригинальные запчасти для техники De Dietrich.</span>
+								</div>
+								<div class="help__row">
+									Как часто нужно размораживать морозильные камеры DeDietrich?
+									<span class="help__info">В основном модели холодильников De Dietrich оснащены системой No Frost. Это означает, что морозильные камеры не нуждаются в разморозке, только в регулярной чистке. Единственная модель – встраиваемый под столешницу морозильник De Dietrich – имеет
+										автоматическую систему разморозки. Это означает, что его нужно размораживать примерно 1 раз в год.</span>
+								</div>
+								<div class="help__row">
+									У нас на кухне нет возможности подключения вытяжки к вентиляции. Может ли она работать исключительно в режиме рециркуляции?
+									<span class="help__info">Да, все вытяжки компании De Dietrich имеют и режим циркуляции, и режим отвода. Вы можете пользоваться двумя режимами попеременно в зависимости от ситуации или всегда одним.</span>
+								</div>
+								<div class="help__row">
+									Можно ли самостоятельно установить технику DeDietrich?
+									<span class="help__info">К каждой модели встраиваемой техники прилагается схема установки и инструкция. Однако мы рекомендуем Вам воспользоваться услугами одного из наших авторизованных сервисных центров. Это избавит Вас от многих хлопот и недоразумений, связанных с
+										неправильной установкой бытовой техники.</span>
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<!-- END WORKAREA -->
@@ -389,7 +357,7 @@
 						</ul>
 					</nav>
 					<nav class="menu-footer">
-						<ul class="menu-footer__list">
+						<ul class="menu-footer__list menu-footer__list-margin">
 							<li class="menu-footer__title js-menu-footer__title">Охлаждение</li>
 							<li class="menu-footer__item">
 								<a class="menu-footer__link" href="#">Холодильники</a>
@@ -441,8 +409,7 @@
 					</div>
 					<div class="footer__telephones">
 						<div class="l-abuse">
-							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
-							</a>
+							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству</a>
 						</div>
 					</div>
 				</div>
