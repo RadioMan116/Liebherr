@@ -1,5 +1,5 @@
 .new-items {
-    background-color: #f8f8f8;
+    background-color: #2e2e2e;
     padding-bottom: 42px !important;
 
     &__caption {
@@ -8,27 +8,25 @@
     }
 
     &__title {
-        color: #212121;
+        color: #eeeeee !important;
         margin-bottom: 0 !important;
         margin-right: 18px;
     }
 
     &__how {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: normal;
         letter-spacing: normal;
-        color: #2e2e2e;
+        text-align: left;
+        color: #eeeeee;
         display: flex;
         align-items: flex-end;
 
-        a {
-            color: #394791;
+        i {
             font-style: normal;
-            padding-left: 5px;
-
+            padding-right: 5px;
         }
     }
 
@@ -98,9 +96,8 @@
         .new-items__link {
             margin-top: 68px;
         }
-
-        /*AGENT_SHEET*/
-        .swiper-pagination_3 .swiper-pagination-bullet-active {
+/*AGENT_SHEET*/
+       .swiper-pagination_3 .swiper-pagination-bullet-active {
             background: #ffffff !important;
         }
     }

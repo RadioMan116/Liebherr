@@ -3,11 +3,6 @@
 	padding: 28px 0 19px;
 	z-index: 3;
 	position: relative;
-	min-width: 1200px;
-
-	@media screen and (max-width: 320px) {
-		min-width: 320px;
-	}
 
 	&__inner {
 		display: flex;
@@ -28,7 +23,7 @@
 	}
 
 	&__copyright {
-
+		font-family: "Gotham Pro";
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -59,7 +54,7 @@
 	}
 
 	&__text {
-
+		font-family: "Gotham Pro";
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -134,7 +129,7 @@
 			transition: 0.3s;
 		}
 
-		.menu-footer__list-margin .menu-footer__title {
+		.menu-footer__list+.menu-footer__list .menu-footer__title {
 			margin-top: 0 !important;
 		}
 
@@ -243,7 +238,7 @@
 	}
 
 	&__link {
-
+		font-family: "Gotham Pro";
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -259,12 +254,14 @@
 		padding: 0;
 		list-style-type: none;
 
-		&-margin {
+		&+.menu-footer__list {
 			.menu-footer__title {
 				margin-top: 20px;
 			}
 		}
 	}
+
+
 }
 
 .abuse-popup-container {
@@ -345,7 +342,7 @@
 	right: 2px;
 	bottom: 2px;
 	left: 2px;
-	@include color;
+	background: #aa6e4f;
 	/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 	border-radius: 2px;
 }

@@ -20,7 +20,7 @@
   }
 
   .sorting__number {
-    
+    font-family: "Gotham Pro";
     font-size: 13px;
     font-weight: normal;
     font-style: normal;
@@ -78,7 +78,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #aa6e4f;
-    
+    font-family: "Gotham Pro";
     border: solid 1px #ae7557;
     border-radius: 4px;
     text-transform: uppercase;
@@ -101,8 +101,6 @@
     border-bottom: 1px solid #eeeeee;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: baseline;
 
     &:hover {
       box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
@@ -134,6 +132,20 @@
         background-size: contain;
       }
     }
+
+  }
+
+  &__pic {
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    height: 100%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
   }
 
   &__specification {
@@ -143,7 +155,7 @@
   }
 
   &__feature {
-    
+    font-family: "Gotham Pro";
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -170,12 +182,12 @@
   }
 
   &__presence {
-    
+    font-family: "Gotham Pro";
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 2;
+    line-height: 1;
     letter-spacing: normal;
     text-align: left;
     color: #03a619;
@@ -186,12 +198,12 @@
   }
 
   &__simile {
-    
+    font-family: "Gotham Pro";
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.5;
+    line-height: 1;
     letter-spacing: normal;
     text-align: left;
     color: #2e2e2e;
@@ -281,7 +293,7 @@
     }
 
     &__element {
-      
+      font-family: "Gotham Pro";
       font-size: 12px;
       font-weight: normal;
       font-style: normal;
@@ -324,7 +336,7 @@
       letter-spacing: normal;
       text-align: left;
       color: #262626;
-      
+      font-family: "Gotham Pro";
     }
   }
 
@@ -563,7 +575,7 @@
   }
 
   &__all {
-    
+    font-family: "Gotham Pro";
     font-size: 14px;
     font-weight: normal;
     font-style: normal;

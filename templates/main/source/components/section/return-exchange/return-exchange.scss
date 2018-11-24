@@ -128,7 +128,7 @@
       font-weight: 500;
       color: #ff4b4b;
       margin-right: 5px;
-      margin-left:5px;
+      margin-left: 5px;
     }
   }
 
@@ -137,8 +137,9 @@
 
     label {
       flex-grow: 1;
-      &.return-exchange__label{
-        margin-left:25px;
+
+      &.return-exchange__label {
+        margin-left: 25px;
       }
     }
 
@@ -186,20 +187,25 @@
     opacity: 0;
     cursor: pointer
   }
-  @media screen and (max-width: 480px){
-    .return-exchange__attachment{
+
+  @media screen and (max-width: 480px) {
+    &__attachment {
       padding-left: 0;
-      label{
+
+      label {
         margin-left: 15px;
       }
-      .abuse-popup__submit{
+
+      .abuse-popup__submit {
         width: 100%;
       }
     }
-    .return-exchange__file{
+
+    &__file {
       margin-left: 0 !important;
     }
-    .return-exchange__attachment__container{
+
+    &__attachment__container {
       width: 100%;
       display: flex;
       justify-content: center;

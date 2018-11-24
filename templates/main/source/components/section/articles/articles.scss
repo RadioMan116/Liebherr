@@ -5,7 +5,8 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .navchain{
+
+    .navchain {
         margin-bottom: 0;
     }
 
@@ -20,6 +21,7 @@
         text-align: left;
         color: #212121;
         margin-bottom: 40px;
+        margin-top: 24px
     }
 
     &__link {
@@ -51,9 +53,22 @@
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        align-content: flex-start;
 
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    &__pic {
+        width: 100%;
+        height: 170px;
+        display: flex;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
         }
     }
 
@@ -106,6 +121,10 @@
             // overflow-x: scroll;
         }
 
+        &__pic {
+            height: auto;
+        }
+
         &__item {
             width: 33%;
 
@@ -134,9 +153,11 @@
             }
 
         }
+
         &__info {
             display: none;
         }
+
         &__link {
             margin-top: 0;
             width: 240px;
