@@ -1,8 +1,8 @@
-<div class="shipping-payment warranty">
-    <div class="filter">
+<div class="d-flex flex-column-reverse flex-md-row">
+    <div class="col-md-3">
         {% include 'section/sidebar/sidebar.html' %}
     </div>
-    <div class="shipping-payment__items">
+    <div class="col-md-9">
         <div class="navchain">
             <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
                 <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -17,84 +17,94 @@
         <div class="shipping-payment__title articles-main__title">
             Гарантия
         </div>
-        <div class="shipping-payment__item">
-            <div class="shipping-payment__banners">
-                 <img src="{{src}}баннер.svg" alt="" class="shipping-payment__pic">
-                 <span class="shipping-payment__banner"></span>
+        <div class="shipping-payment__items">
+
+            <div class="shipping-payment__item">
+                <div class="shipping-payment__banners">
+                    <img src="{{src}}баннер.svg" alt="" class="shipping-payment__pic">
+                    <span class="shipping-payment__banner"></span>
+                </div>
+                <span class="about-us__header warranty__header">На всю продукцию De Dietrich, которая приобретена в
+                    нашем
+                    интернет-магазине,
+                    действует гарантия производителя.</span>
+                <span class="shipping-payment__text">
+                    <b class="shipping-payment__text-b">При доставке техники</b>
+                    Проверьте правильность заполнения гарантийного свидетельства. В нем должны быть указана дата
+                    продажи и
+                    проставлен штамп магазина. Если такая информация отсутствует, началом срока гарантии считается
+                    время
+                    изготовления прибора.
+                </span>
+                <span class="shipping-payment__text">
+                    Обратите внимание на отсутствие у товара механических повреждений и на наличие комплектующих.
+                </span>
+                <span class="shipping-payment__text">
+                    Технику должны устанавливать специалисты сервисного центра. Гарантия не распространяется на
+                    недостатки
+                    в работе прибора, которые возникли вследствие неправильной установки.
+                </span>
+                <span class="shipping-payment__text">
+                    Перед эксплуатацией товара необходимо ознакомиться с инструкцией.
+                </span>
+                <span class="shipping-payment__text">
+                    <b class="shipping-payment__text-b">Условия гарантии</b>
+                    На технику De Dietrich распространяется гарантия в течение двух лет с момента продажи.
+                </span>
+                <span class="shipping-payment__text">
+                    Гарантия действует только на приборы, которые эксплуатировались в домашних условиях.
+                </span>
+                <span class="shipping-payment__text">
+                    Срок гарантии на комплектующие — три месяца. Комплектующими считаются изделия, которые можно
+                    демонтировать без использования инструментов: полки, корзины, ящики, решетки, насадки, шланги.
+                    Такой же
+                    срок — 3 месяца — действует на новые комплектующие, которые были установлены при проведении
+                    гарантийного либо платного ремонта.
+                </span>
+                <ul class="about-us__list shipping-payment__list">
+                    Гарантия производителя не распространяется, если
+                    <li class="about-us__li shipping-payment__li">
+                        не были соблюдены требования, прописанные в инструкции;
+                    </li>
+                    <li class="about-us__li shipping-payment__li">
+                        товар был поврежден при неправильной транспортировке, установке либо эксплуатации;
+                    </li>
+                    <li class="about-us__li shipping-payment__li">
+                        неисправности возникли при перегрузке;
+                    </li>
+                    <li class="about-us__li shipping-payment__li">
+                        в конструкцию товара были внесены изменения неуполномоченными лицами;
+                    </li>
+                    <li class="about-us__li shipping-payment__li">
+                        продуктовых или серийных номеров нет либо они читаются неразборчиво;
+                    </li>
+                    <li class="about-us__li shipping-payment__li">
+                        недостатки были вызваны причинами, которые не зависят от производителя, в том числе: перепадами
+                        напряжения в электросети (по ГОСТу 13109-97 и локальным государственным стандартам), стихийными
+                        бедствиями и пожарами, действиями домашних и диких животных, а также попадания внутрь
+                        посторонних
+                        предметов и жидкостей;
+                    </li>
+                    <li class="about-us__li shipping-payment__li">
+                        повреждения деталей и комплектующих произошли из-за естественного износа, например, перегорела
+                        лампа или был загрязнен фильтр.
+                    </li>
+                </ul>
+                <span class="shipping-payment__text">
+                    Согласно законодательству, на технику установлен срок службы 10 лет с момента продажи. Правила
+                    безопасного и эффективного использования товаров изложены в инструкции по эксплуатации.
+                </span>
             </div>
-            <span class="about-us__header warranty__header">На всю продукцию De Dietrich, которая приобретена в нашем интернет-магазине,
-                действует гарантия производителя.</span>
-            <span class="shipping-payment__text">
-                <b class="shipping-payment__text-b">При доставке техники</b>
-                Проверьте правильность заполнения гарантийного свидетельства. В нем должны быть указана дата продажи и
-                проставлен штамп магазина. Если такая информация отсутствует, началом срока гарантии считается время
-                изготовления прибора.
-            </span>
-            <span class="shipping-payment__text">
-                Обратите внимание на отсутствие у товара механических повреждений и на наличие комплектующих.
-            </span>
-            <span class="shipping-payment__text">
-                Технику должны устанавливать специалисты сервисного центра. Гарантия не распространяется на недостатки
-                в работе прибора, которые возникли вследствие неправильной установки.
-            </span>
-            <span class="shipping-payment__text">
-                Перед эксплуатацией товара необходимо ознакомиться с инструкцией.
-            </span>
-            <span class="shipping-payment__text">
-                <b class="shipping-payment__text-b">Условия гарантии</b>
-                На технику De Dietrich распространяется гарантия в течение двух лет с момента продажи.
-            </span>
-            <span class="shipping-payment__text">
-                Гарантия действует только на приборы, которые эксплуатировались в домашних условиях.
-            </span>
-            <span class="shipping-payment__text">
-                Срок гарантии на комплектующие — три месяца. Комплектующими считаются изделия, которые можно
-                демонтировать без использования инструментов: полки, корзины, ящики, решетки, насадки, шланги. Такой же
-                срок — 3 месяца — действует на новые комплектующие, которые были установлены при проведении
-                гарантийного либо платного ремонта.
-            </span>
-            <ul class="about-us__list shipping-payment__list">
-                Гарантия производителя не распространяется, если
-                <li class="about-us__li shipping-payment__li">
-                    не были соблюдены требования, прописанные в инструкции;
-                </li>
-                <li class="about-us__li shipping-payment__li">
-                    товар был поврежден при неправильной транспортировке, установке либо эксплуатации;
-                </li>
-                <li class="about-us__li shipping-payment__li">
-                    неисправности возникли при перегрузке;
-                </li>
-                <li class="about-us__li shipping-payment__li">
-                    в конструкцию товара были внесены изменения неуполномоченными лицами;
-                </li>
-                <li class="about-us__li shipping-payment__li">
-                    продуктовых или серийных номеров нет либо они читаются неразборчиво;
-                </li>
-                <li class="about-us__li shipping-payment__li">
-                    недостатки были вызваны причинами, которые не зависят от производителя, в том числе: перепадами
-                    напряжения в электросети (по ГОСТу 13109-97 и локальным государственным стандартам), стихийными
-                    бедствиями и пожарами, действиями домашних и диких животных, а также попадания внутрь посторонних
-                    предметов и жидкостей;
-                </li>
-                <li class="about-us__li shipping-payment__li">
-                    повреждения деталей и комплектующих произошли из-за естественного износа, например, перегорела
-                    лампа или был загрязнен фильтр.
-                </li>
-            </ul>
-            <span class="shipping-payment__text">
-                Согласно законодательству, на технику установлен срок службы 10 лет с момента продажи. Правила
-                безопасного и эффективного использования товаров изложены в инструкции по эксплуатации.
-            </span>
-        </div>
-        <div class="shipping-payment__item">
-            <div class="warranty__title articles-main__title">
-                Контакты сервисных центров
+            <div class="shipping-payment__item">
+                <div class="warranty__title articles-main__title">
+                    Контакты сервисных центров
+                </div>
+                <span class="shipping-payment__text warranty__text">
+                    <b class="shipping-payment__text-b">Сервисный центр De Dietrich "БЫТ МОНТАЖ"</b>
+                    <a href="tel:79055833726" class="shipping-payment__number">+7 (905) 583-3726</a>
+                    <a href="tel:79858541446" class="shipping-payment__number">+7 (985) 854-1446</a>
+                </span>
             </div>
-            <span class="shipping-payment__text warranty__text">
-                <b class="shipping-payment__text-b">Сервисный центр De Dietrich "БЫТ МОНТАЖ"</b>
-                <a href="tel:79055833726" class="shipping-payment__number">+7 (905) 583-3726</a>
-                <a href="tel:79858541446" class="shipping-payment__number">+7 (985) 854-1446</a>
-            </span>
         </div>
     </div>
 </div>
