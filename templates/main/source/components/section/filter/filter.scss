@@ -1,14 +1,17 @@
 .filter {
-  // width: calc(((100% / 12) * 3)-28px);
-  // margin-right: 28px;
+  width: calc(((100% / 12) * 3)-28px);
+  margin-right: 28px;
 
-
+  input,
+  span {
+    cursor: pointer;
+  }
 
   &__date {
     height: 28px;
     display: flex;
     align-items: center;
-    font-family: "Gotham Pro Medium";
+    font-family: 'Gotham Pro Medium';
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -28,11 +31,6 @@
     flex-wrap: wrap;
     box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
     transition: 0.4s;
-    margin-bottom: 28px;
-
-    label {
-      cursor: pointer;
-    }
 
     &:hover {}
 
@@ -59,6 +57,7 @@
         display: inline-block;
         vertical-align: middle;
       }
+      
 
       /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
       &:checked+.checkbox-custom::before {
@@ -82,7 +81,7 @@
 
   &__title {
     margin-bottom: 16px;
-    font-family: "Gotham Pro Medium";
+    font-family: 'Gotham Pro Medium';
     font-size: 14px;
     font-size: 16px;
     font-weight: 500;
@@ -102,7 +101,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-family: "Gotham Pro";
+    font-family: 'Gotham Pro';
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -127,7 +126,7 @@
       width: 45%;
       display: flex;
       padding-left: 3%;
-      overflow: hidden;
+      overflow: hidden
     }
   }
 
@@ -139,13 +138,13 @@
     display: flex;
     align-items: center;
     position: relative;
-    background: url("../images/slider.png") repeat-x;
+    background: url('../images/slider.png') repeat-x;
     margin-left: 3%;
 
     .ui-slider-range {
       position: absolute;
       z-index: 1;
-      font-size: 0.7em;
+      font-size: .7em;
       display: block;
       border: 0;
       background-position: 0 0;
@@ -177,13 +176,13 @@
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
+      line-height: 2;
       letter-spacing: normal;
       text-align: left;
       color: #2e2e2e;
       word-wrap: break-word;
       word-break: break-all;
       padding-left: 25px;
-      margin-bottom: 14px;
     }
   }
 
@@ -203,7 +202,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #aa6e4f;
-      font-family: "Gotham Pro Medium";
+      font-family: 'Gotham Pro Medium';
       padding: 14px 0;
       width: 100%;
       border-radius: 2px;
@@ -214,7 +213,7 @@
   }
 
   &_reset {
-    font-family: "Gotham Pro Medium";
+    font-family: 'Gotham Pro Medium';
     font-size: 12px;
     font-weight: 500;
     font-style: normal;
@@ -252,7 +251,7 @@
   }
 
   .close__filter {
-    font-family: "Gotham Pro Medium";
+    font-family: 'Gotham Pro Medium';
     font-size: 16px;
     font-weight: 500;
     font-style: normal;

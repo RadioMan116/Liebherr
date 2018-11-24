@@ -6,13 +6,10 @@
 	<title>Example</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<meta name="HandheldFriendly" content="True">
-	<meta name="format-detection" content="telephone=yes">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/mobile.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
@@ -27,30 +24,17 @@
 						<button class="hamburger" id="js-hamburger" aria-expanded="false">
 							<div class="hamburger__img"></div>
 						</button>
-						<div class="logo">
-							<a href="#" class="logo__link">
-								<img src="images/dedietrich-studio.svg" alt="" class="logo__pic">
-							</a>
-						</div>
-						<!-- /.logo -->
-						<div class="header__telephones">
-							<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
-							<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
-						</div>
-						<div class="menu" id="js-menu" aria-expanded="false">
+						<div class="menu" aria-expanded="false">
 							<nav>
 								<ul class="menu__list">
-									<li class="menu__item js-menu">
-										<span class="menu__link">Каталог</span>
-									</li>
 									<li class="menu__item">
-										<a href="06 - 01 - About us_desktop.html" class="menu__link">De Dietrich</a>
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 03 - Service_desktop.html" class="menu__link">Сервис</a>
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
@@ -59,7 +43,7 @@
 										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 05 - Help_desktop" class="menu__link">Помощь</a>
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
@@ -68,8 +52,11 @@
 								<a href="#" class="menu__compare-320">Сравнение (
 									<i class="compare-320__img">0</i>)</a>
 								<div class="header__telephones">
-									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
 									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
 								</div>
 							</nav>
 						</div>
@@ -85,26 +72,82 @@
 						</div>
 					</div>
 				</div>
-				<div class="header__block header__block_bottom">
-					<div class="header__border header__border_top"></div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
 					<div class="container">
-						<div class="header__img">
-							<img src="images/dit-sign.svg" alt="" class="logo__pic">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/liebherr.svg" alt="" class="logo__pic">
+							</a>
 						</div>
-						<div class="menu" id="js-menu" aria-expanded="false">
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для пекарен</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#">Сервис</a>
+								</span>
+							</nav>
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+									<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+								</div>
+							</div>
+						</div>
+						<div class="menu" aria-expanded="false">
 							<nav>
 								<ul class="menu__list">
-									<li class="menu__item js-menu">
-										<span class="menu__link">Каталог</span>
-									</li>
 									<li class="menu__item">
-										<a href="06 - 01 - About us_desktop.html" class="menu__link">De Dietrich</a>
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 03 - Service_desktop.html" class="menu__link">Сервис</a>
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
@@ -113,7 +156,7 @@
 										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
 									</li>
 									<li class="menu__item">
-										<a href="06 - 05 - Help_desktop" class="menu__link">Помощь</a>
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
 									</li>
 									<li class="menu__item">
 										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
@@ -122,92 +165,21 @@
 								<a href="#" class="menu__compare-320">Сравнение (
 									<i class="compare-320__img">0</i>)</a>
 								<div class="header__telephones">
-									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
 									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
 								</div>
 							</nav>
 						</div>
 						<!--end menu-->
-						<div class="header__icons">
-							<div class="header__search js-header__search"></div>
-							<a href="#" class="header__compare">
-								<span class="header__number">0</span>
-							</a>
-							<a href="#" class="header__basket">
-								<span class="header__number">0</span>
-							</a>
-						</div>
-					</div>
-					<div class="header__border header__border_bottom"></div>
-				</div>
-				<div class="header__dropdown-menu ">
-					<div class="container">
-						<nav class="dropdown-menu dropdown-menu__1">
-							<ul class="dropdown-menu__list">
-								<li class="dropdown-menu__back">назад</li>
-								<li class="dropdown-menu__title js-dropdown-menu__title">Приготовление пищи</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" target="_blank" href="catalog.html">Варочные панели</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Модульные системы</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Духовые шкафы</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Микроволновые печи</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Пароварки</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Вытяжки</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Подогреватели посуды</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Кофемашины</a>
-								</li>
-							</ul>
-						</nav>
-						<nav class="dropdown-menu dropdown-menu__2">
-							<ul class="dropdown-menu__list">
-								<li class="dropdown-menu__title js-dropdown-menu__title">Мойка и стирка</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Стиральные машины</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Посудомоечные машины</a>
-								</li>
-							</ul>
-						</nav>
-						<nav class="dropdown-menu dropdown-menu__3">
-							<ul class="dropdown-menu__list">
-								<li class="dropdown-menu__title js-dropdown-menu__title">Охлаждение</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Холодильники</a>
-								</li>
-								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__link" href="#">Винные шкафы</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="header__telephones">
-							<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
-							<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
-						</div>
-						<div class="header__banner">
-							<img src="images/banner.jpg" srcset="images/banner@2x.jpg 2x,images/banner@3x.jpg 3x" class="special-offers__img">
-						</div>
 					</div>
 				</div>
 			</div>
 			<div class="search__popup">
 				<form action="/search/" class="header__form">
 					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
-					<input type="submit" value="" class="header__submit js-header__submit">
 					<div class="header__button js-header__button"></div>
 				</form>
 			</div>
@@ -218,8 +190,8 @@
 		<div class="section">
 			<div class="content">
 				<div class="container">
-					<div class="d-flex flex-column-reverse flex-md-row">
-						<div class="col-md-3">
+					<div class="shipping-payment return-exchange">
+						<div class="filter">
 							<div class="sidebar">
 								<ul class="work-link">
 									<li class="work-link__item">
@@ -246,7 +218,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-9">
+						<div class="shipping-payment__items">
 							<div class="navchain">
 								<span itemscope="" itemtype="http://schema.org/BreadcrumbList">
 									<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -261,197 +233,189 @@
 							<div class="shipping-payment__title articles-main__title">
 								Правила возврата и обмена
 							</div>
-							<div class="shipping-payment__items">
-								<div class="shipping-payment__item">
-									<span class="return-exchange__header">
-										Внимательно осмотрите внешний вид техники и комплектацию. Убедитесь в отсутствии внешних дефектов до подписания договора. По результатам осмотра вы можете отказаться от товара, оформив акт об отказе. После передачи товара претензии к внешнему виду техники
-										не принимаются (в соответствии со статьями 458 и 459 ГК РФ).
-									</span>
-								</div>
-								<div class="shipping-payment__item">
-									<span class="shipping-payment__text return-exchange__text">
-										<b class="shipping-payment__text-b">При доставке техники</b>В течение 7 дней со дня покупки необходимо проверить, соответствует ли Ваше представление о товаре его характеристикам. В случаях, когда товар надлежащего качества не подошел Вам по
-										каким-либо причинам, можно отказаться от него в любое время до его передачи, а также после передачи — в течение семи дней.
-									</span>
-									<ul class="return-exchange__list shipping-payment__list">
-										Для обмена или возврата товара надлежащего качества необходимо, чтобы были выполнены следующие условия:
-										<li class="return-exchange__li shipping-payment__li">
-											Товар не был в употреблении, были сохранены его потребительские свойства, товарный вид, упаковка, пломбы, ярлыки, а также товарный или кассовый чек, документация к товару.
-										</li>
-										<li class="return-exchange__li shipping-payment__li">
-											Сохранено надлежащее качество товара (нет вмятин, трещин, царапин, сколов и других механических повреждений, за исключением скрытых производственных дефектов).
-										</li>
-										<li class="return-exchange__li shipping-payment__li">
-											Товар не входит в перечень товаров, не подлежащих возврату или обмену на аналогичный товар. (Перечень утвержден Постановлением Правительства РФ от 19 января 1998 г., № 55).
-										</li>
-									</ul>
-									<span class="shipping-payment__text return-exchange__text">
-										<b class="shipping-payment__text-b">Обмен и возврат товара ненадлежащего качества</b>В случае обнаружения дефекта товара необходимо обратиться в авторизованный сервисный центр для получения заключения.
-									</span>
-									<span class="shipping-payment__text return-exchange__text">
-										В отношении технически-сложного товара в случае обнаружения в нем недостатков Вы вправе отказаться от ремонта и потребовать возврата уплаченной за такой товар суммы либо предъявить требование о его замене на товар надлежащего качества в течение 15 дней
-										со дня передачи такого товара Вам. По истечении этого срока Вам необходимо обратиться в авторизованный сервисный центр для получения гарантийного обслуживания. Отказ от ремонта в данном случае возможен при условии:
-									</span>
+							<div class="shipping-payment__item">
+								<span class="return-exchange__header">
+									Внимательно осмотрите внешний вид техники и комплектацию. Убедитесь в отсутствии внешних дефектов до подписания договора. По результатам осмотра вы можете отказаться от товара, оформив акт об отказе. После передачи товара претензии к внешнему виду техники
+									не принимаются (в соответствии со статьями 458 и 459 ГК РФ).
+								</span>
+							</div>
+							<div class="shipping-payment__item">
+								<span class="shipping-payment__text return-exchange__text">
+									<b class="shipping-payment__text-b">При доставке техники</b>В течение 7 дней со дня покупки необходимо проверить, соответствует ли Ваше представление о товаре его характеристикам. В случаях, когда товар надлежащего качества не подошел Вам по
+									каким-либо причинам, можно отказаться от него в любое время до его передачи, а также после передачи — в течение семи дней.
+								</span>
+								<ul class="return-exchange__list shipping-payment__list">
+									Для обмена или возврата товара надлежащего качества необходимо, чтобы были выполнены следующие условия:
+									<li class="return-exchange__li shipping-payment__li">
+										Товар не был в употреблении, были сохранены его потребительские свойства, товарный вид, упаковка, пломбы, ярлыки, а также товарный или кассовый чек, документация к товару.
+									</li>
+									<li class="return-exchange__li shipping-payment__li">
+										Сохранено надлежащее качество товара (нет вмятин, трещин, царапин, сколов и других механических повреждений, за исключением скрытых производственных дефектов).
+									</li>
+									<li class="return-exchange__li shipping-payment__li">
+										Товар не входит в перечень товаров, не подлежащих возврату или обмену на аналогичный товар. (Перечень утвержден Постановлением Правительства РФ от 19 января 1998 г., № 55).
+									</li>
+								</ul>
+								<span class="shipping-payment__text return-exchange__text">
+									<b class="shipping-payment__text-b">Обмен и возврат товара ненадлежащего качества</b>В случае обнаружения дефекта товара необходимо обратиться в авторизованный сервисный центр для получения заключения.
+								</span>
+								<span class="shipping-payment__text return-exchange__text">
+									В отношении технически-сложного товара в случае обнаружения в нем недостатков Вы вправе отказаться от ремонта и потребовать возврата уплаченной за такой товар суммы либо предъявить требование о его замене на товар надлежащего качества в течение 15 дней
+									со дня передачи такого товара Вам. По истечении этого срока Вам необходимо обратиться в авторизованный сервисный центр для получения гарантийного обслуживания. Отказ от ремонта в данном случае возможен при условии:
+								</span>
 
-									<ul class="about-us__list shipping-payment__list">
-										<li class="about-us__li shipping-payment__li">
-											Обнаружения существенного недостатка товара;
-										</li>
-										<li class="about-us__li shipping-payment__li">
-											Нарушения сроков устранения недостатков товара (срок устранения недостатков товара, определяемый в письменной форме соглашением сторон, не может превышать сорок пять дней);
-										</li>
-										<li class="about-us__li shipping-payment__li">
-											Невозможности использования товара в течение каждого года гарантийного срока в совокупности более чем тридцать дней вследствие неоднократного устранения его различных недостатков.
-										</li>
-									</ul>
-									<span class="shipping-payment__text help__">
-										Перечень технически сложных товаров утверждается Правительством Российской Федерации (Перечень утвержден Постановлением Правительства Российской Федерации от 10 ноября 2011 г. N 924).
-									</span>
-								</div>
-								<div class="shipping-payment__item">
-									<span class="shipping-payment__header">
-										Правила оформления претензии по товару
-									</span>
-									<span class="shipping-payment__text return-exchange__text">
-										<b class="shipping-payment__text-b">Внимание! Претензии принимаются исключительно в письменном
+								<ul class="about-us__list shipping-payment__list">
+									<li class="about-us__li shipping-payment__li">
+										Обнаружения существенного недостатка товара;
+									</li>
+									<li class="about-us__li shipping-payment__li">
+										Нарушения сроков устранения недостатков товара (срок устранения недостатков товара, определяемый в письменной форме соглашением сторон, не может превышать сорок пять дней);
+									</li>
+									<li class="about-us__li shipping-payment__li">
+										Невозможности использования товара в течение каждого года гарантийного срока в совокупности более чем тридцать дней вследствие неоднократного устранения его различных недостатков.
+									</li>
+								</ul>
+								<span class="shipping-payment__text help__">
+									Перечень технически сложных товаров утверждается Правительством Российской Федерации (Перечень утвержден Постановлением Правительства Российской Федерации от 10 ноября 2011 г. N 924).
+								</span>
+							</div>
+							<div class="shipping-payment__item">
+								<span class="shipping-payment__header">
+									Правила оформления претензии по товару
+								</span>
+								<span class="shipping-payment__text return-exchange__text">
+									<b class="shipping-payment__text-b">Внимание! Претензии принимаются исключительно в письменном виде.</b>Срок рассмотрения претензии с момента получения заявления составляет 10 дней. Убедительно просим вас сохранять оригиналы документов на покупку.
+								</span>
+								<ul class="return-exchange__list shipping-payment__list">
+									Для того чтобы претензия была рассмотрена как можно быстрее, необходимо указать следующие данные:
+									<li class="return-exchange__li shipping-payment__li">
+										Номер заказа
+									</li>
+									<li class="return-exchange__li shipping-payment__li">
+										Причину обращения (техника не работает, внешний вид, размер и т.п.)
+									</li>
+									<li class="return-exchange__li shipping-payment__li">
+										Требование (возврат денежных средств, обмен — с указанием модели и стоимости )
+									</li>
+									<li class="return-exchange__li shipping-payment__li">
+										Контактные данные
+									</li>
+								</ul>
+								<ul class="about-us__list shipping-payment__list return-exchange__list">
+									В приложении необходим следующий пакет документов:
+									<li class="about-us__li shipping-payment__li return-exchange__li">
+										Подписанное заявление с данными о номере заказа, причине обращения, требованиями и контактными данными.
+									</li>
+									<li class="about-us__li shipping-payment__li return-exchange__li">
+										Скан заключения авторизованного сервисного центра (в случае технической неисправности).
+									</li>
+									<li class="about-us__li shipping-payment__li return-exchange__li">
+										Фотографии повреждений (при наличии).
+									</li>
+									<li class="about-us__li shipping-payment__li return-exchange__li">
+										Фотографии упаковки и товара (в случае если товар не подошел по внешнему виду, размеру, цвету и т.п.).
+									</li>
+									<li class="about-us__li shipping-payment__li return-exchange__li">
+										Кассовый и товарный чек или товарная накладная.
+									</li>
+									<li class="about-us__li shipping-payment__li return-exchange__li">
+										Гарантийный талон.
+									</li>
+								</ul>
+								<a class="return-exchange__link" href="/upload/content/claim/blank.docx">Скачать бланк заявления</a>
+							</div>
+							<div class="shipping-payment__item">
+								<span class="shipping-payment__header">
+									Информация для юридических организаций
+								</span>
+								<span class="shipping-payment__text return-exchange__text">
+									Согласно ст. 457, 458 ГК РФ, обязанность поставщика передать товар покупателю считается исполненной в момент передачи товара покупателю или указанному им лицу, либо предоставления товара в распоряжение покупателя, если товар должен быть передан покупателю
+									или указанному им лицу в месте нахождения товара.
+								</span>
+								<span class="shipping-payment__text return-exchange__text">
+									Обмен либо возврат товара будет возможен в случае, если это предусмотрено договором. Внимательно ознакомьтесь с документами, полученными при доставке товара, и подписывайте их только при условии, что все пункты вас устраивают.
+								</span>
+								<span class="shipping-payment__text return-exchange__text">
+									В соответствии со ст. 523 ГК РФ односторонний отказ от исполнения договора поставки (полностью или частично) или одностороннее его изменение допускаются в случае существенного нарушения договора одной из сторон ( аб. 4 п.2 ст. 450 ) . Нарушение договора
+									поставки поставщиком предполагается в случае поставки товаров ненадлежащего качества с недостатками, которые не могут быть устранены в приемлемый для покупателя срок, а также при неоднократном нарушении сроков поставки товаров.
+								</span>
+							</div>
+							<div class="shipping-payment__item">
+								<span class="shipping-payment__header">
+									Форма для рекламационных обращений
+								</span>
+								<form name="" action="" method="post" enctype="" class="return-exchange__form">
+									<input type="hidden" name="" value="">
+									<input type="hidden" name="" value="">
+									<div class="return-exchange__field">
+										<span class="return-exchange__name">ФИО
+											<span class="return-exchange__required">*</span>
+										</span>
+										<input type="text" name="" value="" class="return-exchange__input" title="ФИО">
+										<span class="return-exchange__error-text"></span>
+									</div>
+									<div class="return-exchange__field">
+										<span class="return-exchange__name">E-mail
+											<span class="return-exchange__required">*</span>
+										</span>
+										<input type="text" name="" value="" class="return-exchange__input" title="E-mail">
+										<span class="return-exchange__error-text"></span>
+									</div>
 
-                        виде.</b>Срок рассмотрения претензии с момента получения заявления составляет 10 дней. Убедительно просим вас сохранять оригиналы документов на покупку.
-									</span>
-									<ul class="return-exchange__list shipping-payment__list">
-										Для того чтобы претензия была рассмотрена как можно быстрее, необходимо указать следующие данные:
-										<li class="return-exchange__li shipping-payment__li">
-											Номер заказа
-										</li>
-										<li class="return-exchange__li shipping-payment__li">
-											Причину обращения (техника не работает, внешний вид, размер и т.п.)
-										</li>
-										<li class="return-exchange__li shipping-payment__li">
-											Требование (возврат денежных средств, обмен — с указанием модели и стоимости )
-										</li>
-										<li class="return-exchange__li shipping-payment__li">
-											Контактные данные
-										</li>
-									</ul>
-									<ul class="about-us__list shipping-payment__list return-exchange__list">
-										В приложении необходим следующий пакет документов:
-										<li class="about-us__li shipping-payment__li return-exchange__li">
-											Подписанное заявление с данными о номере заказа, причине обращения, требованиями и контактными данными.
-										</li>
-										<li class="about-us__li shipping-payment__li return-exchange__li">
-											Скан заключения авторизованного сервисного центра (в случае технической неисправности).
-										</li>
-										<li class="about-us__li shipping-payment__li return-exchange__li">
-											Фотографии повреждений (при наличии).
-										</li>
-										<li class="about-us__li shipping-payment__li return-exchange__li">
-											Фотографии упаковки и товара (в случае если товар не подошел по внешнему виду, размеру, цвету и т.п.).
-										</li>
-										<li class="about-us__li shipping-payment__li return-exchange__li">
-											Кассовый и товарный чек или товарная накладная.
-										</li>
-										<li class="about-us__li shipping-payment__li return-exchange__li">
-											Гарантийный талон.
-										</li>
-									</ul>
-									<a class="return-exchange__link" href="/upload/content/claim/blank.docx">Скачать бланк заявления</a>
-								</div>
-								<div class="shipping-payment__item">
-									<span class="shipping-payment__header">
-										Информация для юридических организаций
-									</span>
-									<span class="shipping-payment__text return-exchange__text">
-										Согласно ст. 457, 458 ГК РФ, обязанность поставщика передать товар покупателю считается исполненной в момент передачи товара покупателю или указанному им лицу, либо предоставления товара в распоряжение покупателя, если товар должен быть передан покупателю
-										или указанному им лицу в месте нахождения товара.
-									</span>
-									<span class="shipping-payment__text return-exchange__text">
-										Обмен либо возврат товара будет возможен в случае, если это предусмотрено договором. Внимательно ознакомьтесь с документами, полученными при доставке товара, и подписывайте их только при условии, что все пункты вас устраивают.
-									</span>
-									<span class="shipping-payment__text return-exchange__text">
-										В соответствии со ст. 523 ГК РФ односторонний отказ от исполнения договора поставки (полностью или частично) или одностороннее его изменение допускаются в случае существенного нарушения договора одной из сторон ( аб. 4 п.2 ст. 450 ) . Нарушение договора
-										поставки поставщиком предполагается в случае поставки товаров ненадлежащего качества с недостатками, которые не могут быть устранены в приемлемый для покупателя срок, а также при неоднократном нарушении сроков поставки товаров.
-									</span>
-								</div>
-								<div class="shipping-payment__item">
-									<span class="shipping-payment__header">
-										Форма для рекламационных обращений
-									</span>
-									<form name="" action="" method="post" enctype="" class="return-exchange__form">
-										<input type="hidden" name="" value="">
-										<input type="hidden" name="" value="">
-										<div class="return-exchange__field">
-											<span class="return-exchange__name">ФИО
-												<span class="return-exchange__required">*</span>
-											</span>
-											<input type="text" name="" value="" class="return-exchange__input" title="ФИО">
-											<span class="return-exchange__error-text"></span>
-										</div>
-										<div class="return-exchange__field">
-											<span class="return-exchange__name">E-mail
-												<span class="return-exchange__required">*</span>
-											</span>
-											<input type="text" name="" value="" class="return-exchange__input" title="E-mail">
-											<span class="return-exchange__error-text"></span>
-										</div>
+									<div class="return-exchange__field">
+										<span class="return-exchange__name">Телефон
+											<span class="return-exchange__required">*</span>
+										</span>
+										<input type="text" name="" value="" class="return-exchange__input" title="Телефон">
+										<span class="return-exchange__error-text"></span>
+									</div>
 
-										<div class="return-exchange__field">
-											<span class="return-exchange__name">Телефон
-												<span class="return-exchange__required">*</span>
-											</span>
-											<input type="text" name="" value="" class="return-exchange__input" title="Телефон">
-											<span class="return-exchange__error-text"></span>
-										</div>
+									<div class="return-exchange__field">
+										<span class="return-exchange__name">Номер заказа
+											<span class="return-exchange__required">*</span>
+										</span>
+										<input type="text" name="" value="" class="return-exchange__input" title="Номер заказа">
+										<span class="return-exchange__error-text"></span>
+									</div>
 
-										<div class="return-exchange__field">
-											<span class="return-exchange__name">Номер заказа
-												<span class="return-exchange__required">*</span>
-											</span>
-											<input type="text" name="" value="" class="return-exchange__input" title="Номер заказа">
-											<span class="return-exchange__error-text"></span>
-										</div>
-
-										<div class="return-exchange__field">
-											<span class="return-exchange__name">Причина обращения
-												<span class="return-exchange__required">*</span>
-											</span>
-											<textarea name="" rows="" cols="" class="return-exchange__textarea" title="Причина обращения"></textarea>
-											<span class="return-exchange__error-text"></span>
-										</div>
-										<div class="return-exchange__field return-exchange__attachment">
-											<span class="return-exchange__copyright">Приложения
-												<i>(Внимание!</i>Рекламация будет рассмотрена после получения
-												<a href="#claim-docs">полного пакета документов</a>)</span>
-											<div class="return-exchange__attachment__container">
-												<label class="return-exchange__file">
-													<span class="return-exchange__button">ВЫБЕРИТЕ ФАЙЛ</span>
-													<input type="file">
-												</label>
-											</div>
-										</div>
-										<br>
-										<div class="return-exchange__field return-exchange__attachment">
-											<label class="return-exchange__label">
-												<input class="checkbox filter_checkbox pers_data_check" type="checkbox" checked="">
-												<span class="checkbox-custom"></span>
-												<span class="checkbox__oferta">
-													Согласен с
-													<a target="_blank" href="/personal_data/">
-														использованием персональных данных
-													</a>
-													для обработки обращения
-
-												</span>
+									<div class="return-exchange__field">
+										<span class="return-exchange__name">Причина обращения
+											<span class="return-exchange__required">*</span>
+										</span>
+										<textarea name="" rows="" cols="" class="return-exchange__textarea" title="Причина обращения"></textarea>
+										<span class="return-exchange__error-text"></span>
+									</div>
+									<div class="return-exchange__field return-exchange__attachment">
+										<span class="return-exchange__copyright">Приложения
+											<i>(Внимание!</i>Рекламация будет рассмотрена после получения
+											<a href="#claim-docs">полного пакета документов</a>)</span>
+										<div class="return-exchange__attachment__container">
+											<label class="return-exchange__file">
+												<span class="return-exchange__button">ВЫБЕРИТЕ ФАЙЛ</span>
+												<input type="file">
 											</label>
-											<div class="return-exchange__error-text js-field-error-text"></div>
 										</div>
+									</div>
+									<br>
+									<div class="return-exchange__field return-exchange__attachment">
+										<label class="return-exchange__label">
+											<input class="checkbox filter_checkbox pers_data_check" type="checkbox" checked="">
+											<span class="checkbox-custom"></span>
+											Согласен с
+											<a target="_blank" href="/personal_data/">
+												использованием персональных данных
+											</a>
+											для обработки обращения
+										</label>
+										<div class="return-exchange__error-text js-field-error-text"></div>
+									</div>
 
-										<div class="return-exchange__submit return-exchange__attachment">
-											<input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit" name="">
-										</div>
-									</form>
-								</div>
+									<div class="return-exchange__submit return-exchange__attachment">
+										<input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit" name="">
+									</div>
+								</form>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<!-- END WORKAREA -->
@@ -511,7 +475,7 @@
 						</ul>
 					</nav>
 					<nav class="menu-footer">
-						<ul class="menu-footer__list">
+						<ul class="menu-footer__list menu-footer__list-margin">
 							<li class="menu-footer__title js-menu-footer__title">Охлаждение</li>
 							<li class="menu-footer__item">
 								<a class="menu-footer__link" href="#">Холодильники</a>
@@ -563,8 +527,7 @@
 					</div>
 					<div class="footer__telephones">
 						<div class="l-abuse">
-							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
-							</a>
+							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству</a>
 						</div>
 					</div>
 				</div>

@@ -1,8 +1,8 @@
-<div class="d-flex flex-column-reverse flex-md-row">
-    <div class="col-md-3">
+<div class="shipping-payment return-exchange contact">
+    <div class="filter">
         {% include 'section/sidebar/sidebar.html' %}
     </div>
-    <div class="col-md-9">
+    <div class="shipping-payment__items">
         <div class="navchain">
             <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
                 <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -17,107 +17,99 @@
         <div class="shipping-payment__title articles-main__title">
             Контакты
         </div>
-        <div class="shipping-payment__items contact">
-            <div class="shipping-payment__item contact__item">
-                <div class="contact__element">
-                    <span class="shipping-payment__text return-exchange__text">
-                        <b class="shipping-payment__text-b">Телефон</b>
-                        <a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
-                    </span>
-                    <span class="shipping-payment__text return-exchange__text">
-                        <b class="shipping-payment__text-b">Email</b>
-                        <a itemprop="email" saprocessedanchor="true" href="mailto:shop@dedietrich-home.ru" target="_blank">shop@dedietrich-home.ru</a>
-                    </span>
-                    <span class="shipping-payment__text return-exchange__text">
-                        <b class="shipping-payment__text-b">Время работы</b>
-                        <span class="contact__text">Пн-Пт: с 8:00 до 22:00;</span>
-                        <span class="contact__text">Сб-Вс: с 9:00 до 22:00</span>
-                    </span>
-                </div>
-                <div class="contact__element">
-                    <span class="shipping-payment__text return-exchange__text">
-                        <b class="shipping-payment__text-b">Реквизиты</b>
-                        <span class="contact__text">
-                            ООО «НТК Трейд»
-                        </span>
-                        <span class="contact__text">
-                            Фактический и юридический адрес: 123103, г. Москва, проспект Маршала Жукова, дом 59
-                        </span>
-                        <span class="contact__text">
-                            Почтовый адрес: 123103, г. Москва, а/я 28
-                        </span>
-                        <span class="contact__text">
-                            ОГРН: 1167746250319
-                        </span>
-                        <span class="contact__text">
-                            ИНН: 7734379272, КПП: 773401001
-                        </span>
-                        <span class="contact__text">
-                            р/сч.: 40702810100000144921 в филиале № 7701 банка ВТБ (ПАО)
-                        </span>
-                        <span class="contact__text">
-                            кор/сч.: 30101810345250000745
-                        </span>
-                        <span class="contact__text">
-                            БИК: 044525745
-                        </span>
-                    </span>
-                </div>
-            </div>
-            <div class="shipping-payment__item contact__item">
-                <span class="shipping-payment__header">
-                    Задать вопрос
-                </span>
-                <form action="" method="post" class="contact__form">
-                    <input type="hidden" name="FAQ[SEND]" value="1">
-                    <input type="hidden" name="action" value="FAQ">
-                    <input type="hidden" name="id" value="0">
-                    <div class="contact__detail">
-                        <span class="return-exchange__name">Ваше имя<span class="return-exchange__required">*</span></span>
-                        <input type="text" name="" value="" class="return-exchange__input" placeholder="Ваше имя *"
-                            title="ФИО">
-                        <span class="return-exchange__error-text"></span>
-                    </div>
-                    <div class="contact__detail">
-                        <span class="return-exchange__name">E-mail <span class="return-exchange__required">*</span></span>
-                        <input type="text" name="" value="" class="return-exchange__input" placeholder="Email *" title="E-mail">
-                        <span class="return-exchange__error-text"></span>
-                    </div>
-                    <div class="contact__detail">
-                        <span class="return-exchange__name">Телефон <span class="return-exchange__required">*</span></span>
-                        <input type="tel" name="" value="" class="return-exchange__input" placeholder="Телефон *" title="Телефон">
-                        <span class="return-exchange__error-text"></span>
-                    </div>
-                    <div class="contact__detail contact__detail-textarea">
-                        <span class="return-exchange__name">Ваш вопрос <span class="return-exchange__required">*</span></span>
-                        <textarea name="" rows="" cols="" class="return-exchange__textarea" placeholder="Ваш вопрос *"
-                            title="Причина обращения"></textarea>
-                        <span class="return-exchange__error-text"></span>
-                    </div>
-                    <label>
-                        <input class="checkbox filter_checkbox pers_data_check" type="checkbox" checked="">
-                        <span class="checkbox-custom"></span>
-                        <span class="checkbox__oferta">
-                            Согласен с
-                            <a target="_blank" href="/personal_data/">
-                                использованием персональных данных
-                            </a>
-                            для обработки обращения
-
-                        </span>
-                    </label>
-                    <input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit" name="">
-                </form>
-            </div>
-            <div class="shipping-payment__item">
-                <span class="shipping-payment__header">
-                    Правила приема рекламационных обращений
+        <div class="shipping-payment__item contact__item">
+            <div class="contact__element">
+                <span class="shipping-payment__text return-exchange__text">
+                    <b class="shipping-payment__text-b">Телефон</b>
+                    <a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
                 </span>
                 <span class="shipping-payment__text return-exchange__text">
-                    Информация по приему&#160<a href="/claim/"><b>претензий и заявлений на рекламацию</b></a>
+                    <b class="shipping-payment__text-b">Email</b>
+                    <a itemprop="email" saprocessedanchor="true" href="mailto:shop@dedietrich-home.ru" target="_blank">shop@dedietrich-home.ru</a>
+                </span>
+                <span class="shipping-payment__text return-exchange__text">
+                    <b class="shipping-payment__text-b">Время работы</b>
+                    <span class="contact__text">Пн-Пт: с 8:00 до 22:00;</span>
+                    <span class="contact__text">Сб-Вс: с 9:00 до 22:00</span>
+                </span>
+            </div>
+            <div class="contact__element">
+                <span class="shipping-payment__text return-exchange__text">
+                    <b class="shipping-payment__text-b">Реквизиты</b>
+                    <span class="contact__text">
+                        ООО «НТК Трейд»
+                    </span>
+                    <span class="contact__text">
+                        Фактический и юридический адрес: 123103, г. Москва, проспект Маршала Жукова, дом 59
+                    </span>
+                    <span class="contact__text">
+                        Почтовый адрес: 123103, г. Москва, а/я 28
+                    </span>
+                    <span class="contact__text">
+                        ОГРН: 1167746250319
+                    </span>
+                    <span class="contact__text">
+                        ИНН: 7734379272, КПП: 773401001
+                    </span>
+                    <span class="contact__text">
+                        р/сч.: 40702810100000144921 в филиале № 7701 банка ВТБ (ПАО)
+                    </span>
+                    <span class="contact__text">
+                        кор/сч.: 30101810345250000745
+                    </span>
+                    <span class="contact__text">
+                        БИК: 044525745
+                    </span>
                 </span>
             </div>
         </div>
+        <div class="shipping-payment__item contact__item">
+            <span class="shipping-payment__header">
+                Задать вопрос
+            </span>
+            <form action="" method="post" class="contact__form">
+                <input type="hidden" name="FAQ[SEND]" value="1">
+                <input type="hidden" name="action" value="FAQ">
+                <input type="hidden" name="id" value="0">
+                <div class="contact__detail">
+                    <span class="return-exchange__name">Ваше имя<span class="return-exchange__required">*</span></span>
+                    <input type="text" name="" value="" class="return-exchange__input" placeholder="Ваше имя *" title="ФИО">
+                    <span class="return-exchange__error-text"></span>
+                </div>
+                <div class="contact__detail">
+                    <span class="return-exchange__name">E-mail <span class="return-exchange__required">*</span></span>
+                    <input type="text" name="" value="" class="return-exchange__input" placeholder="Email *" title="E-mail">
+                    <span class="return-exchange__error-text"></span>
+                </div>
+                <div class="contact__detail">
+                    <span class="return-exchange__name">Телефон <span class="return-exchange__required">*</span></span>
+                    <input type="tel" name="" value="" class="return-exchange__input" placeholder="Телефон *" title="Телефон">
+                    <span class="return-exchange__error-text"></span>
+                </div>
+                <div class="contact__detail contact__detail-textarea">
+                    <span class="return-exchange__name">Ваш вопрос  <span class="return-exchange__required">*</span></span>
+                    <textarea name="" rows="" cols="" class="return-exchange__textarea" placeholder="Ваш вопрос *" title="Причина обращения"></textarea>
+                    <span class="return-exchange__error-text"></span>
+                </div>
+                <label>
+                    <input class="checkbox filter_checkbox pers_data_check" type="checkbox" checked="">
+                    <span class="checkbox-custom"></span>
+                    Согласен с&#160  
+                    <a target="_blank" href="/personal_data/">
+                         использованием персональных данных&#160
+                    </a>
+                    для обработки обращения 
+                </label>
+                <input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit" name="">
+            </form>
+        </div>
+        <div class="shipping-payment__item">
+            <span class="shipping-payment__header">
+                Правила приема рекламационных обращений
+            </span>
+            <span class="shipping-payment__text return-exchange__text">
+                Информация по приему&#160<a href="/claim/"><b>претензий и заявлений на рекламацию</b></a>
+            </span>
+        </div>
     </div>
-
 </div>

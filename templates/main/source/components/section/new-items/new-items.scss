@@ -1,5 +1,5 @@
 .new-items {
-    background-color: #2e2e2e;
+    background-color: #f8f8f8;
     padding-bottom: 42px !important;
 
     &__caption {
@@ -8,25 +8,27 @@
     }
 
     &__title {
-        color: #eeeeee !important;
+        color: #212121;
         margin-bottom: 0 !important;
         margin-right: 18px;
     }
 
     &__how {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
+        line-height: normal;
         letter-spacing: normal;
-        text-align: left;
-        color: #eeeeee;
+        color: #2e2e2e;
         display: flex;
         align-items: flex-end;
 
-        i {
+        a {
+            color: #394791;
             font-style: normal;
-            padding-right: 5px;
+            padding-left: 5px;
+
         }
     }
 
@@ -96,8 +98,9 @@
         .new-items__link {
             margin-top: 68px;
         }
-/*AGENT_SHEET*/
-       .swiper-pagination_3 .swiper-pagination-bullet-active {
+
+        /*AGENT_SHEET*/
+        .swiper-pagination_3 .swiper-pagination-bullet-active {
             background: #ffffff !important;
         }
     }

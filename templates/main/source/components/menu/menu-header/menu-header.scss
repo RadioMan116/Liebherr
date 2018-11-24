@@ -16,10 +16,7 @@
   display: flex;
   align-items: center;
   flex-shrink: 1;
-  flex-grow: 1;
-  flex-basis: 75%;
-  padding-right: 3.1%;
-  width:954px;
+  width:701px;
 
   @media (max-width:850px) {
     padding-right: 1%;
@@ -31,23 +28,16 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+
   }
 
   &__item {
 
-    // padding-right: 40px;
-    &:first-child {
-      padding-right: 16px;
-      background: url("https://icongr.am/fontawesome/caret-right.svg?color=ffffff") 4rem/18px no-repeat;
-
-      &:hover {
-        background: url("https://icongr.am/fontawesome/caret-down.svg?color=aa6e4f") 4rem/18px no-repeat;
-      }
-    }
-
     &:hover {
-      a,span {
-        color: #aa6e4f;
+
+      a,
+      span {
+        color: #394791;
         text-decoration: none;
       }
     }
@@ -59,21 +49,14 @@
 
   &__link {
     display: block;
-    font-family: "Gotham Pro Bold";
-    font-size: 12px;
-    font-weight: bold;
+    font-family: "Arial";
+    font-size: 13px;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 2;
+    line-height: normal;
     letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    @media (max-width: 850px) {
-      font-size: 11px;
-    }
+    color: #666666;
   }
 
   .menu__compare-320 {
@@ -81,37 +64,16 @@
   }
 
   @media (max-width: 768px) {
-    transform: scale(0);
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s;
-    padding: 0 24px;
-    display: flex;
-    align-items: baseline;
+    display: none;
 
     nav {
+      display: flex;
+      flex-wrap: wrap;
+
       .header__telephones {
         display: flex;
-        width: 100%;
-        padding: 0 24px;
-      }
-
-      .header__phone {
-        font-size: 20px;
-        font-weight: 500;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-        text-align: left;
-        color: #eeeeee;
-      }
-
-      .header__call-phone-button {
-        background: unset;
+        margin-top: 0;
+        align-items: baseline;
       }
     }
 
@@ -123,43 +85,21 @@
 
     &__list {
       flex-direction: column;
-      padding: 24px 0 41px;
+      padding: 24px 0 30px;
+      width: 100%;
     }
 
-    &__item+&__item {}
-
-    &__link {
-      font-size: 14px;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 4;
-      letter-spacing: normal;
-      text-align: left;
-      color: #eeeeee;
+    &__item+&__item {
+      margin-top: 16px;
     }
 
-    &__item {
-      border-top: 1px solid #494949;
-
-      &:first-child {
-        background: url("https://icongr.am/entypo/chevron-right.svg?color=eeeeee") 98%/18px no-repeat;
-        
-
-        &:hover {
-          background: url("https://icongr.am/entypo/chevron-right.svg?color=aa6e4f") 98%/18px no-repeat;
-          background-color: #5a5a5a;
-        }
-      }
-
-      &:last-child {
-        border-bottom: 1px solid #494949;
-      }
-
-      span:hover,a:hover {
-        background-color: #5a5a5a;
-      }
+    .header__block_bottom & {
+      display: flex;
     }
+  }
+
+  .header__block_bottom & {
+    display: none;
   }
 }
 
@@ -176,11 +116,13 @@
     transition: transform 0.3s;
     z-index: 10;
     background-color: #262626;
-    &.active{
+
+    &.active {
       height: 100vh !important;
       overflow-y: scroll !important;
     }
   }
+
   // .header__dropdown-menu {
   //   position: absolute;
   // }
