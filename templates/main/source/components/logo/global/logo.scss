@@ -1,5 +1,5 @@
 .logo {
-	position: absolute;
+	margin: auto 0;
 
 	&__link {
 		text-decoration: none;
@@ -11,10 +11,13 @@
 		margin: 0 auto;
 		max-width: 100%;
 	}
+
 	@media screen and (max-width: 768px) {
-	position: unset;
+		position: unset;
+		order: -1;
 	}
+
 	@media screen and (max-width: 480px) {
-	width: 127px;
+		width: 118px;
 	}
 }

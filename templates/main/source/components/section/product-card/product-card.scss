@@ -1,6 +1,6 @@
 .navchain {
   width: 100%;
-  font-family: "Gotham Pro";
+  
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -95,7 +95,9 @@
         padding: 13%;
         position: relative;
 
-        iframe {}
+        iframe {
+
+        }
 
         img {
           height: 100%;
@@ -230,7 +232,7 @@
   &__icons {
     background: url("../images/compare__color.svg") -2px 100%/24px no-repeat;
     padding-left: 30px;
-    text-decoration: none !important;
+    text-decoration:none !important;
 
     @media screen and (max-width: 960px) {
       margin-top: 20px;
@@ -924,8 +926,7 @@
 
     .gallery-top {
       width: 100% !important;
-
-      .swiper-slide {
+      .swiper-slide{
         height: unset;
       }
     }

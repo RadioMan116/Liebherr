@@ -14,7 +14,7 @@
 
 	&-popup {
 		&__text {
-			font-family: "Gotham Pro";
+			
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -33,7 +33,7 @@
 
 		a,
 		&__req {
-			color: #aa6e4f;
+			@include link;
 			padding-right: 5px;
 		}
 
@@ -102,7 +102,7 @@
 			letter-spacing: normal;
 			color: #ffffff;
 			text-transform: uppercase;
-			@include button
+			@include button;
 		}
 
 		.modal__close {
