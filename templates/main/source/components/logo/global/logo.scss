@@ -16,6 +16,12 @@
 	@media screen and (max-width: 768px) {
 		position: unset;
 		order: -1;
+		width: 138px;
+		height: 27px;
+
+		.logo__link {
+			min-width: unset;
+		}
 	}
 
 	@media screen and (max-width: 480px) {

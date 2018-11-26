@@ -181,7 +181,7 @@
 		height: 100vh;
 		opacity: 0.6;
 		background-color: #000000;
-		z-index: 2;
+		z-index: 90;
 
 		&-open {
 			display: flex;
@@ -338,6 +338,7 @@
 				width: 18px;
 				height: 18px;
 				background: url("../images/search.svg") 0/18px no-repeat;
+				margin-right: 38px;
 
 				&-open {
 					background: url('../images/musica-searcher-1.svg') 0/18px no-repeat;
@@ -347,11 +348,13 @@
 			&__compare {
 				width: 39px;
 				background: url("../images/compare.svg") 0 /18px no-repeat;
+				margin-right: 30px;
 			}
+
 
 			&__basket {
 				width: 39px;
-				background: url("../images/shopping-cart.svg") 0 /24px no-repeat;
+				background: url("../images/shopping-cart.svg") 0 /18px no-repeat;
 			}
 
 			&__number {
@@ -514,7 +517,7 @@
 			background-color: #ffffff;
 			border: solid 1px #cbcbcb;
 			padding-left: 15px;
-			font-family: 'Gotham Pro';
+
 			font-size: 12px;
 			font-weight: normal;
 			font-style: normal;
@@ -558,7 +561,7 @@
 	@media screen and (max-width: 375px) {
 		.title-strike {
 			margin-right: auto;
-			font-family: 'Gotham Pro Medium';
+
 			font-size: 20px;
 			font-weight: 500;
 			font-style: normal;

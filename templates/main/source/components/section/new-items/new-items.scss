@@ -33,10 +33,10 @@
     }
 
     &__link {
-        font-family: 'Gotham Pro Medium';
-        padding: 14px 31px;
+
+        padding: 7px;
         border-radius: 2px;
-        border: solid 1px #eeeeee;
+        border: solid 1px #394791;
         font-size: 14px;
         font-weight: 500;
         font-style: normal;
@@ -44,21 +44,21 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
-        color: #eeeeee;
+        color: #394791;
         margin: 48px auto 0;
         text-transform: uppercase;
         text-decoration: none !important;
     }
 
-    .swiper-button-prev {
-        background: url("../images/shape1.svg") 0/16px no-repeat !important;
-        transform: rotate(180deg);
-    }
 
-    .swiper-button-next {
-        background: url("../images/shape1.svg") 0/16px no-repeat !important;
-        top: 20px;
-        right: 50px;
+
+    @media screen and (max-width: 768px) {
+
+        padding-top: 0;
+
+        .new-items__link {
+            margin: 28px auto 0;
+        }
     }
 
     @media screen and (max-width: 480px) {

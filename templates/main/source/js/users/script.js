@@ -205,10 +205,13 @@ $(document).ready(function () {
 			$(".header .search__popup").addClass("search__popup-open");
 			$(".header__search").addClass("header__search-open");
 			$(".header__overlay").addClass("header__overlay-open");
+			$("html").addClass("fixed");
+
 		} else {
 			$(".header .search__popup").removeClass("search__popup-open");
 			$(".header__search").removeClass("header__search-open");
 			$(".header__overlay").removeClass("header__overlay-open");
+			$("html").removeClass("fixed");
 		}
 	});
 	$(".js-search-header__input").on("input", function () {

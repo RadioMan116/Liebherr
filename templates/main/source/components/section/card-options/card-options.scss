@@ -124,7 +124,7 @@
     &__title,
     &__model {
         width: 100%;
-        font-family: "Gotham Pro Medium";
+        
         font-size: 36px;
         font-weight: 500;
         font-style: normal;
@@ -158,7 +158,7 @@
 
     &__price {
         width: 100%;
-        font-family: "Gotham Pro Medium";
+        
         font-size: 36px;
         font-weight: 500;
         font-style: normal;
@@ -235,7 +235,7 @@
 
     &__buy {
         @include button;
-        font-family: "Gotham Pro Medium";
+        
         // padding: 12px 56px;
         // height: 46px;
         // text-transform: uppercase;
@@ -278,7 +278,7 @@
 
         .description {
             &__title {
-                font-family: "Gotham Pro Medium";
+                
                 font-size: 20px;
                 font-weight: 500;
                 font-style: normal;
@@ -355,7 +355,7 @@
 
             &__title {
                 width: 100%;
-                font-family: "Gotham Pro Medium";
+                
                 font-size: 20px;
                 font-weight: 500;
                 font-style: normal;
@@ -413,7 +413,7 @@
             }
 
             &__title {
-                font-family: "Gotham Pro Medium";
+                
                 font-size: 20px;
                 font-weight: 500;
                 font-style: normal;
@@ -449,7 +449,7 @@
             }
 
             &__description {
-                font-family: "Gotham Pro Medium";
+                
                 font-size: 14px;
                 font-weight: 500;
                 font-style: normal;
@@ -462,7 +462,7 @@
             }
 
             &__sale {
-                font-family: "Gotham Pro Medium";
+                
                 font-size: 20px;
                 line-height: 1.2;
                 font-weight: 500;
@@ -543,7 +543,7 @@
         }
 
         &__link {
-            font-family: "Gotham Pro Medium";
+            
             padding: 20px 28px;
             font-size: 20px;
             font-weight: 500;
@@ -577,7 +577,7 @@
 
             .characteristic {
                 &__title {
-                    font-family: "Gotham Pro Medium";
+                    
                     width: 100%;
                     font-size: 16px;
                     font-weight: 500;

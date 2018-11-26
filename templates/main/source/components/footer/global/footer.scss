@@ -1,5 +1,5 @@
 .footer {
-	background-color: #2e2e2e;
+	background-color: #f8f8f8;
 	padding: 28px 0 19px;
 	z-index: 3;
 	position: relative;
@@ -11,6 +11,34 @@
 
 	&__col {
 		width: 25%;
+
+		.menu-footer__item {
+			width: 205px;
+		}
+
+		&_3 {
+			width: 35%;
+
+			.menu-footer__list {
+				display: flex;
+				flex-wrap: wrap;
+				height: 181px;
+			}
+
+			.menu-footer__title {
+				width: 100%;
+			}
+
+			.menu-footer__item {
+				width: 50%;
+			}
+		}
+
+		&_last {
+			width: 15%;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__row {
@@ -23,7 +51,6 @@
 	}
 
 	&__copyright {
-
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -37,16 +64,12 @@
 	&__button {
 		height: 34px;
 		padding: 4px 10px 4px 11px;
-		border-radius: 2px;
-		border: solid 1px #979797;
-		font-family: "Gotham Pro Medium";
-		font-size: 10px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 2.4;
-		letter-spacing: normal;
-		text-align: left;
+		border-radius: 3px;
+		background-color: #394791;
+		color: #ffffff;
+		font-family: "Roboto Condensed";
+		font-size: 14px;
+		font-weight: 400;
 		color: #ffffff;
 		display: flex;
 		align-items: center;
@@ -54,34 +77,40 @@
 	}
 
 	&__text {
-
-		font-size: 12px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.92;
-		letter-spacing: normal;
-		text-align: left;
-		color: #b0b0b0;
+		color: #666666;
+		font-family: Arial;
+		font-size: 13px;
+		line-height: 22px;
+		text-align: right;
 	}
 
 	&__tel {
-		font-family: "Gotham Pro Medium";
+		color: #333333;
 		font-size: 20px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.2;
-		letter-spacing: normal;
-		text-align: left;
-		color: #eeeeee;
-		padding: 8px 0 13px;
+		font-weight: 400;
+		line-height: 26px;
+		text-align: right;
+	}
+
+	&__email {
+		color: #394791;
+		font-family: Arial;
+		font-size: 13px;
+		line-height: 22px;
+		text-align: right;
+		margin: 1rem 0;
+
+		i {
+			color: #666666;
+			font-style: normal;
+		}
 	}
 
 	&__telephones {
 		width: 25%;
 		display: flex;
 		min-width: 203px;
+		justify-content: flex-end;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -226,27 +255,17 @@
 
 .menu-footer {
 	&__title {
-		font-family: "Gotham Pro Medium";
-		font-size: 14px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.71;
-		letter-spacing: normal;
-		text-align: left;
-		color: #eeeeee;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 36px;
+		color: #333333;
 	}
 
 	&__link {
-
-		font-size: 12px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.92;
-		letter-spacing: normal;
-		text-align: left;
-		color: #b0b0b0;
+		color: #666666;
+		font-family: Arial;
+		font-size: 13px;
+		line-height: 20px;
 	}
 
 	&__list {
