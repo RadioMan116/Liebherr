@@ -27,6 +27,7 @@
 			display: flex;
 			position: relative;
 			align-items: baseline;
+			padding: 0;
 		}
 
 		&_top {
@@ -79,11 +80,13 @@
 		display: flex;
 		align-items: center;
 		margin-left: auto;
+		flex-grow: 1;
+		margin-left: 1rem;
 
 		.telephones {
 			display: flex;
 			flex-direction: column;
-			margin-left: 41px;
+			margin-left: auto;
 		}
 	}
 
@@ -96,10 +99,11 @@
 		line-height: 1.44;
 		letter-spacing: normal;
 		color: #333333;
+		white-space: nowrap;
 	}
 
 	&__call-phone-button {
-		width: 126px;
+		width: 142px;
 		padding: 5px 15px;
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 14px;
@@ -135,11 +139,11 @@
 	&__search {
 		width: 24px;
 		height: 100%;
-		background: url("../images/search.svg") 0/24px no-repeat;
+		background: url("../images/search.svg") 0/18px no-repeat;
 		margin-right: 43px;
 
 		&-open {
-			background: url("../images/musica-searcher-1.svg") 0/21px no-repeat;
+			background: url("../images/musica-searcher-1.svg") 0/18px no-repeat;
 		}
 
 		@media (max-width:850px) {
@@ -375,6 +379,10 @@
 					order: -1;
 					margin-left: 0;
 					flex-direction: row;
+
+					.header__phone:last-child {
+						margin-left: 1rem;
+					}
 				}
 
 				.header__call-phone-button {
@@ -472,6 +480,7 @@
 .callback_popup {
 	display: none;
 	width: 373px;
+	justify-content: center;
 
 	a {
 		@include link;
@@ -487,6 +496,11 @@
 
 	.call-popup-phone-inner {
 		text-align: center;
+
+		p {
+			width: 80%;
+			margin: 0 auto 1rem;
+		}
 	}
 
 	.callback__form {
