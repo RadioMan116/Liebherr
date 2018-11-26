@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header geometria">
+
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+									</li>
+									<li class="menu__item">
+										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+								<a href="#" class="menu__compare-320">Сравнение (
+									<i class="compare-320__img">0</i>)</a>
+								<div class="header__telephones">
+									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<!--end menu-->
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<div class="header__compare">
+								<span class="header__number">0</span>
+							</div>
+							<div class="header__basket">
+								<span class="header__number">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/liebherr.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для пекарен</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#">Сервис</a>
+								</span>
+							</nav>
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+									<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+								</div>
+							</div>
+						</div>
+						<div class="menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+									</li>
+									<li class="menu__item">
+										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+								<a href="#" class="menu__compare-320">Сравнение (
+									<i class="compare-320__img">0</i>)</a>
+								<div class="header__telephones">
+									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<!--end menu-->
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+
+		<div class="section">
+			<div class="content">
+				<div class="container">
+					<div class="navchain">
+						<span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a href="#" itemprop="item" href="/">De Dietrich</a>
+							</span>
+							»
+							<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a href="#" itemprop="item">Духовые шкафы</a>
+							</span>
+							»
+							<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<span itemprop="item">Сравнение</span>
+							</span>
+						</span>
+					</div>
+					<div class="comparison">
+						<div class="comparison__title">Сравнение</div>
+						<table class="comparison__middle">
+							<tbody class="swiper-container swiper-container-comparison">
+								<tr class="products-line swiper-wrapper">
+									<td class="swiper-slide">
+										<div class="swiper__comparison swiper__comparison_first">
+											<div class="comparison__inner">
+												<div class="comparison-menu__title">Категория сравнения</div>
+												<ul class="comparison__list">
+													<li class="comparison__item">
+														<a class="comparison__link" href="/">
+															<span class="comparison__text">Духовые шкафы</span>
+														</a>
+													</li>
+													<li class="comparison__item">
+														<a class="comparison__link" href="/">
+															<span class="comparison__text">Варочные панели</span>
+														</a>
+													</li>
+													<li class="comparison__item">
+														<a class="comparison__link" href="/">
+															<span class="comparison__text">Варочные панели</span>
+														</a>
+													</li>
+												</ul>
+												<span class="comparison__text">6 товаров в категории</span>
+											</div>
+											<div id="comparison__button" class="comparison__button">
+												<div class="comparison-menu__title">Показать</div>
+												<a href="#" class="comparison__select js-comparison__select active" compare="ALL">
+													<i></i>Все параметры
+												</a>
+												<a href="#" class="comparison__select js-comparison__select" compare="DIFF">
+													<i></i>Различающиеся
+												</a>
+												<a href="#" class="comparison__filter" compare="Delete">
+													<i></i>Очистить список
+												</a>
+											</div>
+										</div>
+									</td>
+									<td class="swiper-slide">
+										<div class="swiper__comparison">
+											<a class="special-offers__pic" href="#">
+												<img src="images/foto_1.jpg" srcset="images/foto_1@2x.jpg 2x,images/foto_1@3x.jpg 3x" class="special-offers__img">
+											</a>
+											<a href="#" class="special-offers__text">90cm Curved Decorative Hood</a>
+											<div class="special-offers__sale">
+												<span class="special-offers__price">134 200
+													<i class="special-offers__rub">руб.</i>
+												</span>
+												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+											</div>
+										</div>
+										<a href="#" class="modal__close js-modal-close" title="Закрыть">×</a>
+									</td>
+									<td class="swiper-slide">
+										<div class="swiper__comparison">
+
+											<a class="special-offers__pic" href="#">
+												<img src="images/foto_2.jpg" srcset="images/foto_2@2x.jpg 2x,images/foto_2@3x.jpg 3x" class="special-offers__img">
+											</a>
+											<a href="#" class="special-offers__text">60cm 4 Burner Gas on Glass Hob</a>
+											<div class="special-offers__sale">
+												<span class="special-offers__price">98 400
+													<i class="special-offers__rub">руб.</i>
+												</span>
+												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+											</div>
+										</div>
+										<a href="#" class="modal__close js-modal-close" title="Закрыть">×</a>
+									</td>
+									<td class="swiper-slide">
+										<div class="swiper__comparison">
+											<a class="special-offers__pic" href="#">
+												<img src="images/foto_3.jpg" srcset="images/foto_3@2x.jpg 2x,images/foto_3@3x.jpg 3x" class="special-offers__img">
+											</a>
+											<a href="#" class="special-offers__text">38cm Domino Hob Single 6.1kW Triple Burner</a>
+											<div class="special-offers__sale">
+												<span class="special-offers__price">115 000
+													<i class="special-offers__rub">руб.</i>
+													<span class="price__absolute">122 750 руб.</span>
+												</span>
+												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+											</div>
+										</div>
+										<a href="#" class="modal__close js-modal-close" title="Закрыть">×</a>
+									</td>
+									<td class="swiper-slide">
+										<div class="swiper__comparison">
+											<a class="special-offers__pic" href="#">
+												<img src="images/foto_2.jpg" srcset="images/foto_2@2x.jpg 2x,images/foto_2@3x.jpg 3x" class="special-offers__img">
+											</a>
+											<a href="#" class="special-offers__text">60cm 4 Burner Gas on Glass Hob</a>
+											<div class="special-offers__sale">
+												<span class="special-offers__price">98 400
+													<i class="special-offers__rub">руб.</i>
+												</span>
+												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+											</div>
+										</div>
+										<a href="#" class="modal__close js-modal-close" title="Закрыть">×</a>
+									</td>
+									<td class="swiper-slide">
+										<div class="swiper__comparison">
+											<a class="special-offers__pic" href="#">
+												<img src="images/foto_3.jpg" srcset="images/foto_3@2x.jpg 2x,images/foto_3@3x.jpg 3x" class="special-offers__img">
+											</a>
+											<a href="#" class="special-offers__text">38cm Domino Hob Single 6.1kW Triple Burner</a>
+											<div class="special-offers__sale">
+												<span class="special-offers__price">115 000
+													<i class="special-offers__rub">руб.</i>
+												</span>
+												<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+											</div>
+										</div>
+										<a href="#" class="modal__close js-modal-close" title="Закрыть">×</a>
+									</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Общие харакетристики
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Тип духового шкафа</td>
+									<td class="swiper-block">Multifunction Plus</td>
+									<td class="swiper-block">Multifunction Plus</td>
+									<td class="swiper-block">Multifunction Plus</td>
+									<td class="swiper-block">Multifunction Plus</td>
+									<td class="swiper-block">Multifunction Plus</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Способ подключения</td>
+									<td class="swiper-block">Электрический</td>
+									<td class="swiper-block">Электрический</td>
+									<td class="swiper-block">Электрический</td>
+									<td class="swiper-block">Электрический</td>
+									<td class="swiper-block">Электрический</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Тип очистки</td>
+									<td class="swiper-block">Пиролитическая</td>
+									<td class="swiper-block">Пиролитическая</td>
+									<td class="swiper-block">Пиролитическая</td>
+									<td class="swiper-block">Пиролитическая</td>
+									<td class="swiper-block">Пиролитическая</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">Дизайн</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Цвет</td>
+									<td class="swiper-block">Чёрный</td>
+									<td class="swiper-block">Чёрный</td>
+									<td class="swiper-block">Чёрный</td>
+									<td class="swiper-block">Чёрный</td>
+									<td class="swiper-block">Чёрный</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Панель управления
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Тип управления</td>
+									<td class="swiper-block">Электронное</td>
+									<td class="swiper-block">Электронное</td>
+									<td class="swiper-block">Электронное</td>
+									<td class="swiper-block">Электронное</td>
+									<td class="swiper-block">Электронное</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Дисплей</td>
+									<td class="swiper-block">Есть</td>
+									<td class="swiper-block">Есть</td>
+									<td class="swiper-block">Есть</td>
+									<td class="swiper-block">Есть</td>
+									<td class="swiper-block">Есть</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Клавиши</td>
+									<td class="swiper-block">Сенсорные</td>
+									<td class="swiper-block">Сенсорные</td>
+									<td class="swiper-block">Сенсорные</td>
+									<td class="swiper-block">Сенсорные</td>
+									<td class="swiper-block">Сенсорные</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Переключатели</td>
+									<td class="swiper-block">Поворотные</td>
+									<td class="swiper-block">Поворотные</td>
+									<td class="swiper-block">Поворотные</td>
+									<td class="swiper-block">Поворотные</td>
+									<td class="swiper-block">Поворотные</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Режим эксперт духовой шкаф
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Общее количество функций</td>
+									<td class="swiper-block">9</td>
+									<td class="swiper-block">9</td>
+									<td class="swiper-block">9</td>
+									<td class="swiper-block">9</td>
+									<td class="swiper-block">9</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Конвекция</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Комбинированный нагрев</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Традиционный экономичный</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Поддержание в разогретом состоянии</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Разморозка</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Выпечка хлеба</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Камера духового шкафа
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Количество стекол дверцы духовки</td>
+									<td class="swiper-block">4</td>
+									<td class="swiper-block">4</td>
+									<td class="swiper-block">4</td>
+									<td class="swiper-block">4</td>
+									<td class="swiper-block">4</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Съёмных стёкол</td>
+									<td class="swiper-block">3</td>
+									<td class="swiper-block">3</td>
+									<td class="swiper-block">3</td>
+									<td class="swiper-block">3</td>
+									<td class="swiper-block">3</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Дверца с плавным закрыванием «Soft-close»</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Холодная дверца</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Объем, л</td>
+									<td class="swiper-block">73</td>
+									<td class="swiper-block">73</td>
+									<td class="swiper-block">73</td>
+									<td class="swiper-block">73</td>
+									<td class="swiper-block">73</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Внутреннее освещение</td>
+									<td class="swiper-block">Галогенное</td>
+									<td class="swiper-block">Галогенное</td>
+									<td class="swiper-block">Галогенное</td>
+									<td class="swiper-block">Галогенное</td>
+									<td class="swiper-block">Галогенное</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Энергопотребление
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Класс энергопотребления</td>
+									<td class="swiper-block">А</td>
+									<td class="swiper-block">А</td>
+									<td class="swiper-block">А</td>
+									<td class="swiper-block">А</td>
+									<td class="swiper-block">А</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Комплектация
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Решетки</td>
+									<td class="swiper-block">2</td>
+									<td class="swiper-block">2</td>
+									<td class="swiper-block">2</td>
+									<td class="swiper-block">2</td>
+									<td class="swiper-block">2</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Противень</td>
+									<td class="swiper-block">1</td>
+									<td class="swiper-block">1</td>
+									<td class="swiper-block">1</td>
+									<td class="swiper-block">1</td>
+									<td class="swiper-block">1</td>
+								</tr>
+								<tr class="characteristic__title swiper-wrapper">
+									<td class="swiper-block">
+										Размеры и вес
+									</td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+									<td class="swiper-block"></td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Размеры ниши для встраивания, В х Ш х Г, мм</td>
+									<td class="swiper-block">585 х 560 х 550</td>
+									<td class="swiper-block">585 х 560 х 550</td>
+									<td class="swiper-block">585 х 560 х 550</td>
+									<td class="swiper-block">585 х 560 х 550</td>
+									<td class="swiper-block">585 х 560 х 550</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Размеры прибора, В х Ш х Г, мм</td>
+									<td class="swiper-block">592 х 592 х 609</td>
+									<td class="swiper-block">592 х 592 х 609</td>
+									<td class="swiper-block">592 х 592 х 609</td>
+									<td class="swiper-block">592 х 592 х 609</td>
+									<td class="swiper-block">592 х 592 х 609</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Размеры камеры, В х Ш х Г, мм</td>
+									<td class="swiper-block">320 х 465 х 375</td>
+									<td class="swiper-block">320 х 465 х 375</td>
+									<td class="swiper-block">320 х 465 х 375</td>
+									<td class="swiper-block">320 х 465 х 375</td>
+									<td class="swiper-block">320 х 465 х 375</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Вес брутто, кг</td>
+									<td class="swiper-block">38</td>
+									<td class="swiper-block">38</td>
+									<td class="swiper-block">38</td>
+									<td class="swiper-block">38</td>
+									<td class="swiper-block">38</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Вес нетто, кг</td>
+									<td class="swiper-block">36</td>
+									<td class="swiper-block">36</td>
+									<td class="swiper-block">36</td>
+									<td class="swiper-block">36</td>
+									<td class="swiper-block">36</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Кабель без вилки в комплекте</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+									<td class="swiper-block">Да</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Напряжение, В</td>
+									<td class="swiper-block">220-240</td>
+									<td class="swiper-block">220-240</td>
+									<td class="swiper-block">220-240</td>
+									<td class="swiper-block">220-240</td>
+									<td class="swiper-block">220-240</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Частота, Гц</td>
+									<td class="swiper-block">50-60</td>
+									<td class="swiper-block">50-60</td>
+									<td class="swiper-block">50-60</td>
+									<td class="swiper-block">50-60</td>
+									<td class="swiper-block">50-60</td>
+								</tr>
+								<tr class="characteristic__row swiper-wrapper">
+									<td class="swiper-block">Сила тока, А</td>
+									<td class="swiper-block">16</td>
+									<td class="swiper-block">16</td>
+									<td class="swiper-block">16</td>
+									<td class="swiper-block">16</td>
+									<td class="swiper-block">16</td>
+								</tr>
+							</tbody>
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev special-offers_prev"></div>
+							<div class="swiper-button-next special-offers_next"></div>
+						</table>
+					</div>
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col footer__col_first">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Приготовление пищи</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Варочные панели</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Модульные системы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Духовые шкафы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Микроволновые печи</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Пароварки</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Вытяжки</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подогреватели посуды</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Кофемашины</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col footer__col_two">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Мойка и стирка</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Стиральные машины</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Посудомоечные машины</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="menu-footer">
+						<ul class="menu-footer__list menu-footer__list-margin">
+							<li class="menu-footer__title js-menu-footer__title">Охлаждение</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Холодильники</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Винные шкафы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col footer__col_three">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">DeDietrich</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Доставка и оплата</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подключение</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Гарантия</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col footer__col_last">
+					<div class="footer__text footer__text_first">Интернет-магазин</div>
+					<a href="tel:+74955653990" class="footer__tel">+7 (495) 565-39-90</a>
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__row">
+					<div class="footer__copyright">
+						2004—2018 Официальный магазин De Dietrich
+					</div>
+					<div class="footer__telephones">
+						<div class="l-abuse">
+							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.footer__row -->
+
+			</div>
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src=""></script>
+	<script>
+		window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')
+	</script>
+
+
+	<script type="text/javascript" src="js/script.min.js"></script>
+	<script type="text/javascript" src="js/frontend-works.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Example</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header geometria">
+
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+									</li>
+									<li class="menu__item">
+										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+								<a href="#" class="menu__compare-320">Сравнение (
+									<i class="compare-320__img">0</i>)</a>
+								<div class="header__telephones">
+									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<!--end menu-->
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<div class="header__compare">
+								<span class="header__number">0</span>
+							</div>
+							<div class="header__basket">
+								<span class="header__number">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/liebherr.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Винные шкафы</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника</span>
+								<ul class="dropdown-menu__list">
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для пекарен</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="dropdown-menu dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="#">Сервис</a>
+								</span>
+							</nav>
+							<div class="header__telephones">
+								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<div class="telephones">
+									<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+									<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+								</div>
+							</div>
+						</div>
+						<div class="menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+									</li>
+									<li class="menu__item">
+										<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									</li>
+									<li class="menu__item">
+										<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+								<a href="#" class="menu__compare-320">Сравнение (
+									<i class="compare-320__img">0</i>)</a>
+								<div class="header__telephones">
+									<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+									<div class="telephones">
+										<a href="tel:+74955653990" class="header__phone">+7 (495) 565-39-90</a>
+										<a href="tel:+78003331936" class="header__phone">+7 (800) 333-19-36</a>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<!--end menu-->
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+
+		<div class="section">
+			<div class="content">
+				<!-- WORKAREA -->
+				<div class="gallery">
+					<!-- Slider main container -->
+					<div class="swiper-container-main">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img src='images/main.jpg' alt="">
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											Техника Liebherr:
+										</span>
+										<span class="span span__small">
+											стиль и технологии
+										</span>
+										<span class="span span__big">
+											Холодильная техника Liebher — это легендарное немецкое качество, современные технологии, комфорт использования и разнообразие модельного ряда.
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src='images/main.jpg' alt="">
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											Техника Liebherr:
+										</span>
+										<span class="span span__small">
+											стиль и технологии
+										</span>
+										<span class="span span__big">
+											Холодильная техника Liebher — это легендарное немецкое качество, современные технологии, комфорт использования и разнообразие модельного ряда.
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src='images/main.jpg' alt="">
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											Техника Liebherr:
+										</span>
+										<span class="span span__small">
+											стиль и технологии
+										</span>
+										<span class="span span__big">
+											Холодильная техника Liebher — это легендарное немецкое качество, современные технологии, комфорт использования и разнообразие модельного ряда.
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src='images/main.jpg' alt="">
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											Техника Liebherr:
+										</span>
+										<span class="span span__small">
+											стиль и технологии
+										</span>
+										<span class="span span__big">
+											Холодильная техника Liebher — это легендарное немецкое качество, современные технологии, комфорт использования и разнообразие модельного ряда.
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev swiper-button-main main_prev"></div>
+						<div class="swiper-button-next swiper-button-main main_next"></div>
+
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="gallery__items">
+						<div class="gallery__item">
+							<img src="images/02.png" alt="">
+							<div class="gallery__info-ball  gallery__info-ball_1">
+								<span class="info-ball__text">
+									Амортизирующий доводчик двери SoftSystem.
+								</span>
+							</div>
+							<div class="gallery__info-ball gallery__info-ball_2">
+								<span class="info-ball__text">
+									BioFresh - это специальная регулирующаяся зона в холодильной камере, в которой поддерживается определенный микроклимат. Зона свежести BioFresh состоит из двух контейнеров - DrySafe с низкой влажностью для хранения молочных продуктов, морепродуктов и мяса
+									и HydroSafe для хранения фруктов и овощей. При хранении в отделении BioFresh, скоропортящиеся продукты в значительной степени сохраняют вкусовые качества, свежесть и питательность.
+								</span>
+							</div>
+							<div class="gallery__info-ball gallery__info-ball_3">
+								<span class="info-ball__text">
+									NoFrost - благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея на стенках морозильного
+									отделения, и тем самым забыть о процедуре размораживания.
+								</span>
+							</div>
+							<div class="gallery__info-ball gallery__info-ball_4">
+								<span class="info-ball__text">
+									IceMaker - инновационное решение для производства кубиков льда даже при отсутствии стационарной подачи или недостаточно высоком качестве питьевой воды. Для наполнения водой резервуар легко извлекается из холодильника.
+								</span>
+							</div>
+						</div>
+						<div class="gallery__el">
+							<a class="gallery__link" href="">
+								<img src="images/gallery-link_1.png" alt="">
+								<span class="gallery__article">Официальная гарантия</span>
+								<span class="gallery__text">Гарантийный сервис Liebherr</span>
+							</a>
+						</div>
+						<div class="gallery__el">
+							<a class="gallery__link" href="">
+								<img src="images/gallery-link_2.png" alt="">
+								<span class="gallery__article">Сервис и обслуживание</span>
+								<span class="gallery__text">Об установке и подклчении</span>
+							</a>
+						</div>
+						<div class="gallery__el">
+							<a class="gallery__link" href="">
+								<img src="images/gallery-link_3.png" alt="">
+								<span class="gallery__article">Глоссарий</span>
+								<span class="gallery__text">Технологии компании Liebherr</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="special-offers">
+					<div class="container">
+						<span class="special-offers__title">Спецпредложения</span>
+						<!-- Slider main container -->
+						<div class="swiper-container swiper-container-two">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper special-offers__wrapper">
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" srcset="images/foto_1@2x.jpg 2x,images/foto_1@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Холодильник Liebherr IKF 3510 Comfort
+									</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" srcset="images/foto_2@2x.jpg 2x,images/foto_2@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Винный шкаф Liebherr EWTgw 3583 Vinidor</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">98 400
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" srcset="images/foto_3@2x.jpg 2x,images/foto_3@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Холодильник Liebherr SBS 66I2</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">115 000
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_4.jpg" srcset="images/foto_4@2x.jpg 2x,images/foto_4@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" srcset="images/foto_1@2x.jpg 2x,images/foto_1@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Холодильник Liebherr IKF 3510 Comfort
+									</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" srcset="images/foto_2@2x.jpg 2x,images/foto_2@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Винный шкаф Liebherr EWTgw 3583 Vinidor</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">98 400
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" srcset="images/foto_3@2x.jpg 2x,images/foto_3@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Premium NoFrost (SICN 3386 +</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">115 000
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_4.jpg" srcset="images/foto_4@2x.jpg 2x,images/foto_4@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" srcset="images/foto_1@2x.jpg 2x,images/foto_1@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Холодильник Liebherr IKF 3510 Comfort
+									</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" srcset="images/foto_2@2x.jpg 2x,images/foto_2@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Винный шкаф Liebherr EWTgw 3583 Vinidor</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">98 400
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" srcset="images/foto_3@2x.jpg 2x,images/foto_3@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">ICN 3386)</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">115 000
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_4.jpg" srcset="images/foto_4@2x.jpg 2x,images/foto_4@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Морозильник Liebherr GN 2723 Comfort NoFrost</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+
+							<!-- If we need navigation buttons -->
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+						<div class="swiper-pagination_2"></div>
+						<div class="swiper-button-prev special-offers_prev"></div>
+						<div class="swiper-button-next special-offers_next"></div>
+					</div>
+
+				</div>
+				<div class="new-items special-offers">
+					<div class="container">
+						<div class="new-items__caption">
+							<span class="special-offers__title new-items__title">Новинки</span>
+							<span class="new-items__how">В разделе
+								<a href="#">57новинок</a>
+							</span>
+						</div>
+
+						<!-- Slider main container -->
+						<div class="swiper-container swiper-container-three">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper special-offers__wrapper">
+								<div class="swiper-slide special-offers__slide new-items__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/new-items_1.jpg" srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x" class="special-offers__img">
+									</a>
+									<a href="#" class="special-offers__text">Духовой шкаф De Dietrich DOM1195GX</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide new-items__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/new-items_2.jpg" srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x" class="special-offers__img">
+									</a>
+
+									<a href="#" class="special-offers__text">Духовой шкаф De Dietrich DOM1195GX</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">98 400
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide new-items__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/new-items_3.jpg" srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x" class="special-offers__img">
+									</a>
+
+									<a href="#" class="special-offers__text">Духовой шкаф De Dietrich DOM1195GX</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">115 000
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+								<div class="swiper-slide special-offers__slide new-items__slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/new-items_4.jpg" srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x" class="special-offers__img">
+									</a>
+
+									<a href="#" class="special-offers__text">Духовой шкаф De Dietrich DOM1195GX</a>
+									<div class="special-offers__sale">
+										<span class="special-offers__price">134 200
+											<i class="special-offers__rub">руб.</i>
+										</span>
+										<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">купить</a>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- If we need navigation buttons -->
+
+							<!-- If we need scrollbar -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+						<div class="swiper-pagination_3"></div>
+						<a href="#" class="new-items__link">Все новинки</a>
+						<div class="swiper-button-prev new-items_prev"></div>
+						<div class="swiper-button-next new-items_next"></div>
+					</div>
+
+				</div>
+				<div class="articles">
+					<div class="container">
+						<span class="articles__title">Статьи</span>
+						<div class="articles__items">
+							<div class="articles__item">
+								<a class="articles__pic" href="#">
+									<img src="images/articles_1.jpg" srcset="images/articles_1@2x.jpg 2x,images/articles_1@3x.jpg 3x" class="articles__img">
+								</a>
+								<a href="#" class="articles__text">Что делать, если индикатор горит, а варочная панель не работает?</a>
+								<span class="articles__date">25 марта 2018</span>
+								<span class="articles__info">9 причин вызвать мастера из сервисного центра и не пытаться устранить поломку самостоятельно</span>
+							</div>
+							<div class="articles__item">
+
+								<a class="articles__pic" href="#">
+									<img src="images/articles_2.jpg" srcset="images/articles_2@2x.jpg 2x,images/articles_2@3x.jpg 3x" class="articles__img">
+								</a>
+								<a href="#" class="articles__text">Преимущества встраиваемых микроволновых печей De Dietrich</a>
+								<span class="articles__date">25 марта 2018</span>
+								<span class="articles__info">В коллекции De Dietrich представлены надежные и технологичные модели с высоким</span>
+							</div>
+							<div class="articles__item">
+								<a class="articles__pic" href="#">
+									<img src="images/articles_3.jpg" srcset="images/articles_3@2x.jpg 2x,images/articles_3@3x.jpg 3x" class="articles__img">
+								</a>
+								<a href="#" class="articles__text">Обзор варочной панели De Dietrich DTG 1127 X</a>
+								<span class="articles__date">25 марта 2018</span>
+								<span class="articles__info">Модель сочетает удобство традиционного газового нагрева и широкие функциональные</span>
+							</div>
+							<div class="articles__item">
+								<a class="articles__pic" href="#">
+									<img src="images/articles_4.jpg" srcset="images/articles_4@2x.jpg 2x,images/articles_4@3x.jpg 3x" class="articles__img">
+								</a>
+								<a href="#" class="articles__text">ICS Система интеллектуального контроля у стиральных машин</a>
+								<span class="articles__date">25 марта 2018</span>
+								<span class="articles__info">Технический прогресс не стоит на месте, и сегодня компания De Dietrich предлагает «умные»</span>
+							</div>
+						</div>
+						<a href="#" class="articles__link">Все Статьи</a>
+					</div>
+				</div>
+
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__col footer__col_first">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Приготовление пищи</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Варочные панели</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Модульные системы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Духовые шкафы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Микроволновые печи</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Пароварки</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Вытяжки</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подогреватели посуды</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Кофемашины</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col footer__col_two">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Мойка и стирка</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Стиральные машины</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Посудомоечные машины</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="menu-footer">
+						<ul class="menu-footer__list menu-footer__list-margin">
+							<li class="menu-footer__title js-menu-footer__title">Охлаждение</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Холодильники</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Винные шкафы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col footer__col_three">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">DeDietrich</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Доставка и оплата</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Подключение</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Гарантия</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col footer__col_last">
+					<div class="footer__text footer__text_first">Интернет-магазин</div>
+					<a href="tel:+74955653990" class="footer__tel">+7 (495) 565-39-90</a>
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__row">
+					<div class="footer__copyright">
+						2004—2018 Официальный магазин De Dietrich
+					</div>
+					<div class="footer__telephones">
+						<div class="l-abuse">
+							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.footer__row -->
+
+			</div>
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src=""></script>
+	<script>
+		window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')
+	</script>
+
+
+	<script type="text/javascript" src="js/script.min.js"></script>
+	<script type="text/javascript" src="js/frontend-works.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>
