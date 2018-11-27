@@ -8,7 +8,7 @@
     height: 28px;
     display: flex;
     align-items: center;
-    
+    font-family: "Gotham Pro Medium";
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -78,11 +78,26 @@
         border-radius: 2px;
       }
     }
+
+    .close__filter {
+      font-family: "Gotham Pro Medium";
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #2e2e2e;
+      text-transform: uppercase;
+      border-bottom: 1px dashed black;
+      display: none;
+    }
   }
 
   &__title {
     margin-bottom: 16px;
-    
+    font-family: "Gotham Pro Medium";
     font-size: 14px;
     font-size: 16px;
     font-weight: 500;
@@ -203,7 +218,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #aa6e4f;
-      
+      font-family: "Gotham Pro Medium";
       padding: 14px 0;
       width: 100%;
       border-radius: 2px;
@@ -214,7 +229,7 @@
   }
 
   &_reset {
-    
+    font-family: "Gotham Pro Medium";
     font-size: 12px;
     font-weight: 500;
     font-style: normal;
@@ -251,54 +266,62 @@
     }
   }
 
-  .close__filter {
-    
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    text-transform: uppercase;
-    border-bottom: 1px dashed black;
-    display: none;
-  }
+
 
   @media screen and (max-width: 768px) {
     width: 100%;
     margin-right: 0;
     margin-bottom: 40px;
 
-    .closed {
-      height: 56px;
-      overflow: hidden;
-      position: relative;
+    &__form {
+      &.closed {
+        height: 56px;
+        overflow: hidden;
+        position: relative;
 
-      * {
-        display: none;
+        .item__close {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          left: 15px;
+          top: 0;
+          border: 0;
+          background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 95%/18px no-repeat;
+        }
+
+        .close__filter {
+          display: block;
+          width: 159px;
+
+          &:last-child {
+            display: none;
+          }
+        }
       }
 
       .item__close {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 15px;
-        top: 0;
         border: 0;
-        background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 95%/18px no-repeat;
+        position: relative;
+        overflow: inherit;
       }
 
-      .close__filter {
+      .close__filter:last-child {
         display: block;
-        width: 159px;
+        position: absolute;
+        right: 20px;
+        bottom: -60px;
+        color: #666666;
+        font-family: "Gotham Pro Medium";
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
 
-        &:last-child {
-          display: none;
-        }
+      .col-md-3 &+.sidebar {
+        display: none;
       }
     }
+
 
     &__item {
       width: 100%;
@@ -349,27 +372,7 @@
       }
     }
 
-    .item__close {
-      border: 0;
-      position: relative;
-      overflow: inherit;
-    }
 
-    .close__filter:last-child {
-      display: block;
-      position: absolute;
-      right: 20px;
-      bottom: -60px;
-      color: #666666;
-      
-      font-size: 12px;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-
-    .sidebar {
-      display: none;
-    }
   }
 
   @media screen and (max-width: 480px) {
@@ -443,33 +446,33 @@
       padding: 0;
     }
 
-    .filter__form {
+    &__form {
       position: relative;
-    }
 
-    .filter__button {
-      padding-top: 19px;
-      padding-bottom: 19px;
-    }
+      .filter__button {
+        padding-top: 19px;
+        padding-bottom: 19px;
+      }
 
-    .item__close {
-      position: absolute;
-      bottom: 0;
-      padding: 0 !important;
-      left: 0;
-    }
+      .item__close {
+        position: absolute;
+        bottom: 0;
+        padding: 0 !important;
+        left: 0;
+      }
 
-    .close__filter:last-child {
-      width: 100%;
-      margin: 5px auto;
-      position: unset;
-      /* min-width: 127px; */
-      white-space: nowrap;
-      max-width: 127px;
-    }
+      .close__filter:last-child {
+        width: 100%;
+        margin: 5px auto;
+        position: unset;
+        /* min-width: 127px; */
+        white-space: nowrap;
+        max-width: 127px;
+      }
 
-    .sidebar {
-      display: none;
+      .sidebar {
+        display: none;
+      }
     }
   }
 }

@@ -322,7 +322,7 @@ $(document).ready(function () {
 			$(this).addClass("active");
 		}
 	});
-	$(".help__row").click(function () {
+	$(".js-help__row").click(function () {
 		if ($(this).hasClass("help__row-open") == false) {
 			$(".help__row")
 				.children(".help__info")

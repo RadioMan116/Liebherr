@@ -1,16 +1,10 @@
 .d-flex {
+
   .articles {
-    &__title {
-      width: 100%;
-      color: #262626;
-      
-      font-size: 36px;
-      font-weight: 500;
-      line-height: 54px;
-    }
+
 
     &__list {
-      width: 75%;
+      width: 100%;
       margin-left: auto;
 
       .sidebar {
@@ -20,18 +14,15 @@
 
 
     &__items {
-      width: 75%;
       display: flex;
       flex-wrap: wrap;
-      margin: -23px -14px;
-
 
     }
 
     &__item {
       width: calc(((100%/12) * 4));
       margin: 0;
-      padding: 23px 14px;
+      padding: 0 14px 23px;
     }
   }
 
@@ -176,7 +167,7 @@
 
     .articles__title {
       color: #262626;
-      
+      font-family: "Gotham Pro Medium";
       font-size: 30px;
       font-weight: 500;
       line-height: 36px;
@@ -204,7 +195,7 @@
 
     .articles__title {
       color: #262626;
-      
+      font-family: "Gotham Pro Medium";
       font-size: 24px;
       font-weight: 500;
       line-height: 32px;
