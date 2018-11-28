@@ -9,4 +9,56 @@
     padding-left: 10px;
   }
 
+  .table {
+    width: 100%;
+
+    &_tr:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+
+    &_td {
+      color: #333333 !important;
+      font-family: Arial !important;
+      font-size: 14px !important;
+      font-weight: 400 !important;
+
+      &:first-child {
+        width: unset;
+        flex-grow: 1;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+    &.shipping-payment__items {
+      tbody {
+        .table {
+          width: 100%;
+
+          &_tr:nth-child(odd) {}
+
+          &_td {
+            width: unset !important;
+            flex-shrink: 1;
+
+            &:first-child {}
+
+            &:last-child {
+              flex-basis: 90px;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
 }

@@ -10,7 +10,7 @@
 
 
   &__header {
-    font-family: 'Gotham Pro Medium';
+
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -18,7 +18,7 @@
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
-    color: #aa6e4f;
+    color: #394791;
     margin-top: 10px;
   }
 
@@ -27,7 +27,7 @@
 
 
   &__link {
-    font-family: 'Gotham Pro Medium';
+
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -35,7 +35,7 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #aa6e4f;
+    color: #394791;
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -85,7 +85,7 @@
   }
 
   &__required {
-    color: #aa6e4f;
+    color: #394791;
   }
 
   &__copyright {
@@ -101,7 +101,7 @@
     margin-bottom: 15px;
 
     a {
-      color: #aa6e4f;
+      color: #394791;
     }
 
     i {
@@ -125,21 +125,21 @@
     }
 
     a {
-      color: #aa6e4f;
+      color: #394791;
     }
   }
 
   &__file {
     border-radius: 2px;
-    border: solid 1px #aa6e4f;
-    font-family: 'Gotham Pro Medium';
+    border: solid 1px #394791;
+
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.71;
     letter-spacing: normal;
-    color: #aa6e4f;
+    color: #394791;
     text-transform: uppercase;
     appearance: none;
     position: relative;

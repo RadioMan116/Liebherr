@@ -11,9 +11,12 @@
 
 	&__col {
 		width: 25%;
+		flex-basis: 220px;
+		flex-grow: 1;
 
 		.menu-footer__item {
 			width: 205px;
+			cursor: pointer;
 		}
 
 		&_3 {
@@ -36,6 +39,7 @@
 
 		&_last {
 			width: 15%;
+			flex-basis: 180px;
 			display: flex;
 			flex-direction: column;
 		}
@@ -107,13 +111,36 @@
 	}
 
 	&__telephones {
-		width: 25%;
 		display: flex;
 		min-width: 203px;
 		justify-content: flex-end;
 	}
 
-	@media screen and (max-width: 768px) {
+	.menu-footer {
+		&__title {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 36px;
+			color: #333333;
+			cursor: pointer;
+		}
+
+		&__link {
+			color: #666666;
+			font-family: Arial;
+			font-size: 13px;
+			line-height: 20px;
+		}
+
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+	}
+
+
+	@media screen and (max-width: 989px) {
 		.footer {
 			&__col {
 				width: 33.3%;
@@ -124,34 +151,44 @@
 					margin-bottom: 14px;
 					display: flex;
 					flex-wrap: wrap;
+					flex-grow: 0;
+					flex-basis: unset;
+					height: 130px;
 				}
 			}
 
-			&__text {
-				width: 50%;
-				flex: 1 1 150px;
-
-				&_first {
-					order: 1;
-				}
-
-				&_two {
-					order: 2;
-				}
-
-				&_three {
-					order: 4
-				}
+			&__email {
+				margin: 12px 0;
 			}
 
-			&__tel {
+			&__text,
+			&__tel,
+			&__email {
+				text-align: left;
 				width: 50%;
-				order: 3;
 			}
 		}
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 768px) {
+		.footer {
+			&__col {
+				flex-basis: unset;
+
+				.menu-footer__item {
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+
+		.menu-footer__list {
+			display: block;
+			height: unset;
+		}
+	}
+
+	@media screen and (max-width: 680px) {
 		padding: 0 0 19px;
 
 		* {
@@ -165,16 +202,11 @@
 		&__col {
 			width: 100% !important;
 			margin-bottom: 0 !important;
+			border-bottom: 1px solid #eeeeee;
 
-			&_three {
-				.menu-footer {
-					border-bottom: 1px solid #494949;
-					margin-bottom: 20px;
-
-					&__title {
-						padding-bottom: 16px !important;
-					}
-				}
+			&_last {
+				height: unset !important;
+				margin-top: 1rem;
 			}
 		}
 
@@ -200,37 +232,15 @@
 			justify-content: center;
 		}
 
-		&__text {
-			width: 100% !important;
-			flex: 1 1 auto !important;
 
-			&_first {
-				order: 1;
-			}
-
-			&_two {
-				order: 3 !important;
-			}
-
-			&_three {
-				order: 4
-			}
-		}
-
-		&__tel {
-			width: 100% !important;
-			flex: 1 1 auto !important;
-			order: 2 !important;
-		}
 
 		.menu-footer {
-			height: 53px;
+			height: 60px;
 			overflow: hidden;
 
 			&__title {
-				padding: 16px;
-				border-top: 1px solid #494949;
-				background: url("https://icongr.am/entypo/chevron-down.svg?color=eeeeee") 97%/18px no-repeat;
+				padding: 16px 16px 16px 0;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") 97%/18px no-repeat;
 			}
 
 			&__item {
@@ -247,39 +257,14 @@
 			overflow: unset;
 
 			.menu-footer__title {
-				background: url("https://icongr.am/entypo/chevron-up.svg?color=eeeeee") 97%/18px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-up.svg?color=666666") 97%/18px no-repeat;
 			}
 		}
 	}
+
+	@media screen and (max-width: 480px) {}
 }
 
-.menu-footer {
-	&__title {
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 36px;
-		color: #333333;
-	}
-
-	&__link {
-		color: #666666;
-		font-family: Arial;
-		font-size: 13px;
-		line-height: 20px;
-	}
-
-	&__list {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-
-		&-margin {
-			.menu-footer__title {
-				margin-top: 20px;
-			}
-		}
-	}
-}
 
 .abuse-popup-container {
 	// height: 100vh;

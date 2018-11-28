@@ -10,7 +10,7 @@
     &__title {
         width: 100%;
         margin: 4px 0 32px;
-        
+
         font-size: 36px;
         font-weight: 500;
         font-style: normal;
@@ -59,7 +59,7 @@
             display: flex;
             max-width: 120px;
             max-height: 120px;
-            align-items: baseline;
+            align-items: stretch;
         }
 
         .title__span,
@@ -78,7 +78,7 @@
                 line-height: 1.5;
                 letter-spacing: normal;
                 color: #2e2e2e;
-                
+
             }
         }
 
@@ -117,7 +117,7 @@
                 line-height: 1.5;
                 letter-spacing: normal;
                 color: #2e2e2e;
-                
+
             }
 
             .decr,
@@ -158,7 +158,7 @@
             letter-spacing: normal;
             text-align: left;
             color: #2e2e2e;
-            
+
 
             strong {
                 font-size: 24px;
@@ -183,7 +183,7 @@
         letter-spacing: normal;
         text-align: left;
         color: #2e2e2e;
-        
+
     }
 
     .swiper-slide {
@@ -245,7 +245,7 @@
         max-width: 100%;
 
         label {
-            
+
             font-size: 14px;
             font-weight: normal;
             font-style: normal;
@@ -257,13 +257,13 @@
             flex-basis: 200px;
 
             .sof-req {
-                color: #aa6e4f;
+                color: #394791;
             }
         }
     }
 
     .form__title {
-        
+
         font-size: 26px;
         font-weight: 500;
         font-style: normal;
@@ -343,11 +343,11 @@
             line-height: 1.5;
             letter-spacing: normal;
             text-align: left;
-            // color: #aa6e4f;
+            // color: #394791;
             margin: 31px 0 41px;
 
             a {
-                color: #aa6e4f;
+                color: #394791;
             }
         }
 
@@ -355,7 +355,7 @@
             width: 272px;
             height: 46px;
             border-radius: 2px;
-            background-color: #aa6e4f;
+            background-color: #394791;
             color: white;
             margin-left: -25px;
             text-transform: uppercase;

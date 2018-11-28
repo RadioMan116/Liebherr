@@ -30,7 +30,7 @@
 
   &__row {
     width: 100%;
-    font-family: 'Gotham Pro Medium';
+
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -50,7 +50,7 @@
 
     &-open {
       background: url("https://icongr.am/fontawesome/caret-up.svg?color=666666") 99% 20px/20px no-repeat;
-      color: #aa6e4f;
+      color: #394791;
     }
 
     &:hover {
@@ -63,7 +63,7 @@
   }
 
   &__info {
-    font-family: 'Gotham Pro';
+
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -80,19 +80,19 @@
   @media screen and (max-width: 768px) {
     &__row {
       color: #2e2e2e;
-     
+
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
 
       &-open {
-        color: #aa6e4f;
+        color: #394791;
       }
     }
 
     .help__info {
       color: #2e2e2e;
-      font-family: "Gotham Pro";
+
       font-size: 14px;
       line-height: 22px;
     }
@@ -105,12 +105,12 @@
       line-height: 24px;
 
       &-open {
-        color: #aa6e4f;
+        color: #394791;
       }
     }
 
     &__info {
-      font-family: "Gotham Pro";
+
       font-size: 14px;
       line-height: 22px;
     }

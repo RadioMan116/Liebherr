@@ -22,14 +22,18 @@
     display: flex;
     align-items: center;
     padding-left: 11px;
+    padding: 5px 10px 5px 0;
+
     &:nth-child(1) {
       background: url("../images/work-1.svg") 11px 50%/24px no-repeat;
     }
+
     &:nth-child(2) {
       background: url("../images/work-2.svg") 11px 50%/24px no-repeat;
       border-top: 1px solid #eeeeee;
       border-bottom: 1px solid #eeeeee;
     }
+
     &:nth-child(3) {
       background: url("../images/work-3.svg") 11px 50%/24px no-repeat;
     }
@@ -50,9 +54,8 @@
     margin-left: 47px;
   }
 
-  &__item {
-    padding: 5px 0;
-  }
+
+
 }
 
 .yandex {
@@ -62,8 +65,7 @@
   border: solid 1px #eeeeee;
   padding: 15%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 
   &:hover {
     box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
@@ -71,24 +73,25 @@
 
   &__pic {
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__link {
     &_form {
       margin-top: 21px;
-
       font-size: 12px;
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
       line-height: 2;
       letter-spacing: normal;
-      text-align: left;
+      text-align: center;
       text-transform: uppercase;
-      color: #aa6e4f;
+      color: #394791;
       padding: 7px 13px 5px 14px;
       border-radius: 2px;
-      border: solid 1px #aa6e4f;
+      border: solid 1px #394791;
       text-decoration: none !important;
       white-space: nowrap;
     }
@@ -170,10 +173,10 @@
     letter-spacing: normal;
     text-align: left;
     text-transform: uppercase;
-    color: #aa6e4f;
+    color: #394791;
     padding: 7px 13px 5px 14px;
     border-radius: 2px;
-    border: solid 1px #aa6e4f;
+    border: solid 1px #394791;
     text-decoration: none !important;
     width: 150px !important;
   }

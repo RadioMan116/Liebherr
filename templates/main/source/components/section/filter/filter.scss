@@ -73,7 +73,7 @@
         right: 2px;
         bottom: 2px;
         left: 2px;
-        background: #aa6e4f;
+        background: #394791;
         /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
         border-radius: 2px;
       }
@@ -117,7 +117,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-family: "Gotham Pro";
+    
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -166,7 +166,7 @@
       background-position: 0 0;
       height: 4px;
       border-radius: 2px;
-      background-color: #aa6e4f;
+      background-color: #394791;
     }
 
     .ui-slider-handle {
@@ -174,7 +174,7 @@
       height: 12px;
       transform: rotate(-45deg);
       border-radius: 2px;
-      background-color: #aa6e4f;
+      background-color: #394791;
       border: none;
       padding: 0;
       position: absolute;
@@ -217,12 +217,12 @@
       line-height: normal;
       letter-spacing: normal;
       text-align: center;
-      color: #aa6e4f;
+      color: #394791;
      
       padding: 14px 0;
       width: 100%;
       border-radius: 2px;
-      border: solid 1px #aa6e4f;
+      border: solid 1px #394791;
       text-transform: uppercase;
       margin-bottom: 19px;
     }
@@ -237,9 +237,9 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #aa6e4f;
+    color: #394791;
     text-transform: uppercase;
-    border-bottom: 1px dashed #aa6e4f;
+    border-bottom: 1px dashed #394791;
   }
 
   &__item {
