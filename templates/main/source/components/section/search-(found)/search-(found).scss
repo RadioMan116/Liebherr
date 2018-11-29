@@ -4,11 +4,18 @@
   align-items: baseline;
   align-content: baseline;
 
+  .shipping-payment__item {
+    padding-top: 2rem;
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+  }
+
   &__form {
     margin-top: 22px;
     width: 100%;
     // height: 46px;
     display: flex;
+    margin-bottom: 1rem;
 
     input[type='text'] {
       flex-grow: 1;
@@ -30,7 +37,6 @@
 
   .search__info {
     color: #262626;
-    
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -39,11 +45,25 @@
     margin-top: 24px;
     margin-bottom: 34px;
   }
+
   @media screen and (max-width: 480px) {
     .catalog__item {
       width: 100%;
       margin-right: 0;
       height: 100%;
+    }
+
+    &__form {
+      flex-direction: column;
+
+      input[type='text'] {
+        margin-bottom: 1rem;
+        height: 40px;
+      }
+
+      input[type='submit'] {
+        width: 100%;
+      }
     }
   }
 }

@@ -262,7 +262,14 @@
 		}
 	}
 
-	@media screen and (max-width: 480px) {}
+	@media screen and (max-width: 480px) {
+		.checkbox__oferta {
+			color: #666666;
+			font-family: Arial;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
 }
 
 
@@ -283,12 +290,8 @@
 	-webkit-box-shadow: 0 0 10px -2px #748690;
 	padding: 35px 31px 27px;
 	background: #fff;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	display: none;
 	flex-wrap: wrap;
-	// justify-content: center;
 	z-index: 3;
 	max-height: 100%;
 	overflow-y: auto;
@@ -297,8 +300,10 @@
 		display: flex;
 	}
 
-	@media screen and (max-width: 768px) {
-		width: 83.78128982174505%;
+	@media screen and (max-width: 768px) {}
+
+	@media screen and (max-width: 620px) {
+		width: auto;
 	}
 
 	@media screen and (max-width: 375px) {
@@ -316,20 +321,29 @@
 .checkbox-custom {
 	position: relative;
 	/* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
-	width: 20px;
+	width: 16px;
 	/* Обязательно задаем ширину */
-	height: 20px;
+	height: 16px;
 	/* Обязательно задаем высоту */
-	border: 2px solid #ccc;
-	border-radius: 3px;
+	border-radius: 2px;
+	border: 1px solid #394791;
+	background-color: #ffffff;
+	flex-shrink: 0;
+	margin-top: 4px;
 }
+
+.checkbox__oferta {
+	color: #666666;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+}
+
 
 /* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
 .checkbox-custom,
-.label {
-	display: inline-block;
-	vertical-align: middle;
-}
+.label {}
 
 /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
 .checkbox:checked+.checkbox-custom::before {
@@ -338,12 +352,10 @@
 	display: block;
 	/* Делаем его блочным элементом */
 	position: absolute;
-	/* Позиционируем его абсолютным образом */
-	/* Задаем расстояние от верхней, правой, нижней и левой границы */
 	top: 2px;
-	right: 2px;
 	bottom: 2px;
 	left: 2px;
+	right: 2px;
 	@include color;
 	/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 	border-radius: 2px;

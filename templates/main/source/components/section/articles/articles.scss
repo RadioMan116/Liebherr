@@ -12,7 +12,6 @@
     }
 
     &__title {
-
         font-size: 32px;
         font-weight: 500;
         font-style: normal;
@@ -27,7 +26,7 @@
 
     &__link {
         margin-left: auto;
-        padding: 14px;
+        padding: 10px;
         border-radius: 2px;
         border: solid 1px #394791;
         font-size: 14px;
@@ -113,8 +112,17 @@
     }
 
     @media screen and (max-width: 768px) {
-        &__items {
-            // overflow-x: scroll;
+        &__title {
+            color: #212121;
+            font-family: "Roboto Condensed";
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
         }
 
         &__pic {
@@ -133,6 +141,7 @@
             }
         }
     }
+
 
     @media screen and (max-width: 480px) {
         &__items {
@@ -156,8 +165,20 @@
 
         &__link {
             margin-top: 0;
-            width: 240px;
+            width: 100%;
             text-align: center;
+            order: 3;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        &__pic {
+            img {
+                height: 100%;
+            }
         }
     }
 }

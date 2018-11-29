@@ -308,7 +308,7 @@ $(document).ready(function () {
 	// 	console.log('1')
 	// 	$('.header__dropdown-menu').appendTo('.menu__list')
 	// }
-	if (windowWidth2 <= 768) {
+	if (windowWidth2 <= 965) {
 		$('.logo').appendTo('.header__block_top>.container')
 	}
 

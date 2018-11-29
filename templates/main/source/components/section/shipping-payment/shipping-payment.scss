@@ -25,7 +25,7 @@
       flex-wrap: wrap;
       margin: 0 auto;
       position: relative;
-      margin-bottom: 10px;
+      margin-bottom: 2rem;
       align-content: baseline;
       max-width: 100%;
 
@@ -96,13 +96,23 @@
         span {
           width: 100%;
           padding: 5px 0;
-          display: block;
+          font-family: Arial;
+          font-weight: 700;
         }
 
         strong {
           display: block;
           margin-bottom: 1rem;
         }
+      }
+
+      ol {
+        color: #333333;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        padding-left: 0;
       }
 
       ul {
@@ -126,6 +136,7 @@
         line-height: 28px;
         text-align: left;
         margin-left: 2rem;
+        font-weight: 400;
 
         &:first-child {
           margin-top: 1rem;
@@ -187,6 +198,7 @@
         }
       }
 
+
       .maps {
         width: 100%;
         border-top: 1px solid #e2e2e2;
@@ -197,7 +209,9 @@
     }
 
 
-    &__item {}
+    &__item {
+      width: 100%;
+    }
 
     &__pic {
       margin: 0 0 24px;
@@ -333,32 +347,6 @@
         font-size: 14px;
         line-height: 24px;
       }
-
-
-
-
-      &.return-exchange {
-        ul {
-          font-size: 14px;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.57;
-          letter-spacing: normal;
-          text-align: left;
-          color: #2e2e2e;
-          list-style-type: decimal;
-        }
-
-        li {
-          padding-left: 15px;
-          margin-left: 1rem;
-
-          &::before {
-            display: none;
-          }
-        }
-      }
     }
 
     &__pic {
@@ -453,21 +441,28 @@
         }
 
         h2 {
-          color: #262626;
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 32px;
+          color: #333333;
+          font-family: "Roboto Condensed";
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+
+        ol {
+          margin-bottom: 0;
         }
 
         ul {
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
+          margin-bottom: 0;
         }
 
         li {
           color: #262626;
           font-size: 14px;
+          margin-bottom: 1rem;
         }
 
         h4 {

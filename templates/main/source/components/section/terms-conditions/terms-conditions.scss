@@ -1,11 +1,7 @@
 .terms-conditions {
-  display: flex;
-  flex-wrap: wrap;
-
-  &__list {
-    margin-top: 0;
+  ol {
+    li {
+      list-style-position: inside;
+    }
   }
- .shipping-payment__text-b{
-   margin-bottom: 0;
- }
 }

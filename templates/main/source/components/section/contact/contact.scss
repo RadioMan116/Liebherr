@@ -13,7 +13,7 @@
     label {
       margin-left: 30px;
       color: #666666;
-      
+
       font-size: 12px;
       line-height: 18px;
       display: flex;
@@ -41,8 +41,6 @@
     margin-right: 20px;
   }
 
-
-
   &__item {
     display: flex;
     flex-wrap: wrap
@@ -53,18 +51,13 @@
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+
+    span {
+      display: block !important;
+      font-weight: 400 !important;
+    }
   }
 
-  .shipping-payment__text-b {
-    margin-bottom: 9px;
-  }
-
-  .shipping-payment__text {
-    margin-bottom: 9px;
-    margin-top: 9px;
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .return-exchange__name {
     display: none;
@@ -112,21 +105,25 @@
       padding-right: 0;
     }
 
-    .return-exchange__name {
-      display: flex;
-      font-size: 14px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 2.29;
-      letter-spacing: normal;
-      text-align: left;
-      color: #2e2e2e;
+    .return-exchange__input {
+      margin-bottom: 1rem;
     }
 
-    .return-exchange__input::placeholder,
-    .return-exchange__textarea::placeholder {
-      opacity: 0;
-    }
+    // .return-exchange__name {
+    //   display: flex;
+    //   font-size: 14px;
+    //   font-weight: normal;
+    //   font-style: normal;
+    //   font-stretch: normal;
+    //   line-height: 2.29;
+    //   letter-spacing: normal;
+    //   text-align: left;
+    //   color: #2e2e2e;
+    // }
+
+    // .return-exchange__input::placeholder,
+    // .return-exchange__textarea::placeholder {
+    //   opacity: 0;
+    // }
   }
 }

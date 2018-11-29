@@ -1,41 +1,19 @@
 .return-exchange {
-  display: flex;
-  flex-wrap: wrap;
 
   // &__title {}
 
   // &__items {}
 
   // &__item {}
-
-
-  &__header {
-
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #394791;
-    margin-top: 10px;
+  &__background {
+    padding: 24px;
+    background-color: #f8f8f8;
   }
 
-  // &__text {}
-
-
-
   &__link {
-
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: #394791;
+    font-family: Arial;
+    font-size: 14px;
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -90,14 +68,10 @@
 
   &__copyright {
     width: 100%;
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
     color: #666666;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
     margin-bottom: 15px;
 
     a {
@@ -132,7 +106,6 @@
   &__file {
     border-radius: 2px;
     border: solid 1px #394791;
-
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -169,6 +142,8 @@
     cursor: pointer
   }
 
+
+
   @media screen and (max-width: 480px) {
     &__attachment {
       padding-left: 0;
@@ -184,12 +159,17 @@
 
     &__file {
       margin-left: 0 !important;
+      flex-grow: 0 !important;
     }
 
     &__attachment__container {
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+
+    &__background {
+      padding: 6px;
     }
   }
 }

@@ -1,6 +1,6 @@
 .header__dropdown-menu {
 	display: flex;
-	margin-left: 70px;
+	margin-left: 6%;
 	margin-top: auto;
 	margin-bottom: auto;
 	flex-grow: 1;
@@ -120,7 +120,47 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
+	.header__dropdown-menu {
+		margin-left: 1%;
+
+		.dropdown-menu__title {
+			padding: 2% 8% 2% 4%;
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 101%/14px no-repeat;
+
+			&:hover {
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 101%/14px no-repeat;
+			}
+		}
+	}
+
+
+}
+
+@media (max-width: 1000px) {
+	.header__dropdown-menu {
+
+		.dropdown-menu {
+			margin-left: 0;
+
+			&:nth-child(2) {
+				margin-left: 0;
+			}
+
+			&:nth-child(3) {
+				margin-left: 0;
+			}
+		}
+
+		.header__telephones {
+			margin-left: 0;
+		}
+	}
+
+
+}
+
+@media (max-width: 965px) {
 	.header__dropdown-menu {
 		flex-wrap: wrap;
 		margin-left: 0;

@@ -42,13 +42,13 @@
     color: #666666;
     font-size: 14px;
     line-height: 24px;
-    
+
   }
 
   &__text {
     width: 100%;
     color: #2e2e2e;
-    
+
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -66,7 +66,7 @@
 
   &__link {
     color: #2e2e2e;
-    
+
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 3px;
@@ -104,6 +104,208 @@
 
     .reviews__section {
       justify-content: end !important;
+    }
+  }
+}
+
+.reviews {
+  &__title {
+
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: left;
+    color: #262626;
+    margin: 46px 0 34px;
+  }
+
+  &__top {
+    height: 60px;
+    background-color: #ffffff;
+    border: solid 1px #eeeeee;
+    display: flex;
+    align-items: center;
+    padding: 0 12px 0 18px;
+    justify-content: space-between;
+  }
+
+  &__all {
+
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 20px;
+  }
+
+  &__link {
+
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    @include button;
+
+
+  }
+
+  &__section {
+    display: flex;
+  }
+
+  &-list {
+    &__field {
+      display: flex;
+      // margin-bottom: 19px;
+      // &:last-child{
+      //     margin-bottom: 0;
+      // }
+      padding: 9.5px 0;
+    }
+
+    &__col {
+      &:first-child {
+        width: 200px;
+        flex-shrink: 0;
+
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #262626;
+      }
+
+      &[itemprop="author"] {
+
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #262626;
+      }
+
+      &_date {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e2e2e;
+      }
+
+      &_desc {
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.57;
+        letter-spacing: normal;
+        text-align: left;
+        color: #262626;
+      }
+    }
+
+    &__model {
+
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: #262626;
+    }
+
+    &__item {
+      padding: 39px 0 37px;
+      border-bottom: 1px solid #eeeeee;
+    }
+  }
+
+  .ratings {
+    display: flex;
+
+    &__star {
+      width: 24px;
+      height: 24px;
+      background: url("../images/star.svg") no-repeat;
+      background-position: center;
+      background-size: 21px 20px;
+    }
+
+    &__none {
+      background: url("../images/rectangle-2.svg") no-repeat;
+      background-position: center;
+      background-size: 21px 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .reviews__top {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: unset;
+      padding: 16px 24px;
+    }
+
+    .reviews__section {
+      width: 100%;
+      display: flex;
+      margin-bottom: 23px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .reviews__link {
+      width: 80%;
+      text-align: center;
+    }
+
+    .ratings__star {
+      background-size: 100%;
+    }
+
+    .reviews-list {
+      &__field {
+        flex-wrap: wrap;
+      }
+
+      &__col[itemprop="author"] {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+
+      &__col {
+        margin-bottom: 15px;
+      }
+
+      &__col_date {
+        margin-left: auto;
+      }
+
+      &__item {
+        padding: 15px 0;
+      }
     }
   }
 }
