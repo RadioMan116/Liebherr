@@ -41,7 +41,7 @@
 		@media screen and (max-width: 768px) {}
 
 		@media screen and (max-width: 620px) {
-			width: auto;
+			width: auto !important;
 		}
 
 		@media screen and (max-width: 375px) {
