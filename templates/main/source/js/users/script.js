@@ -227,6 +227,10 @@ $(document).ready(function () {
 		$(".js-header__submit").hide();
 
 	});
+	$(".catalog__sort").click(function () {
+		$(".catalog__li").removeClass('active');
+		$(this).parent().addClass('active');
+	});
 
 	$(document).on('click', '[data-ajax]', function (e) {
 		e.stopPropagation();

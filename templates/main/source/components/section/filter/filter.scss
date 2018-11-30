@@ -8,7 +8,7 @@
     height: 28px;
     display: flex;
     align-items: center;
-   
+
     font-size: 14px;
     font-weight: 500;
     font-style: normal;
@@ -26,7 +26,7 @@
     transition: 0.4s;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
     transition: 0.4s;
     margin-bottom: 28px;
 
@@ -42,15 +42,16 @@
 
       /* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
       &-custom {
-        position: relative;
         /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
-        width: 20px;
+        width: 100%;
         /* Обязательно задаем ширину */
-        height: 20px;
+        height: 100%;
         /* Обязательно задаем высоту */
-        border: 2px solid #ccc;
-        border-radius: 3px;
-        margin-left: -25px;
+        border-radius: 2px;
+        background-color: #e7e7e7;
+        padding: 3px 34px 3px 5px;
+
+        &+.checkbox-custom {}
       }
 
       /* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
@@ -60,27 +61,53 @@
         vertical-align: middle;
       }
 
-      /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
-      &:checked+.checkbox-custom::before {
-        content: "";
-        /* Добавляем наш псевдоэлемент */
-        display: block;
-        /* Делаем его блочным элементом */
+      &-number {
         position: absolute;
-        /* Позиционируем его абсолютным образом */
-        /* Задаем расстояние от верхней, правой, нижней и левой границы */
-        top: 2px;
-        right: 2px;
-        bottom: 2px;
-        left: 2px;
-        background: #394791;
+        right: 10px;
+        top: 4px;
+        color: #999999;
+      }
+
+      /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+      &:hover+.checkbox-custom,
+        {
+        color: #ffffff;
+        background: #394791 !important;
         /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
-        border-radius: 2px;
+      }
+
+      &:checked+.checkbox-custom,
+        {
+        color: #ffffff;
+        background: #d82300;
+        /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+      }
+
+      &:checked+.checkbox-custom+.checkbox-number {
+        color: #ffffff;
+      }
+
+      &:hover+.checkbox-custom+.checkbox-number {
+        color: transparent;
+
+        &::before {
+          content: "x";
+          /* Добавляем наш псевдоэлемент */
+          display: flex;
+          /* Делаем его блочным элементом */
+          position: absolute;
+          top: -2px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          justify-content: flex-end;
+          color: white;
+        }
       }
     }
 
     .close__filter {
-     
+
       font-size: 16px;
       font-weight: 500;
       font-style: normal;
@@ -96,18 +123,14 @@
   }
 
   &__title {
-    margin-bottom: 16px;
-   
-    font-size: 14px;
+    color: #333333;
+    font-family: "Roboto Condensed";
     font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #2e2e2e;
-    background: url("https://icongr.am/entypo/chevron-up.svg?color=d6d6d6") 97%/18px no-repeat;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 17px;
+    background: url("https://icongr.am/entypo/chevron-up.svg?color=d6d6d6") 100% 0px/18px no-repeat;
   }
 
   &__container {}
@@ -117,7 +140,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
+
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -137,13 +160,25 @@
     }
 
     span {
+      color: #666666;
+      font-family: Arial;
+      font-size: 13px;
+      line-height: 20px;
+      height: 34px;
       border-radius: 2px;
-      border: solid 1px #d6d6d6;
-      width: 45%;
+      border: 1px solid #d6d6d6;
+      background-color: #ffffff;
       display: flex;
       padding-left: 3%;
       overflow: hidden;
+      align-items: center;
+
+      &+span {
+        margin-left: 10px;
+      }
     }
+
+
   }
 
   &__slider {
@@ -170,15 +205,14 @@
     }
 
     .ui-slider-handle {
-      width: 12px;
-      height: 12px;
-      transform: rotate(-45deg);
+      width: 15px;
+      height: 15px;
       border-radius: 2px;
-      background-color: #394791;
-      border: none;
+      border: 3px solid #394791;
+      background-color: #ffffff;
       padding: 0;
       position: absolute;
-      z-index: 1;
+      z-index: 3;
     }
   }
 
@@ -187,18 +221,15 @@
     flex-wrap: wrap;
 
     label {
-      width: 100%;
-      font-size: 14px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      letter-spacing: normal;
-      text-align: left;
-      color: #2e2e2e;
-      word-wrap: break-word;
-      word-break: break-all;
-      padding-left: 25px;
-      margin-bottom: 14px;
+      width: unset;
+      color: #333333;
+      font-family: Arial;
+      font-size: 13px;
+      line-height: 20px;
+      margin-bottom: 10px;
+      position: relative;
+      display: flex;
+      margin-right: 12px;
     }
   }
 
@@ -218,7 +249,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #394791;
-     
+
       padding: 14px 0;
       width: 100%;
       border-radius: 2px;
@@ -229,7 +260,7 @@
   }
 
   &_reset {
-   
+
     font-size: 12px;
     font-weight: 500;
     font-style: normal;
@@ -252,7 +283,7 @@
 
   &__close {
     flex-grow: 1;
-    height: 50px;
+    height: 80px;
     width: 100%;
     padding: 16px 0 0;
 
@@ -262,7 +293,7 @@
 
     .filter__title {
       display: block;
-      background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/18px no-repeat;
+      background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 100% 0px/18px no-repeat;
     }
   }
 
@@ -311,7 +342,7 @@
         right: 20px;
         bottom: -60px;
         color: #666666;
-       
+
         font-size: 12px;
         font-weight: 500;
         text-transform: uppercase;

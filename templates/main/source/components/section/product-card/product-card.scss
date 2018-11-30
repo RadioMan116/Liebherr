@@ -324,7 +324,7 @@
       flex-wrap: wrap;
 
       &:hover {
-        box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+       box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
       }
 
       &__title {
@@ -384,7 +384,7 @@
       flex-wrap: wrap;
 
       &:hover {
-        box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+       box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
       }
 
       &__title {
@@ -674,7 +674,7 @@
     }
 
     .swiper-slide:hover {
-      box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.14);
+     box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
     }
   }
 
