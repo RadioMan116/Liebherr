@@ -47,7 +47,7 @@
 
   &__text {
     width: 100%;
-    color: #2e2e2e;
+       color: #333333;
 
     font-size: 14px;
     font-weight: 500;
@@ -65,7 +65,7 @@
   }
 
   &__link {
-    color: #2e2e2e;
+       color: #333333;
 
     font-size: 14px;
     line-height: 24px;
@@ -110,15 +110,11 @@
 
 .reviews {
   &__title {
-
+    color: #333333;
+    font-family: "Roboto Condensed";
     font-size: 26px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 0.92;
-    letter-spacing: normal;
-    text-align: left;
-    color: #262626;
+    font-weight: 400;
+    line-height: 24px;
     margin: 46px 0 34px;
   }
 
@@ -133,15 +129,10 @@
   }
 
   &__all {
-
+    color: #666666;
+    font-family: Arial;
     font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    text-align: left;
-    color: #2e2e2e;
+    line-height: 24px;
     margin-left: 20px;
   }
 
@@ -177,27 +168,18 @@
       &:first-child {
         width: 200px;
         flex-shrink: 0;
-
+        color: #333333;
+        font-family: Arial;
         font-size: 14px;
-        font-weight: 500;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.71;
-        letter-spacing: normal;
-        text-align: left;
-        color: #262626;
+        font-weight: 700;
       }
 
       &[itemprop="author"] {
-
+        color: #333333;
+        font-family: "Roboto Condensed";
         font-size: 20px;
-        font-weight: 500;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-        text-align: left;
-        color: #262626;
+        font-weight: 400;
+        line-height: 24px;
       }
 
       &_date {
@@ -208,32 +190,23 @@
         line-height: 1.71;
         letter-spacing: normal;
         text-align: left;
-        color: #2e2e2e;
+           color: #333333;
       }
 
       &_desc {
         margin-right: 5px;
+        color: #333333;
+        font-family: Arial;
         font-size: 14px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.57;
-        letter-spacing: normal;
-        text-align: left;
-        color: #262626;
       }
     }
 
     &__model {
-
+      color: #333333;
+      font-family: Arial;
       font-size: 14px;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.71;
-      letter-spacing: normal;
-      text-align: left;
-      color: #262626;
+      font-weight: 700;
+      line-height: 24px;
     }
 
     &__item {

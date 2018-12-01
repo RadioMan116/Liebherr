@@ -16,12 +16,13 @@
     line-height: 1.71;
     letter-spacing: normal;
     text-align: left;
-    color: #2e2e2e;
+       color: #333333;
     margin-bottom: 31px;
   }
 
   &__form {
-    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    background-color: #f8f8f8;
     padding: 16px 20px 25px;
     transition: 0.4s;
     display: flex;
@@ -107,22 +108,18 @@
     }
 
     .close__filter {
-
+      color: #394791;
+      font-family: "Roboto Condensed";
       font-size: 16px;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: center;
-      color: #2e2e2e;
+      font-weight: 400;
+      line-height: 24px;
       text-transform: uppercase;
-      border-bottom: 1px dashed black;
       display: none;
     }
   }
 
   &__title {
+    display: flex;
     color: #333333;
     font-family: "Roboto Condensed";
     font-size: 16px;
@@ -131,6 +128,42 @@
     line-height: 24px;
     padding-right: 17px;
     background: url("https://icongr.am/entypo/chevron-up.svg?color=d6d6d6") 100% 0px/18px no-repeat;
+  }
+
+  &-tip {
+    background: url('../images/bt-tip.png') no-repeat 0 0/14px;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    margin: .35em 0 .35em .35em;
+    position: relative;
+    flex-shrink: 0;
+
+    &[title]:hover {
+      background: url('../images/bt-tip-hover.png') no-repeat 0 0/14px;
+
+      &:after {
+        content: attr(title);
+        position: absolute;
+        bottom: 100%;
+        left: -150px;
+        width: 363px;
+        box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
+        border-radius: 3px;
+        background-color: #ffffff;
+        padding: 12px 17px;
+        z-index: 99;
+        color: #333333;
+        font-family: Arial;
+        font-size: 12px;
+        line-height: 18px;
+
+        &:first-line {
+          color: #ff0000;
+          font-variant: small-caps;
+        }
+      }
+    }
   }
 
   &__container {}
@@ -230,6 +263,21 @@
       position: relative;
       display: flex;
       margin-right: 12px;
+
+      .filter-tip {
+        position: absolute;
+        right: -20px;
+      }
+
+      &.disabled {
+        pointer-events: none;
+
+        * {
+          color: #999999 !important;
+
+        }
+
+      }
     }
   }
 
@@ -239,6 +287,7 @@
     justify-content: center;
 
     input {
+      display: none;
       -webkit-appearance: none;
       background: transparent;
       font-size: 14px;
@@ -260,25 +309,29 @@
   }
 
   &_reset {
+    &:before {
+      content: 'x';
+      margin-right: 20px;
+    }
 
-    font-size: 12px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: #394791;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
     text-transform: uppercase;
-    border-bottom: 1px dashed #394791;
   }
 
   &__item {
-    overflow: hidden;
+    // overflow: hidden;
     height: unset;
     border-bottom: 1px solid #eeeeee;
     padding: 16px 0 24px !important;
     width: 100%;
+
+    &.item__close {
+      display: none;
+    }
   }
 
   &__close {
@@ -317,12 +370,11 @@
           left: 15px;
           top: 0;
           border: 0;
-          background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 95%/18px no-repeat;
+          background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 95%/18px #f8f8f8 no-repeat;
         }
 
         .close__filter {
           display: block;
-          width: 159px;
 
           &:last-child {
             display: none;
@@ -330,7 +382,19 @@
         }
       }
 
+      .filter__checkbox {
+        label.parent-tip {
+          margin-right: 30px;
+
+          .filter-tip[title]:hover:after {
+            left: -240px;
+            width: 280px;
+          }
+        }
+      }
+
       .item__close {
+        display: block;
         border: 0;
         position: relative;
         overflow: inherit;
@@ -340,12 +404,14 @@
         display: block;
         position: absolute;
         right: 20px;
-        bottom: -60px;
-        color: #666666;
-
-        font-size: 12px;
-        font-weight: 500;
+        bottom: -20px;
+        color: #394791;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
         text-transform: uppercase;
+        text-align: center;
       }
 
       .col-md-3 &+.sidebar {
@@ -380,13 +446,13 @@
       width: 40%;
     }
 
-    &__checkbox {
+    & &__checkbox {
       display: flex;
       flex-grow: 1;
       flex-wrap: wrap;
 
       label {
-        width: 33%;
+        width: calc(33%-12px);
       }
     }
 
@@ -395,12 +461,7 @@
       justify-content: unset;
       align-items: center;
 
-      input {
-        width: 232px;
-        height: 44px;
-        margin-bottom: 0;
-        margin-right: 20px;
-      }
+
     }
 
 
@@ -414,6 +475,14 @@
     &__item {
       width: 100%;
       display: block;
+
+      &.filter__close {
+        height: 45px;
+
+        .filter__checkbox {
+          display: none;
+        }
+      }
     }
 
     &__container {
@@ -444,9 +513,7 @@
       flex-grow: 1;
       flex-wrap: wrap;
 
-      label {
-        width: 100%;
-      }
+
     }
 
     &__button {
@@ -457,18 +524,14 @@
       display: flex;
       flex-direction: column;
 
-      input {
-        width: 240px;
-        height: 44px;
-        margin: 0 auto;
-        display: block;
-      }
 
       span {
-        width: 127px;
-        margin: 20px auto;
-        min-width: 127px;
-        white-space: nowrap;
+        color: #394791;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
       }
     }
 

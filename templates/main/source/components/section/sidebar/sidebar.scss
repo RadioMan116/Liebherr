@@ -23,6 +23,7 @@
     align-items: center;
     padding-left: 11px;
     padding: 5px 10px 5px 0;
+    margin-left: 2rem;
 
     &:nth-child(1) {
       background: url("../images/work-1.svg") 11px 50%/24px no-repeat;
@@ -40,7 +41,7 @@
   }
 
   &:hover {
-   box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
   }
 
   &__a {
@@ -68,7 +69,7 @@
   flex-direction: column;
 
   &:hover {
-   box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
   }
 
   &__pic {
@@ -108,7 +109,7 @@
   justify-content: center;
 
   &:hover {
-   box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
   }
 
   span,
@@ -125,7 +126,7 @@
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
-    color: #2e2e2e;
+    color: #333333;
   }
 
   &__text {
@@ -136,7 +137,7 @@
     line-height: 1.67;
     letter-spacing: normal;
     text-align: left;
-    color: #2e2e2e;
+    color: #333333;
     margin: 9px 0 5px;
   }
 
@@ -148,7 +149,7 @@
     line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
-    color: #2e2e2e;
+    color: #333333;
   }
 
   &__worktime {
@@ -159,7 +160,7 @@
     line-height: 1.67;
     letter-spacing: normal;
     text-align: left;
-    color: #2e2e2e;
+    color: #333333;
     margin: 4px 0 11px;
     width: 100%;
   }

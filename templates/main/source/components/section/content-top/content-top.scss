@@ -113,20 +113,63 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
-        .page__title {
-            font-size: 32px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.38;
-            letter-spacing: normal;
-            text-align: center;
+    @media screen and (max-width: 768px) {
+        background: url("../images/catalog-mobile.png") no-repeat;
+
+        &__title_bottom {
+            width: 380px;
             color: #ffffff;
+            font-family: Arial;
+            font-size: 13px;
+            line-height: 22px;
         }
 
-        .content-top__title_top {
+        &__title_top {
+            color: #ffffff;
+            font-family: "Roboto Condensed";
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 400px;
+        background-position-x: 75%;
+
+        .container {
+            height: 100%;
+        }
+
+        .page__title.content-top__title_bottom {
             display: none;
         }
+
+        .navchain {
+            font-family: Arial;
+            font-size: 12px;
+            line-height: 24px;
+            margin-top: 146px;
+            text-align: center;
+        }
+
+        &__title_top {
+            color: #ffffff;
+            font-family: "Roboto Condensed";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 39px;
+            text-transform: uppercase;
+            word-spacing: 60rem;
+            text-align: center;
+        }
+
+        &__inner {
+            background: #00000030;
+        }
     }
+
+
 }

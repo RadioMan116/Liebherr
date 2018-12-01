@@ -358,6 +358,10 @@ $(document).ready(function () {
 	selectbox();
 	// слайдеры для фильтра
 	function SetSliders() {
+		var fForm = $('#products-filter');
+		$('.filter_checkbox', fForm).click(function () {
+			fForm.submit();
+		});
 		$("#products-filter div.slider_filter_range").each(function () {
 			var handle = $(this);
 			var container = handle.parents(".filter-slider-container");
@@ -379,18 +383,18 @@ $(document).ready(function () {
 					inputMax.val(ui.values[1]);
 				},
 				stop: function () {
-					// $('#products-filter').submit();
+					$('#products-filter').submit();
 				}
 			});
 			inputMin.blur(function () {
 				var sliderValues = handle.slider("option", "values");
 				// if ($(this).val() != sliderValues[0])
-				// $('#products-filter').submit();
+				$('#products-filter').submit();
 			});
 			inputMax.blur(function () {
 				var sliderValues = handle.slider("option", "values");
 				// if ($(this).val() != sliderValues[1])
-				// $('#products-filter').submit();
+				$('#products-filter').submit();
 			});
 		});
 	}
@@ -401,22 +405,6 @@ $(document).ready(function () {
 	});
 	window.globalPopup = new Popup();
 
-	// $(".js-combox").combox({
-	// 	startFn: function(li, index, combox) {
-
-	// 		this.input = combox.getElementsByTagName("input")[0];
-
-	// 		this.input.value = li.getAttribute("value");
-
-	// 	},
-	// 	changeFn: function(li, index, combox) {
-
-	// 		var _this = this;
-
-	// 		this.input.value = li.getAttribute("value");
-
-	// 	}
-	// });
 
 
 
@@ -465,7 +453,15 @@ $(document).ready(function () {
 			})
 		);
 	});
+	$(".filter__form .checkbox-number").each(function () {
+		if ($(this).text() === '0') {
+			$(this).parent().addClass('disabled');
+		}
+	});
 
+	if ($('.filter-tip').length > 0) {
+		$(".filter-tip").parent().addClass('parent-tip');
+	}
 	$(".gallery-thumbs").each(function (index, element) {
 		var $this = $(this);
 		galleryThumbs.push(
@@ -473,10 +469,12 @@ $(document).ready(function () {
 				slidesPerView: 4,
 				loop: true,
 				freeMode: true,
-				loopedSlides: 5, //looped slides should be the same
+				loopedSlides: 5,
+				direction: "vertical",
+				//looped slides should be the same
 				// watchSlidesVisibility: true,
 				// watchSlidesProgress: true,
-				spaceBetween: 32,
+				spaceBetween: 16,
 				slidesPerView: 4,
 				touchRatio: 0.2,
 				slideToClickedSlide: true,
@@ -496,7 +494,7 @@ $(document).ready(function () {
 					//   spaceBetween: 20
 					// },
 					768: {
-						direction: "vertical",
+
 						spaceBetween: 10
 					}
 				}
