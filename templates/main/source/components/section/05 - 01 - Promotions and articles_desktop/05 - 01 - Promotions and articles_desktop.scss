@@ -6,10 +6,30 @@
     &__list {
       width: 100%;
       margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .sidebar {
         display: none;
       }
+
+      .load-more {
+        height: 26px;
+        color: #394791;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        border-bottom: 1px dashed #394791;
+        margin: 0 auto;
+        white-space: nowrap;
+        min-width: 100px;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-decoration: none !important;
+      }
+
     }
 
 
@@ -23,61 +43,13 @@
       width: calc(((100%/12) * 4));
       margin: 0;
       padding: 0 14px 23px;
-    }
-  }
 
-  .filter {
-    &__item {
-      padding: 0 !important;
-    }
-
-    &__form {
-      padding: 16px 20px;
-
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        border-bottom: 0;
-
-        &__list {
-          list-style: none;
-          padding: 0;
-          display: flex;
-          flex-wrap: wrap;
-        }
-
-        &__title {
-          width: 100%;
-          margin: 16px 0 8px;
-        }
-
-        &__item {
-          width: 100%;
-
-          &:hover {
-            a {
-              color: #394791;
-            }
-          }
-        }
-
-        &__link {
-          font-size: 14px;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          letter-spacing: normal;
-          text-align: left;
-             color: #333333;
-          display: flex;
-          padding: 5px 0;
-          transition: 0.3s;
-        }
-      }
     }
 
 
   }
+
+
 
   .pagination {
     margin-top: 63px;
@@ -86,31 +58,38 @@
   @media screen and (max-width: 768px) {
     .filter {
       &__form {
-        height: unset !important;
 
-        .tags__item {
-          width: 33%;
-        }
+
+        .tags__item {}
 
         .filter__checkbox {
           label {
             align-items: center;
           }
-
-          span {
-            margin-right: 10px;
-          }
         }
       }
 
       &__item {
-        display: flex !important;
+        overflow: hidden;
       }
 
+      &__close {}
 
+      &__article {
+        position: relative;
 
-      &__close {
-        height: 35px;
+        .filter__title {
+          background: unset;
+        }
+
+        .filter__item {
+          position: unset;
+        }
+
+        .close__filter:last-child {
+          top: 12px;
+          bottom: unset;
+        }
       }
     }
 
@@ -127,8 +106,7 @@
       .sidebar {
         display: flex;
         flex-wrap: wrap;
-        align-content: baseline;
-        align-items: flex-start;
+
       }
 
       .work-link,
@@ -145,11 +123,9 @@
       }
 
       .work-link {
-        padding-left: 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
         margin-bottom: 0;
 
         &__item {
@@ -181,10 +157,38 @@
       .tags__item {
         width: 100%;
       }
+
+      &__article {
+        .catalog__simile {
+          display: inline;
+        }
+
+        .close__filter:last-child {
+          top: 12px;
+          bottom: unset;
+          left: unset;
+          transform: unset;
+          width: 20px;
+          overflow: hidden;
+          padding-right: 7px;
+          font-family: 'Helvetica', 'Arial', sans-serif;
+          font-size: 1em;
+          font-weight: bold;
+
+          &:before {
+            content: 'x'; // here is your X(cross) sign.
+            color: black;
+            font-weight: 300;
+            font-family: Arial, sans-serif;
+            padding: 0 5px;
+          }
+        }
+      }
     }
 
     .articles__item {
       width: 100%;
+      padding: 0;
     }
 
     .articles__title {
@@ -219,7 +223,7 @@
           }
 
           &__link {
-            width: 100%;
+            width: 150px !important;
             display: flex;
             justify-content: center;
           }

@@ -16,14 +16,14 @@
     line-height: 1.71;
     letter-spacing: normal;
     text-align: left;
-       color: #333333;
+    color: #333333;
     margin-bottom: 31px;
   }
 
   &__form {
     border: 1px solid #eeeeee;
     background-color: #f8f8f8;
-    padding: 16px 20px 25px;
+    padding: 0px 20px 0px;
     transition: 0.4s;
     display: flex;
     flex-wrap: wrap;
@@ -37,9 +37,13 @@
 
     &:hover {}
 
+    .filter_checkbox {
+      display: none;
+    }
+
     /* Скрываем реальный чекбокс */
     .checkbox {
-      display: none;
+
 
       /* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
       &-custom {
@@ -285,6 +289,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 52px;
+    align-items: center;
 
     input {
       display: none;
@@ -326,8 +332,12 @@
     // overflow: hidden;
     height: unset;
     border-bottom: 1px solid #eeeeee;
-    padding: 16px 0 24px !important;
+    padding: 13px 0 20px !important;
     width: 100%;
+
+    &:nth-last-child(2) {
+      border: none;
+    }
 
     &.item__close {
       display: none;
@@ -336,7 +346,7 @@
 
   &__close {
     flex-grow: 1;
-    height: 80px;
+
     width: 100%;
     padding: 16px 0 0;
 
@@ -347,6 +357,7 @@
     .filter__title {
       display: block;
       background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 100% 0px/18px no-repeat;
+      margin: 0;
     }
   }
 
@@ -404,7 +415,7 @@
         display: block;
         position: absolute;
         right: 20px;
-        bottom: -20px;
+        bottom: -100%;
         color: #394791;
         font-family: "Roboto Condensed";
         font-size: 14px;
@@ -412,6 +423,10 @@
         line-height: 24px;
         text-transform: uppercase;
         text-align: center;
+      }
+
+      .catalog__simile {
+        display: none;
       }
 
       .col-md-3 &+.sidebar {
@@ -446,15 +461,6 @@
       width: 40%;
     }
 
-    & &__checkbox {
-      display: flex;
-      flex-grow: 1;
-      flex-wrap: wrap;
-
-      label {
-        width: calc(33%-12px);
-      }
-    }
 
     &__button {
       width: 100%;
@@ -544,7 +550,6 @@
       position: relative;
 
       .filter__button {
-        padding-top: 19px;
         padding-bottom: 19px;
       }
 
@@ -557,11 +562,12 @@
 
       .close__filter:last-child {
         width: 100%;
-        margin: 5px auto;
-        position: unset;
+
         /* min-width: 127px; */
         white-space: nowrap;
         max-width: 127px;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       .sidebar {

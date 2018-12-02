@@ -186,12 +186,7 @@
 }
 
 .swiper {
-	&-slide {
-		position: relative;
-		// height: unset !important;
-		align-items: flex-start;
-		overflow: hidden;
-	}
+	&-slide {}
 
 
 
