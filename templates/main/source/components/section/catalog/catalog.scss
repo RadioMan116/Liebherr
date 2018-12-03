@@ -363,6 +363,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 20px;
   }
 
   &__presence {
@@ -384,7 +385,7 @@
     text-decoration: none;
     line-height: normal;
     flex-shrink: 0;
-    margin: 2px auto;
+    margin: 2px 0;
 
     &:hover {
       text-decoration: none;
