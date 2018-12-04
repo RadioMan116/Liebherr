@@ -1,0 +1,154 @@
+.glossary {
+
+    width: 100%;
+
+    margin-bottom: 2rem;
+
+    * {
+        transition: .5s;
+    }
+
+    &.closed {
+
+        .glossary__list {
+            display: none;
+        }
+
+        .glossary__title {
+            background: url("https://icongr.am/entypo/chevron-down.svg?color=#808080") #f8f8f8 22px 24px/18px no-repeat;
+            color: #2e2e2e;
+            font-family: "Roboto Condensed";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .glossary__items {
+            background: #f8f8f8;
+        }
+
+        .glossary__item {
+            color: #394791;
+        }
+    }
+
+    &__title {
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") #394791 22px 24px/18px no-repeat;
+        padding: 22px 56px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 56px 22px;
+        background: #394791;
+        margin-top: -1px;
+
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        color: #ffffff;
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+
+        &:after {
+            content: '| ';
+            margin: 0 5px;
+            width: 5px;
+        }
+    }
+
+    &__img {
+        width: 150px;
+        height: 150px;
+        margin-right: 2rem;
+    }
+
+    &__li {
+        display: flex;
+        margin-top: 2rem;
+
+        p {
+            margin: 0 !important;
+        }
+    }
+
+    .shipping-payment__items & {
+        &:first-child {
+            padding-top: 2rem;
+            border-top: 1px solid #e2e2e2;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__img {
+            width: 120px;
+            height: 120px;
+        }
+
+        &__item {
+            &:after {
+                content: '| ';
+                margin: 0 4px;
+                width: 3px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &__img {
+            width: 75px;
+            height: 75px;
+            margin-bottom: 1rem;
+        }
+
+        &__li {
+            flex-direction: column;
+
+        }
+
+        &__title {
+            padding: 12px 46px;
+            font-size: 18px !important;
+            background: url("https://icongr.am/entypo/chevron-up.svg?color=ffffff") #394791 18px 15px/18px no-repeat;
+        }
+
+        &.closed {
+
+
+
+            .glossary__title {
+                background: url("https://icongr.am/entypo/chevron-down.svg?color=#808080") #f8f8f8 18px 15px/18px no-repeat;
+            }
+
+        }
+
+
+        &__items {
+            display: block;
+            padding: 0 16px 14px;
+        }
+
+        &__item {
+            font-size: 14px;
+            line-height: 24px;
+            display: inline;
+
+            &:after {
+                content: '| ';
+                margin: 0 4px;
+                width: 3px;
+            }
+        }
+    }
+
+}

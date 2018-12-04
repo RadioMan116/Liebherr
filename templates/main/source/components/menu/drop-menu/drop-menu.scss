@@ -344,6 +344,19 @@
 		}
 	}
 
+	.header__dropdown-menu {
+		.dropdown-menu {
+			&__title {
+				font-family: "Roboto Condensed";
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 46px;
+				padding: 0;
+			}
+		}
+	}
+
+
 	.menu__item:first-child {
 		display: flex;
 		position: relative;

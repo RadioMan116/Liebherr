@@ -395,6 +395,22 @@
 			align-items: center;
 		}
 
+		.gallery__el {
+			height: 56px;
+
+			img {
+				width: 60px;
+				height: 55px;
+			}
+		}
+
+		.swiper-slide {
+			img {
+				height: 284px;
+				max-width: unset;
+			}
+		}
+
 		.swiper__title {
 			margin: 0;
 			width: 260px;
@@ -431,12 +447,22 @@
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 28px;
+			padding: 0 13px;
+		}
+
+		&__tablet {
+			padding-right: 0;
+		}
+
+		&__items {
+			padding: 1rem;
 		}
 
 		&__text {
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 19px;
+			padding: 0 13px;
 		}
 	}
 }

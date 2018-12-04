@@ -26,7 +26,7 @@
 		box-shadow: 0 0 10px -2px #748690;
 		-moz-box-shadow: 0 0 10px -2px #748690;
 		-webkit-box-shadow: 0 0 10px -2px #748690;
-		padding: 35px 31px 27px;
+		padding: 14px 31px 27px;
 		background: #fff;
 		display: none;
 		flex-wrap: wrap;
@@ -123,8 +123,8 @@
 	&__close {
 		display: none;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 7px;
+		right: 10px;
 		height: 40px;
 		width: 40px;
 		cursor: pointer;

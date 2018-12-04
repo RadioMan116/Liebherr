@@ -454,8 +454,24 @@
 			}
 		}
 
+		.container {
+			margin-top: 0;
+		}
+
 		.header__button {
 			right: 9%;
+		}
+
+		&__dropdown-menu .dropdown-menu__link {
+			padding: 5px 0;
+		}
+
+		&__dropdown-menu .dropdown-menu+.dropdown-menu {
+			margin-top: 19px;
+
+			+.dropdown-menu {
+				margin-top: 0;
+			}
 		}
 
 		.menu-480 {
