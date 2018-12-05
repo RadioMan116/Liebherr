@@ -1,6 +1,6 @@
 .special-offers {
     padding-top: 48.2px;
-    padding-bottom: 72px;
+    padding-bottom: 41px;
     display: flex;
     flex-direction: column;
     max-width: 1436px;
@@ -31,10 +31,11 @@
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
-        padding: 24px;
-        justify-content: center;
+        padding: 20px;
+        justify-content: flex-start;
         align-content: stretch;
         border: 1px solid #f1f1f1;
+        min-height: 440px;
     }
 
     &__text {
@@ -199,7 +200,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        padding-bottom: 0;
+        padding-bottom: 2rem;
 
         .special-offers {
             &__buy {
@@ -212,7 +213,22 @@
                 height: 36px;
             }
 
+            &__slide {
+                min-height: unset;
+                padding: 14px 16px;
+            }
+        }
 
+        .swiper-button-next {
+            right: -12px;
+        }
+
+        .swiper-button-prev {
+            right: 29px;
+        }
+
+        .swiper-pagination_2 {
+            right: 92px;
         }
 
         &__text {
@@ -221,10 +237,16 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
+            padding: 20px 0 3rem;
         }
 
         &__pic {
-            max-height: 190px;
+            max-height: 205px;
+        }
+
+        &__title {
+            margin-top: 7px;
+            margin-bottom: 23px;
         }
     }
 

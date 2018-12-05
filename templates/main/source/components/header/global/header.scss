@@ -339,7 +339,7 @@
 				width: 18px;
 				height: 18px;
 				background: url("../images/search.svg") 0/18px no-repeat;
-				margin-right: 38px;
+				margin-right: 39px;
 
 				&-open {
 					background: url('../images/musica-searcher-1.svg') 0/18px no-repeat;
@@ -349,13 +349,14 @@
 			&__compare {
 				width: 39px;
 				background: url("../images/compare.svg") 0 /18px no-repeat;
-				margin-right: 30px;
+				margin-right: 25px;
 			}
 
 
 			&__basket {
 				width: 39px;
 				background: url("../images/shopping-cart.svg") 0 /18px no-repeat;
+				margin-right: -15px;
 			}
 
 			&__number {
@@ -467,7 +468,7 @@
 		}
 
 		&__dropdown-menu .dropdown-menu+.dropdown-menu {
-			margin-top: 19px;
+
 
 			+.dropdown-menu {
 				margin-top: 0;

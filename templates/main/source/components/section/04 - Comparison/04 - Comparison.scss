@@ -19,19 +19,9 @@
     max-width: 100%;
     position: relative;
 
-    tr:not(:first-child):nth-child(even) {
-      td {
-        background-color: #f8f8f8;
-      }
-    }
 
-    tr:not(:first-child):hover {
-      td {
-        background-color: #f3efec !important;
-      }
-
-    }
   }
+
 
   .tabs {
     width: 25%;
@@ -47,19 +37,14 @@
     flex-wrap: wrap;
 
     td {
-      border-right: solid 1px #f1f1f1;
+      border-bottom: solid 1px #e8e8e8;
       height: 100%;
       display: flex;
       align-items: center;
-      font-size: 14px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.93;
-      letter-spacing: normal;
-      text-align: left;
-         color: #333333;
+      color: #333333;
     }
+
+
   }
 
   .swiper-wrapper {
@@ -79,11 +64,20 @@
   }
 
   .products-line {
+    background-color: #f8f8f8;
 
 
     .swiper-slide {
       padding-left: 0;
       align-items: baseline;
+
+
+      &~.swiper-slide {
+        .swiper__comparison {
+          background: #ffffff;
+        }
+
+      }
     }
 
     .swiper__comparison_first {
@@ -93,7 +87,7 @@
 
   &__title {
     width: 100%;
-    
+
     font-size: 36px;
     font-weight: 500;
     font-style: normal;
@@ -106,14 +100,13 @@
 
   &__inner {
     padding: 17px 16px;
-    background-color: #eeeeee;
     width: 96%;
     display: flex;
     flex-direction: column;
   }
 
   &-menu__title {
-    
+
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -121,7 +114,7 @@
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
-       color: #333333;
+    color: #333333;
   }
 
   &__list {
@@ -171,7 +164,7 @@
     line-height: 2;
     letter-spacing: normal;
     text-align: left;
-       color: #333333;
+    color: #333333;
     position: relative;
   }
 
@@ -191,7 +184,7 @@
       line-height: 1;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
       margin: 5px 0;
     }
 
@@ -218,26 +211,55 @@
       display: flex;
       align-items: center;
       width: 100%;
-      font-size: 16px;
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: left;
-         color: #333333;
-      
+      background: url("https://icongr.am/entypo/chevron-up.svg?color=b0b0b0") #f8f8f8 26px 20px/18px no-repeat;
+
+      cursor: pointer;
+
+
+      td:first-child {
+        color: #2e2e2e;
+        font-family: "Roboto Condensed";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-left: 60px;
+        background: unset;
+      }
+
+      td {
+        background: #f8f8f8;
+      }
+
+      &-active {
+        background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") #f8f8f8 26px 20px/18px no-repeat;
+
+        td:first-child {
+          color: #394791;
+        }
+      }
     }
 
     &__row {
       width: 100%;
-      cursor: pointer;
 
+      td:first-child {
+        color: #2e2e2e;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 30px;
 
+        &~td {
+          color: #2e2e2e;
+          font-family: Arial;
+          font-size: 14px;
+          line-height: 30px;
+          padding-left: 44px;
+        }
+      }
     }
 
     &__property {
-      
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -245,7 +267,7 @@
       line-height: normal;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
     }
 
     &__name {
@@ -256,7 +278,7 @@
       line-height: 1.93;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
       flex: 1 1 25%;
       padding-left: 17px;
       padding-top: 10px;
@@ -291,17 +313,30 @@
   .price__absolute {}
 
   .swiper-button-prev {
-    background: url("../images/round-arrow-left.svg") 0/24px no-repeat;
+
     position: absolute;
-    top: 40px;
-    right: 100px;
-    left: unset;
+    background: url("../images/special-offers_prev.png") 0/34px no-repeat;
+    top: 30px;
+    right: 50px;
+    width: 34px;
+    height: 34px;
+    left: unset !important;
+
+    &:hover {
+      background: url("../images/swiper-button-color-prev.png") 0/34px no-repeat;
+    }
   }
 
   .swiper-button-next {
-    background: url("../images/round-arrow-right.svg") 0/24px no-repeat;
-    top: 40px;
-    right: 50px;
+    background: url("../images/special-offers_next.png") 0/34px no-repeat;
+    top: 30px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+
+    &:hover {
+      background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
+    }
   }
 
   .swiper-scrollbar {
@@ -330,7 +365,7 @@
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
-       color: #333333;
+    color: #333333;
     margin-top: 17px;
   }
 
@@ -378,7 +413,7 @@
       line-height: 1.71;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
     }
 
     .special-offers__buy {
@@ -398,7 +433,7 @@
       line-height: 1.2;
       letter-spacing: -1px;
       text-align: left;
-         color: #333333;
+      color: #333333;
     }
 
     .special-offers__rub {
@@ -444,7 +479,7 @@
         width: 100%;
         height: unset !important;
         padding: 0 0 0 17px;
-        
+
         font-size: 12px;
         font-weight: 500;
         font-style: normal;
@@ -452,7 +487,7 @@
         line-height: 1;
         letter-spacing: normal;
         text-align: left;
-           color: #333333;
+        color: #333333;
       }
     }
 
@@ -468,7 +503,7 @@
       font-stretch: normal;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
     }
 
     &__title {
@@ -498,7 +533,7 @@
       font-stretch: normal;
       line-height: 2;
       letter-spacing: normal;
-         color: #333333;
+      color: #333333;
     }
 
     .swiper-button-prev {
@@ -519,7 +554,7 @@
       line-height: 1.57;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
     }
 
     .special-offers__price {
@@ -530,7 +565,7 @@
       line-height: 1.5;
       letter-spacing: normal;
       text-align: left;
-         color: #333333;
+      color: #333333;
       width: 100%;
       margin-top: 25px;
       flex-wrap: nowrap;

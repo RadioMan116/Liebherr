@@ -36,12 +36,115 @@
 		margin-bottom: -95px;
 		position: relative;
 		display: flex;
+		background: url('../images/01.png') no-repeat;
 
-		img {
-			width: auto;
-			max-width: 100%;
-			height: auto;
-			max-height: 100%;
+		.button__open {
+			width: 34px;
+			height: 34px;
+			border-radius: 3px;
+			background-color: #394791;
+			color: #ffffff;
+			background: url("../images/holod-button.png") no-repeat;
+			position: absolute;
+			top: 5%;
+			left: 5%;
+
+			&.open {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+		}
+
+		.button__half-open {
+			border-radius: 3px;
+			background-color: #394791;
+			color: #ffffff;
+			padding: 5px 7px 8px 10px;
+			position: absolute;
+			top: 50%;
+			right: 0;
+		}
+
+		&.closed {
+			.closed {
+				display: block;
+			}
+		}
+
+		&.closed.half-open {
+			background: url('../images/02.png') no-repeat;
+
+			.closed {
+				display: none;
+			}
+
+			.half-open {
+				display: block;
+			}
+		}
+
+		&.closed.open {
+			background: url('../images/03.png') no-repeat;
+
+
+
+			.closed {
+				display: none;
+			}
+
+			.button__half-open {
+				display: none;
+			}
+
+			.half-open {
+				display: block;
+			}
+
+			.open {
+				display: block;
+			}
+
+			.gallery__info-ball {
+
+				&_3 {
+					top: 13px;
+					left: 240px;
+				}
+
+				&_4 {
+					top: 60px;
+					left: 100px;
+				}
+
+				&_5 {
+					display: none;
+				}
+
+				&_6 {
+					top: 400px;
+					left: 110px;
+				}
+
+				&_7 {
+					top: 170px;
+					left: 210px;
+				}
+
+				&_8 {
+					bottom: 60px;
+					left: 200px;
+				}
+
+				&_9 {
+					top: 260px;
+					left: 210px;
+				}
+
+			}
+
 		}
 	}
 
@@ -114,6 +217,7 @@
 		height: 22px;
 		background: url("../images/point-small.png") 0/22px no-repeat;
 		cursor: pointer;
+		display: none;
 
 		.info-ball__text {
 			display: none;
@@ -133,6 +237,7 @@
 			line-height: normal;
 			letter-spacing: normal;
 			color: #212121;
+			z-index: 99;
 
 			&::before {
 				content: "";
@@ -150,24 +255,36 @@
 
 		}
 
+
+
 		&_1 {
-			top: 15px;
-			left: 215px;
+			top: 115px;
+			left: 185px;
 		}
 
 		&_2 {
-			top: 70px;
-			left: 125px;
+			top: 380px;
+			left: 95px;
 		}
 
 		&_3 {
-			top: 260px;
-			left: 200px;
+			top: 13px;
+			left: 170px;
 		}
 
 		&_4 {
+			top: 60px;
+			left: 100px;
+		}
+
+		&_5 {
+			top: 260px;
+			left: 180px;
+		}
+
+		&_6 {
 			top: 400px;
-			left: 140px;
+			left: 110px;
 		}
 
 		&:hover {
@@ -205,13 +322,15 @@
 		background: #0000006b
 	}
 
+
+
 	&__title {
 		width: 600px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		margin-left: 31%;
-		margin-top: 30px;
+		margin-top: 3rem;
 
 		.span {
 
@@ -308,9 +427,13 @@
 				padding-right: 2rem;
 			}
 
+			&-pagination {
+				text-align: end;
+				padding-right: 7rem;
+			}
 
 			&__title {
-				margin-left: auto;
+				margin-left: 45%;
 				width: 59%;
 
 				.span {
@@ -329,11 +452,36 @@
 			}
 		}
 
+		&__items {
+			padding: 16px 24px;
+		}
+
+		&__item {
+			&.closed.open {
+				width: 319px;
+
+				&+.gallery__tablet {
+					padding-left: 1%;
+				}
+
+
+			}
+		}
+
+		&__article {
+			color: #212121;
+			font-family: "Roboto Condensed";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 28px;
+		}
+
+
 		&__tablet {
 			display: flex;
 			flex-direction: column;
 			flex-grow: 1;
-			padding-right: 1rem;
+			padding-left: 10%;
 		}
 
 		&__el {
@@ -341,6 +489,10 @@
 			margin-left: unset;
 			width: 100%;
 			margin-bottom: 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		&__link {
@@ -372,8 +524,15 @@
 			display: none;
 		}
 
+		&__tablet {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
 		.swiper__item {
 			justify-content: center;
+			padding-right: 0;
+			padding-top: 0;
 		}
 
 		.swiper__title {
@@ -385,6 +544,26 @@
 				text-align: center;
 			}
 		}
+
+		.swiper__title {
+			.span {
+				&__small {
+					font-size: 33px;
+				}
+
+				&__big {
+					font-size: 15px;
+				}
+			}
+
+		}
+
+		.swiper-pagination {
+			bottom: 24px;
+			text-align: center;
+			padding-right: 0;
+		}
+
 	}
 }
 
@@ -439,9 +618,6 @@
 			max-width: 240px;
 		}
 
-		.swiper-pagination {
-			bottom: 24px;
-		}
 
 		&__article {
 			font-size: 16px;
@@ -450,9 +626,7 @@
 			padding: 0 13px;
 		}
 
-		&__tablet {
-			padding-right: 0;
-		}
+
 
 		&__items {
 			padding: 1rem;
