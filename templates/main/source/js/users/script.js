@@ -91,7 +91,7 @@ $(document).ready(function () {
 		}
 	});
 	var mySwiper2 = new Swiper(".swiper-container-four", {
-		slidesPerView: 'auto',
+		slidesPerView: 4,
 		spaceBetween: 27,
 		slidesPerGroup: 1,
 		loop: true,
@@ -125,7 +125,10 @@ $(document).ready(function () {
 			768: {
 				slidesPerView: 3,
 				spaceBetween: 20,
-			}
+			},
+			1116: {
+				slidesPerView: 3,
+			},
 		}
 	});
 	var mySwiper5 = new Swiper(".swiper-container-comparison", {

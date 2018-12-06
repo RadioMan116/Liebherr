@@ -90,7 +90,7 @@
             color: #333333;
         }
 
-        .glossary__decs {
+        .glossary__desc {
             width: 100%;
             color: #333333;
             font-family: Arial;
@@ -135,7 +135,7 @@
         &__li {
             flex-direction: column;
 
-            .glossary__decs {
+            .glossary__desc {
                 font-size: 14px;
                 line-height: 22px;
             }
