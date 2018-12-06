@@ -558,9 +558,9 @@ $(document).ready(function () {
 			$(".hide-tabs__delivery").removeClass("closed");
 		}
 	});
-	$(".characteristic__title").nextUntil('tr.characteristic__title').hide();
+	$(".js-characteristic__title").nextUntil('tr.js-characteristic__title').hide();
 
-	$(".characteristic__title").click(function () {
+	$(".js-characteristic__title").click(function () {
 		if (!$(this).hasClass("characteristic__title-active")) {
 			$(this).nextUntil('tr.characteristic__title').show();
 			$(this).addClass('characteristic__title-active');

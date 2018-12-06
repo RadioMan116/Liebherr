@@ -90,7 +90,7 @@
             color: #333333;
         }
 
-        span {
+        .glossary__decs {
             width: 100%;
             color: #333333;
             font-family: Arial;
@@ -135,7 +135,7 @@
         &__li {
             flex-direction: column;
 
-            span {
+            .glossary__decs {
                 font-size: 14px;
                 line-height: 22px;
             }
